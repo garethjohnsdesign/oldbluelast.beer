@@ -1,0 +1,137 @@
+//  Table of Contents:
+//
+//   1. Mixins
+//   2. Global
+//   3. Typography
+//   4. Navigation
+//   5. Index
+//   6. Category / Class
+//   7. Article
+//   8. Footer
+
+
+// 1. Mixins
+// ---------
+
+@mixin links ($link, $hover) {
+  a {
+    color: $link;
+    &:hover {
+      color: $hover;   
+    }
+  }
+}
+
+// 2. Global
+// ---------
+
+body {
+  cursor: default;
+  font-kerning: normal;
+}
+
+svg {
+  max-width: 100%;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+::selection {
+  background: $primary-color;
+  color: $secondary-color;
+}
+
+:focus {
+  outline: 0;
+}
+
+select {
+  -webkit-appearance:none;
+}
+
+p a {
+  padding-bottom: 0.25rem;
+  border-bottom: 2px $medium-gray solid;
+  &:hover {
+    border-bottom: 2px transparent solid;
+  }
+}    
+  
+
+// 3. Typography
+// -------------
+
+.underline {
+  padding-bottom: 0.25rem;
+  border-bottom: 1px $black solid;
+  &:hover {
+    border-bottom: 1px transparent solid;
+  }
+}
+
+i, cite, em, var, address, dfn {
+  font-style: normal;
+}
+
+// 4. Navigation
+// -------------
+
+
+
+// 5. Index
+// -------------
+
+
+// 5. Page
+// -------------
+
+article h1 {
+  text-align: center;
+  padding-bottom: $global-padding
+}
+
+article h3 {
+  text-align: center;
+  padding-bottom: $global-padding
+}
+
+.hero__section {
+  background-position: center center;
+  background-size: cover;
+  height: 60vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .hero-section-text {
+    color: $white;
+  }
+}
+
+
+#map {
+    height: 60vh;
+  }
+  
+input#search-box.search {
+    background-color: #fff;
+  }
+
+
+.sticky {
+    z-index: 10;
+}
+
+$scrollhide-nav-transition-speed: 1s;
+
+.scrollhide-nav {
+  transition: transform $scrollhide-nav-transition-speed cubic-bezier(0.86, 0, 0.07, 1);
+
+  &.hidden {
+    transform: translateY(-100%);
+  }
+}

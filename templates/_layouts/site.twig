@@ -1,0 +1,54 @@
+{% extends "_layouts/base" %}
+
+{% if bodyClass is not defined %}
+	{% set bodyClass = entry is defined ? entry.section.handle : craft.request.firstSegment %}
+{% endif %}
+
+{% if nav[bodyClass] is defined %}
+	{% set title %}{% if title is defined %}{{ title }} - {% endif %}{{ nav[bodyClass].title }}{% endset %}
+{% endif %}
+
+{% block body %}
+<div class="off-canvas-wrapper">
+  <!-- Off Canvas Content -->
+  
+  <!-- Navigation Mobile -->
+  {% include "_includes/navigation/mobile" %}
+  <!-- End Navigation Mobile -->
+    
+  <!-- Off Canvas Content -->
+  <div class="off-canvas-content">
+    
+  <!-- Navigation Desktop -->
+  {% include "_includes/navigation/desktop" %}
+  <!-- End Navigation Desktop -->
+  
+  <main id="main" role="main">
+  {% block main %}{% endblock %}
+  </main>
+  
+  <!-- Footer -->
+  <footer id="footer">
+  <!-- Newsletter -->
+  {% include "_includes/footer/newsletter" %}
+  <!-- End Newsletter -->
+  
+  <!-- Socials -->
+  {% include "_includes/footer/socials" %}
+  <!-- End Socials -->
+  
+  <!-- Copyright -->
+  {% include "_includes/footer/copyright" %}
+  <!-- End Copyright -->
+  </footer>
+  <!-- End Footer -->
+  
+  </div>
+  <!-- End Off Canvas Content -->
+</div>
+{% endblock %}
+
+{% block foot %}
+{% include "_includes/scripts/scripts" %}
+
+{% endblock %}

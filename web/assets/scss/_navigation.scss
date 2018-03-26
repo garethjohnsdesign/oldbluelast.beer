@@ -1,0 +1,61 @@
+$nav-text-color: $white;
+$nav-height: 75px;
+$nav-background: #2c3840;
+$offcanvas-padding: 20px;
+
+.multilevel-offcanvas {
+  background: darken($nav-background, 5%);
+  padding: 20px;
+  color: $white;
+  z-index: 1000;
+
+  > .menu {
+    margin-bottom: 1rem;
+  }
+
+  .menu a {
+    color: rgba($nav-text-color,.6);
+    padding-top: 7px;
+    padding-bottom: 7px;
+    transition: color 0.2s ease-in;
+
+    &:hover {
+      color: $nav-text-color;
+    }
+  }
+
+  .fa {
+    color: $nav-text-color;
+  }
+
+  .is-accordion-submenu-parent > a::after {
+    border-color: rgba($nav-text-color,.6) transparent transparent;
+  }
+
+  .social-links {
+    margin-left: $offcanvas-padding;
+
+    li {
+      margin-right: 5px;
+    }
+
+    a:hover .fa {
+      color: darken($nav-text-color,25%);
+      transition: color .2s ease-in;
+    }
+
+    .fa {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+.body-info {
+  text-align: center;
+  color: $nav-background;
+
+  .button {
+    margin: 1rem 0;
+    padding: 0.85em 2em;
+  }
+}
