@@ -19,10 +19,9 @@
             
             {% for drink in craft.entries.section('drinks').all() %}
             <tr>
-
-                <td><a href="{{ drink.url }}">Perfect Espresso</a></td>
-                <td>{{ drink.dateAddedToMenu | date }}</td>
-                <td><a href="/styles/index.html">Espresso</a></td>
+              <td><a href="{{ drink.url }}">Perfect Espresso</a></td>
+              <td>{{ drink.dateAddedToMenu | date }}</td>
+              <td><a href="/styles/index.html">Espresso</a></td>
             </tr>
             {% endfor %}
             

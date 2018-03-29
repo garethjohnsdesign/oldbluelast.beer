@@ -2,6 +2,118 @@
 
 {% block main %}
 
-Test
+{# Hero #}
+<section class="home__hero padding-top-2">
+  <div class="grid-container">
+    <div class="grid-x grid-padding-x grid-padding-y">
+      <div class="small-12 medium-6 cell text-uppercase">
+        <h1>A<br>Beer<br>Website<br>Website<br>Website<br>Website</h1>
+      </div>
+      <div class="small-12 medium-6 cell align-self-middle">
+        <p>We are a beer by VICE, nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum. Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum.</p>
+        <a href="#" class="underline text-uppercase">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+{# End Hero #}
+
+{# Upcoming Events #}
+<section class="home__upcoming-events inverted padding-top-2">
+<div class="grid-container">
+    <div class="grid-x grid-padding-x grid-padding-y">
+      <div class="small-12 cell text-uppercase">
+        <h1>Upcoming<br>Events</h1>
+        
+          <ul class="vertical menu">
+          
+          {% set entries = craft.entries
+    .section('events')
+    .eventFeatured('true')
+    .eventDate('>' ~ now.getTimestamp())
+    .order('eventDate asc')
+    .all() %}
+    
+          {% for entry in entries %}
+        	  <li>
+          	  <a href="{{ entry.eventLink}}" class="padding-left-0" target="_blank">
+          	  
+                <div class="grid-x grid-padding-x grid-padding-y">
+                
+                <div class="small-8 cell text-uppercase">
+                <h6>{{ entry.eventDate | date }}</h6>
+                <h5>{{ entry.title}} @ {{ entry.eventVenue}}, {{ entry.eventLocation}}</h5>
+                </div>
+                
+                <div class="small-4 cell text-uppercase text-right align-self-bottom margin-bottom-1">
+                <span class="underline">Event Page</span>
+                </div>
+                
+                </div>
+          	  
+          	  </a>
+        	  </li>
+        	 {% endfor %}
+          </ul>
+  
+        
+        
+        
+      </div>
+    </div>
+</div>
+</section>
+{# End Upcoming Events #}
+
+{# Recent Events #}
+<section class="home__recent-events padding-top-2 padding-bottom-2 grid-container">
+
+  
+    <div class="grid-x grid-padding-x grid-padding-y">
+      <div class="small-12 cell text-uppercase">
+        <h1>Recent<br> Events</h1>
+      </div>
+    </div>
+    
+    <div class="grid-x grid-padding-x grid-padding-y small-up-2 medium-up-4 large-up-4">
+      
+      {% for entry in craft.entries.section('events').all() if entry.eventFeatured and entry.eventDate < now %}
+      <div class="cell">
+        <a href="{{ entry.url}}">
+        <h6 class="text-uppercase">{{ entry.eventDate | date }}</h6>
+        
+        {% for asset in entry.eventThumb %}
+        <img src="{{ asset.getUrl('thumb') }}" width="{{ asset.getWidth('thumb') }}" height="{{ asset.getHeight('thumb') }}" class="margin-top-1 margin-bottom-2">
+        {% endfor %}
+        
+        <h5>{{ entry.title}} @ {{ entry.eventVenue}}, {{ entry.eventLocation}}</h5>
+        <span class="underline">See Photos</span>
+        </a>
+      </div>
+      {% endfor %}
+      
+    </div>
+
+</section>
+{# End Recent Events #}
+
+{# Location #}
+<section class="home__recent-events inverted padding-top-2">
+  <div class="grid-container">
+    <div class="grid-x grid-padding-x grid-padding-y">
+      <div class="small-12 cell text-uppercase">
+        <h1>Here We Are</h1>
+      </div>
+    </div>  
+  </div>
+  
+  <div class="grid-x">
+    <div class="small-12 cell">
+      <div id="map" class="locations__map"></div>    
+    </div>
+  </div>
+</section>
+{# End Location #}
+
 
 {% endblock %}

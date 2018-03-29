@@ -11,18 +11,14 @@
   "dependencies": {
     "foundation-sites": "^6.4.3",
     "motion-ui": "^1.2.3",
-    "foundation-datepicker": "^1.5.6",
     "jquery": "^3.3.1",
     "aos": "^2.2.0",
     "svgxuse": "^1.2.6",
     "what-input": "^5.0.5",
-    "flatpickr": "^4.3.2",
-    "headroom.js": "headroom-js#^0.9.4",
-    "headroom": "^1.0.3"
+    "lightgallery": "^1.6.8"
   },
   "ignore": [
     "**/.*",
-    "node_modules",
     "bower_components",
     "test",
     "tests"

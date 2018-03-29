@@ -1,0 +1,16 @@
+{% set navigation = {
+  "about":    { title: "About" },
+  "locations":    { title: "Locations" },
+  "events":    { title: "Events" },
+  "contact":    { title: "Contact" },
+} %}
+
+<div class="off-canvas position-right inverted" id="offCanvasRight" data-off-canvas>
+  
+  <ul class="vertical menu">
+    {% for slug, item in navigation %}
+	  <li class="text-uppercase"><a href="{{ url(slug) }}">{{ item.title }}</a></li>
+		{% endfor %}
+  </ul>
+  
+</div>

@@ -1,36 +1,27 @@
 @font-face {
-  font-family: 'GT America Light';
+  font-family: 'Helvetica Neue Bold';
   src: 
-  url('../fonts/gt-america-light.woff2') format('woff2'), 
-  url('../fonts/gt-america-light.woff') format('woff');
+  url('../fonts/helvetica-neue-bold.woff2') format('woff2'), 
+  url('../fonts/helvetica-neue-bold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'GT America Medium';
+  font-family: 'Helvetica Neue Black';
   src: 
-  url('../fonts/gt-america-medium.woff2') format('woff2'), 
-  url('../fonts/gt-america-medium.woff') format('woff');
+  url('../fonts/helvetica-neue-black.woff2') format('woff2'), 
+  url('../fonts/helvetica-neue-black.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 
 @font-face {
-  font-family: 'Circular Medium';
+  font-family: 'Gallery';
   src: 
-  url('../fonts/circular-std-medium.woff2') format('woff2'), 
-  url('../fonts/circular-std-medium.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Circular Book';
-  src: 
-  url('../fonts/circular-std-book.woff2') format('woff2'), 
-  url('../fonts/circular-std-book.woff') format('woff');
+  url('../fonts/gallery.woff2') format('woff2'), 
+  url('../fonts/gallery.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

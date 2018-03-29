@@ -59,7 +59,13 @@ p a {
   &:hover {
     border-bottom: 2px transparent solid;
   }
-}    
+}
+
+.inverted {
+  background-color: $primary-color;
+  color: $white;
+  @include links ($white, $black) 
+}
   
 
 // 3. Typography
@@ -67,10 +73,14 @@ p a {
 
 .underline {
   padding-bottom: 0.25rem;
-  border-bottom: 1px $black solid;
+  border-bottom: 2px $primary-color solid;
   &:hover {
-    border-bottom: 1px transparent solid;
+    border-bottom: 2px transparent solid;
   }
+}
+
+.inverted .underline {
+  border-bottom: 2px $white solid;
 }
 
 i, cite, em, var, address, dfn {
@@ -80,42 +90,24 @@ i, cite, em, var, address, dfn {
 // 4. Navigation
 // -------------
 
-
+.off-canvas {
+  padding: $global-padding;
+  font-size: 1.75rem;
+  font-family: $secondary-font-family;
+}
 
 // 5. Index
 // -------------
+
+// 5. Footer
+// -------------
+
+
 
 
 // 5. Page
 // -------------
 
-article h1 {
-  text-align: center;
-  padding-bottom: $global-padding
-}
-
-article h3 {
-  text-align: center;
-  padding-bottom: $global-padding
-}
-
-.hero__section {
-  background-position: center center;
-  background-size: cover;
-  height: 60vh;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  .hero-section-text {
-    color: $white;
-  }
-}
-
-
-#map {
-    height: 60vh;
-  }
   
 input#search-box.search {
     background-color: #fff;
@@ -133,5 +125,16 @@ $scrollhide-nav-transition-speed: 1s;
 
   &.hidden {
     transform: translateY(-100%);
+  }
+}
+
+
+
+.locations__map {
+  @include breakpoint(small) {
+  height: 70vh;
+  }
+  @include breakpoint(medium) { 
+  height: 50vh;
   }
 }

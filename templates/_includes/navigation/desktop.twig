@@ -1,0 +1,29 @@
+<div data-sticky-container>
+  <div data-sticky data-options="marginTop:0;" style="width:100%" class="scrollhide-nav">
+    <div class="grid-x align-justify align-middle navigation inverted padding-0">
+      <div class="shrink cell uppercase">
+        <a href="{{ siteUrl }}" class="padding-left-1"><svg class="icon icon-logo"><use xlink:href="/assets/icons/symbol-defs.svg#icon-logo"></use></svg></a>
+      </div>
+      
+      <div class="shrink cell">
+        <ul class="menu align-middle">
+          
+          {% set navigationdesktop = {
+  "about":    { title: "About" },
+  "locations":    { title: "Locations" },
+  "events":    { title: "Events" },
+  "contact":    { title: "Contact" },
+} %}
+
+    {% for slug, item in navigationdesktop %}
+	  <li class="text-uppercase"><a href="{{ url(slug) }}">{{ item.title }}</a></li>
+		{% endfor %}
+          
+          <li class="show-for-large"><svg class="icon icon-beer"><use xlink:href="/assets/icons/symbol-defs.svg#icon-beer"></use></svg></li>
+          
+          <li><a data-toggle="offCanvasRight"><svg class="icon icon-menu"><use xlink:href="/assets/icons/symbol-defs.svg#icon-menu"></use></svg></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

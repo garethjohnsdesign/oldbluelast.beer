@@ -1,0 +1,30 @@
+{% extends "_layouts/site" %}
+
+{% block main %}
+
+<div class="grid-container">
+
+  <div class="grid-x grid-padding-y padding-top-2">
+    <div class="small-12 cell">
+      <h5>{{ entry.eventDate | date }}</h5>
+      <h4>{{entry.title}} @ {{entry.eventVenue}}, {{entry.eventLocation}}</h4>
+    </div>
+  </div>
+  
+  <div class="grid-x grid-padding-x grid-padding-y small-up-2 medium-up-3 large-up-4 margin-bottom-2" id="gallery">
+    {% for asset in entry.eventPhotos %}
+    <div class="cell about__images" data-src="{{ asset.getUrl() }}">
+      <a href="{{ asset.getUrl() }}"><img src="{{ asset.getUrl('thumb') }}" width="{{ asset.getWidth('thumb') }}" height="{{ asset.getHeight('thumb') }}" class="excerpt__image"></a>
+    </div>
+    {% endfor %}
+  </div>
+
+</div>
+
+{% endblock %}
+
+
+
+
+
+                

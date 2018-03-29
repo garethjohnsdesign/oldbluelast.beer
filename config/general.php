@@ -23,6 +23,10 @@ return [
 
         // The secure key Craft will use for hashing and encrypting data
         'securityKey' => getenv('SECURITY_KEY'),
+        
+        'enableTemplateCaching' => false,
+        
+        'extraAllowedFileExtensions' => 'kmz',
     ],
 
     // Dev environment settings
@@ -32,6 +36,8 @@ return [
 
         // Dev Mode (see https://craftcms.com/support/dev-mode)
         'devMode' => true,
+        
+        'enableTemplateCaching' => false,
     ],
 
     // Staging environment settings
@@ -46,3 +52,6 @@ return [
         'siteUrl' => null,
     ],
 ];
+
+
+
