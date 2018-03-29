@@ -2,13 +2,20 @@
 
 {% block main %}
 
-{% set locations = craft.entries
-    .section('locations')
-    .all() %}
+{% set target = craft.request.getParam('near') %}
+{% if target %}
+    {% set params = {
+        target: target,
+        range: 500
+    } %}
+    {% set locations = craft.entries.section('locations').address(params).order('distance').all() %}
+{% else %}
+    {% set locations = craft.entries.section('locations').all() %}
+{% endif %}
 
 {% set options = {
     height: 500,
-    zoom: 4,
+    zoom: 15,
     draggable: true,
     markerInfo: '_includes/map/bubble',
     markerOptions: {
@@ -18,22 +25,39 @@
         maxWidth: 200
     }
 } %}
-    
+
+
+
+
 
 <div class="grid-container">
-  <div class="grid-x grid-padding-x grid-padding-y">
-    <div class="small-12 cell">
+  <div class="grid-x grid-padding-x grid-padding-y small-up-3 margin-top-2">
+    
 
     
     {% for entry in locations %}
-    <h3>{{ entry.title }}</h3>
+    <div class="cell">
+    <h4>{{ entry.title }}</h4>
     <h6>{{ entry.address.street1 }}<h6>
     <h6>{{ entry.address.city }}, {{ entry.address.zip }}<h6>
-    
-    {% endfor %}
     </div>
+    {% endfor %}
+    
   </div>
 </div>
+
+<section class="inverted">
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y margin-top-2">
+  <div class="small-12 cell">
+  <form action="" method="GET">
+    <input name="near" type="text" placeholder="Enter your postcode">
+    <input type="submit" class="button" value="Submit">
+  </form>
+  </div>
+  </div>
+</div>
+</section>
 
 <div class="grid-x">
   <div class="small-12 cell">

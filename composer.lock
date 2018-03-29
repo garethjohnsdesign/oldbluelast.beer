@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b4cd9ac60f72d6b118b75049d35f4cb6",
+    "content-hash": "c12f47aaa0901b3b89398b218fa37dc1",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -349,11 +349,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.0-RC16.1",
+            "version": "3.0.0-RC17",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/44fff955bb76c383c582bcd6e5ded80ac69a2dec",
-                "reference": "44fff955bb76c383c582bcd6e5ded80ac69a2dec",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/bcce9c47fe2449128253d89cb390162deb7c80c2",
+                "reference": "bcce9c47fe2449128253d89cb390162deb7c80c2",
                 "shasum": ""
             },
             "require": {
@@ -394,12 +394,6 @@
                 "bower-asset/punycode": "1.3.*",
                 "bower-asset/yii2-pjax": "~2.0.1"
             },
-            "require-dev": {
-                "codeception/codeception": "~2.3.3",
-                "codeception/mockery-module": "~0.2.2",
-                "codeception/specify": "~0.4.6",
-                "codeception/verify": "~0.3.3"
-            },
             "suggest": {
                 "ext-iconv": "Adds support for more character encodings than PHP’s built-in mb_convert_encoding() function, which Craft will take advantage of when converting strings to UTF-8.",
                 "ext-imagick": "Adds support for more image processing formats and options.",
@@ -411,7 +405,6 @@
                     "craft\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -422,7 +415,15 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-03-25T23:47:20+00:00"
+            "support": {
+                "email": "support@craftcms.com",
+                "issues": "https://github.com/craftcms/cms/issues?state=open",
+                "forum": "https://craftcms.stackexchange.com/",
+                "source": "https://github.com/craftcms/cms",
+                "docs": "https://github.com/craftcms/docs",
+                "rss": "https://github.com/craftcms/cms/releases.atom"
+            },
+            "time": "2018-03-28T18:16:57+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -672,11 +673,11 @@
         },
         {
             "name": "doublesecretagency/craft-smartmap",
-            "version": "3.0.4",
+            "version": "3.0.5",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doublesecretagency/craft-smartmap/zipball/cccc09a649d188da96534aecd87d72dd24392b16",
-                "reference": "cccc09a649d188da96534aecd87d72dd24392b16",
+                "url": "https://api.github.com/repos/doublesecretagency/craft-smartmap/zipball/73dcc9df02f3786b47f4f3bdf52163944102750d",
+                "reference": "73dcc9df02f3786b47f4f3bdf52163944102750d",
                 "shasum": ""
             },
             "require": {
@@ -719,7 +720,7 @@
                 "docs": "https://www.doublesecretagency.com/plugins/smart-map/docs",
                 "issues": "https://github.com/doublesecretagency/craft-smartmap/issues"
             },
-            "time": "2018-03-20T05:19:15+00:00"
+            "time": "2018-03-29T17:55:15+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -882,22 +883,17 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.3.1",
+            "version": "6.3.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/49e42e6539f775e80c74086a710a882e1d5a8111",
-                "reference": "49e42e6539f775e80c74086a710a882e1d5a8111",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/68d0ea14d5a3f42a20e87632a5f84931e2709c90",
+                "reference": "68d0ea14d5a3f42a20e87632a5f84931e2709c90",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/promises": "^1.0",
                 "guzzlehttp/psr7": "^1.4",
                 "php": ">=5.5"
-            },
-            "require-dev": {
-                "ext-curl": "*",
-                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.4",
-                "psr/log": "^1.0"
             },
             "suggest": {
                 "psr/log": "Required for using the Log middleware"
@@ -916,7 +912,6 @@
                     "GuzzleHttp\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -938,7 +933,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2018-03-26T12:06:26+00:00"
+            "time": "2018-03-26T16:33:04+00:00"
         },
         {
             "name": "guzzlehttp/promises",
