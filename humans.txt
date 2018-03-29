@@ -13,12 +13,6 @@ Design + Development
 @garethjohnsabc
 
 
-SPECIAL THANKS
---------------
-
-Skylar Challand
-
-
 TECHNOLOGY
 ----------
 

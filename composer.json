@@ -21,7 +21,8 @@
   "require": {
     "craftcms/cms": "^3.0.0-RC1",
     "vlucas/phpdotenv": "^2.4.0",
-    "craftcms/ckeditor": "1.0.0-beta.2"
+    "craftcms/ckeditor": "1.0.0-beta.2",
+    "doublesecretagency/craft-smartmap": "3.0.4"
   },
   "autoload": {
     "psr-4": {

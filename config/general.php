@@ -27,6 +27,8 @@ return [
         'enableTemplateCaching' => false,
         
         'extraAllowedFileExtensions' => 'kmz',
+        
+        'siteUrl' => getenv('SITE_URL'),
     ],
 
     // Dev environment settings
