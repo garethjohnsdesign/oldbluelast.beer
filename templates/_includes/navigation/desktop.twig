@@ -7,21 +7,10 @@
       
       <div class="shrink cell">
         <ul class="menu align-middle">
-          
-          {% set navigationdesktop = {
-  "about":    { title: "About" },
-  "locations":    { title: "Locations" },
-  "events":    { title: "Events" },
-  "contact":    { title: "Contact" },
-} %}
-
-    {% for slug, item in navigationdesktop %}
-	  <li class="text-uppercase"><a href="{{ url(slug) }}">{{ item.title }}</a></li>
-		{% endfor %}
-          
+        
           <li class="show-for-large"><svg class="icon icon-beer"><use xlink:href="/assets/icons/symbol-defs.svg#icon-beer"></use></svg></li>
           
-          <li><a data-toggle="offCanvasRight"><svg class="icon icon-menu"><use xlink:href="/assets/icons/symbol-defs.svg#icon-menu"></use></svg></a></li>
+          <li><a data-toggle="overlay-menu"><svg class="icon icon-menu"><use xlink:href="/assets/icons/symbol-defs.svg#icon-menu"></use></svg></a></li>
         </ul>
       </div>
     </div>

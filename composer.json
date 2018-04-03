@@ -19,7 +19,7 @@
     "rss": "https://craftcms.com/changelog.rss"
   },
   "require": {
-    "craftcms/cms": "3.0.0-RC17",
+    "craftcms/cms": "3.0.0-RC17.1",
     "vlucas/phpdotenv": "^2.4.0",
     "craftcms/ckeditor": "1.0.0-beta.2",
     "doublesecretagency/craft-smartmap": "3.0.5"

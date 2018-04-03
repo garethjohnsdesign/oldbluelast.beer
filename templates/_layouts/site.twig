@@ -2,31 +2,29 @@
 
 {% block body %}
 
-  <!-- Off Canvas Content -->
-  
-    <!-- Navigation Mobile -->
-    {% include "_includes/navigation/mobile" %}
-    <!-- End Navigation Mobile -->
-    
-    <!-- Navigation Desktop -->
-    {% include "_includes/navigation/desktop" %}
-    <!-- End Navigation Desktop -->
-    
-    <main id="main" role="main">
-    {% block main %}{% endblock %}
-    </main>
-    
-    <!-- Footer -->
-    <footer class="inverted">
-    <!-- Newsletter -->
-    {% include "_includes/footer/footer" %}
-    <!-- End Newsletter -->
-    
-    <!-- Copyright -->
-    {% include "_includes/footer/copyright" %}
-    <!-- End Copyright -->
-    </footer>
-    <!-- End Footer -->
+<!-- Overlay Navigation -->
+{% include "_includes/navigation/overlay" %}
+<!-- End Overlay Navigation -->
+
+<!-- Navigation Desktop -->
+{% include "_includes/navigation/desktop" %}
+<!-- End Navigation Desktop -->
+
+<main id="main" role="main">
+{% block main %}{% endblock %}
+</main>
+
+<!-- Footer -->
+<footer class="inverted">
+<!-- Newsletter -->
+{% include "_includes/footer/footer" %}
+<!-- End Newsletter -->
+
+<!-- Copyright -->
+{% include "_includes/footer/copyright" %}
+<!-- End Copyright -->
+</footer>
+<!-- End Footer -->
 
 {% endblock %}
 

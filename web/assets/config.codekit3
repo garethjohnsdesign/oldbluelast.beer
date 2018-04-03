@@ -17,6 +17,677 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"\/bower_components\/animejs\/.bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/.bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/animejs\/anime.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/anime.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/bower_components\/animejs\/anime.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/bower_components\/animejs\/anime.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/bower_components\/animejs\/bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/animejs\/build.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/build.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/bower_components\/animejs\/CNAME": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/CNAME",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/css\/anime-theme.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/css\/anime-theme.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/css\/anime.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/css\/anime.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/css\/documentation.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/css\/documentation.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/css\/site.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/css\/site.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/icons\/apple-touch-icon.png": {
+		"ft": 32768,
+		"iS": 23036,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/icons\/apple-touch-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/icons\/favicon.png": {
+		"ft": 32768,
+		"iS": 1299,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/icons\/favicon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/icons\/icon-doc.png": {
+		"ft": 32768,
+		"iS": 2652,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/icons\/icon-doc.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/icons\/og.png": {
+		"ft": 32768,
+		"iS": 69844,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/icons\/og.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/icons\/twitter.png": {
+		"ft": 32768,
+		"iS": 23528,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/icons\/twitter.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/readme\/anim-parameters.gif": {
+		"ft": 4194304,
+		"iS": 43354,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/readme\/anim-parameters.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/readme\/animejs-logo.gif": {
+		"ft": 4194304,
+		"iS": 805812,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/readme\/animejs-logo.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/readme\/callbacks-all.gif": {
+		"ft": 4194304,
+		"iS": 162194,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/readme\/callbacks-all.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/readme\/fb-parameters.gif": {
+		"ft": 4194304,
+		"iS": 194677,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/readme\/fb-parameters.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/readme\/keyframes-advanced.gif": {
+		"ft": 4194304,
+		"iS": 106219,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/readme\/keyframes-advanced.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/readme\/keyframes-basic.gif": {
+		"ft": 4194304,
+		"iS": 101140,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/readme\/keyframes-basic.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/readme\/playback-play-pause.gif": {
+		"ft": 4194304,
+		"iS": 277650,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/readme\/playback-play-pause.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/readme\/playback-restart.gif": {
+		"ft": 4194304,
+		"iS": 295930,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/readme\/playback-restart.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/readme\/playback-reverse.gif": {
+		"ft": 4194304,
+		"iS": 264088,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/readme\/playback-reverse.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/readme\/playback-seek.gif": {
+		"ft": 4194304,
+		"iS": 431103,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/readme\/playback-seek.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/readme\/playback-timeline.gif": {
+		"ft": 4194304,
+		"iS": 571782,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/readme\/playback-timeline.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/readme\/prop-css.gif": {
+		"ft": 4194304,
+		"iS": 91644,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/readme\/prop-css.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/readme\/prop-dom-attr.gif": {
+		"ft": 4194304,
+		"iS": 57805,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/readme\/prop-dom-attr.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/readme\/prop-js-obj.gif": {
+		"ft": 4194304,
+		"iS": 95743,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/readme\/prop-js-obj.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/readme\/prop-parameters.gif": {
+		"ft": 4194304,
+		"iS": 132301,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/readme\/prop-parameters.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/readme\/prop-svg-attr.gif": {
+		"ft": 4194304,
+		"iS": 89627,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/readme\/prop-svg-attr.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/readme\/prop-transforms.gif": {
+		"ft": 4194304,
+		"iS": 86726,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/readme\/prop-transforms.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/readme\/svg-line-drawing.gif": {
+		"ft": 4194304,
+		"iS": 190844,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/readme\/svg-line-drawing.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/readme\/svg-morphing.gif": {
+		"ft": 4194304,
+		"iS": 148211,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/readme\/svg-morphing.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/readme\/svg-motion-path.gif": {
+		"ft": 4194304,
+		"iS": 85122,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/readme\/svg-motion-path.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/readme\/timeline-absolute.gif": {
+		"ft": 4194304,
+		"iS": 115433,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/readme\/timeline-absolute.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/readme\/timeline-parameters.gif": {
+		"ft": 4194304,
+		"iS": 354895,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/readme\/timeline-parameters.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/readme\/timeline-relative.gif": {
+		"ft": 4194304,
+		"iS": 94249,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/readme\/timeline-relative.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/readme\/timeline.gif": {
+		"ft": 4194304,
+		"iS": 114312,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/readme\/timeline.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/readme\/value-fb.gif": {
+		"ft": 4194304,
+		"iS": 256784,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/readme\/value-fb.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/readme\/value-from-to.gif": {
+		"ft": 4194304,
+		"iS": 122687,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/readme\/value-from-to.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/img\/readme\/value-keyframes.gif": {
+		"ft": 4194304,
+		"iS": 103515,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/readme\/value-keyframes.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/js\/anime.1.0.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/js\/anime.1.0.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/js\/anime.1.3.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/js\/anime.1.3.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/js\/anime.2.0.0.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/js\/anime.2.0.0.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/js\/anime.2.0.1.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/js\/anime.2.0.1.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/js\/anime.2.0.2.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/js\/anime.2.0.2.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/js\/anime.2.1.0.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/js\/anime.2.1.0.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/js\/beautify-html.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/js\/beautify-html.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/js\/fireworks.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/js\/fireworks.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/js\/highlight.pack.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/js\/highlight.pack.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/js\/scripts.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/js\/scripts.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/js\/site.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/js\/site.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/js\/stats.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/js\/stats.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/bower_components\/animejs\/documentation\/assets\/js\/stats.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/assets\/js\/stats.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-canvas-fireworks.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-canvas-fireworks.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-colors-test.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-colors-test.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-complex-properties.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-complex-properties.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-directions-testing.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-directions-testing.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-DOM-stress-test-02.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-DOM-stress-test-02.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-DOM-stress-test.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-DOM-stress-test.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-ease-visualizer.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-ease-visualizer.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-logo-animation.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-logo-animation.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-mgs-logo-animation.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-mgs-logo-animation.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-speed-test.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-speed-test.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-staggered-animations-02.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-staggered-animations-02.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-staggered-animations.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-staggered-animations.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-svg-lines-animations.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-svg-lines-animations.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-svg-path-animation.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-svg-path-animation.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-svg-tests.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-svg-tests.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-tests.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-tests.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-timeline.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-timeline.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/index.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/index.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/LICENSE.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/LICENSE.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/bower_components\/animejs\/package.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/package.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/animejs\/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/README.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"\/bower_components\/aos\/.bower.json": {
 		"ft": 524288,
 		"oA": 2,
@@ -6916,36 +7587,6 @@
 		"sC": 0,
 		"tS": 0
 		},
-	"\/js\/libs\/handlebars.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/libs\/handlebars.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/js\/libs\/infobubble.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/libs\/infobubble.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/js\/libs\/markerclusterer.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/libs\/markerclusterer.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"\/js\/min\/app-min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -6972,54 +7613,6 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
-		},
-	"\/js\/plugins\/storeLocator\/jquery.storelocator.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/plugins\/storeLocator\/jquery.storelocator-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/js\/plugins\/storeLocator\/jquery.storelocator.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/plugins\/storeLocator\/jquery.storelocator.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"\/js\/plugins\/storeLocator\/templates\/infowindow-description.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/js\/plugins\/storeLocator\/templates\/infowindow-description.html",
-		"oF": 0
-		},
-	"\/js\/plugins\/storeLocator\/templates\/kml-infowindow-description.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/js\/plugins\/storeLocator\/templates\/kml-infowindow-description.html",
-		"oF": 0
-		},
-	"\/js\/plugins\/storeLocator\/templates\/kml-location-list-description.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/js\/plugins\/storeLocator\/templates\/kml-location-list-description.html",
-		"oF": 0
-		},
-	"\/js\/plugins\/storeLocator\/templates\/location-list-description.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/js\/plugins\/storeLocator\/templates\/location-list-description.html",
-		"oF": 0
 		},
 	"\/js\/svgxuse.js": {
 		"ft": 64,
@@ -7252,6 +7845,12 @@
 			"followForSyntaxChecking": 0,
 			"linkedFileAbbreviatedPath": "\/bower_components\/lightgallery\/dist\/js\/lightgallery.js",
 			"position": 5,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 0,
+			"linkedFileAbbreviatedPath": "\/bower_components\/animejs\/anime.min.js",
+			"position": 6,
 			"type": 0
 			}
 		]
