@@ -19,36 +19,36 @@ $("#gallery").lightGallery({
 });
 
 $(function () {
-  count = 0;
+  count1 = 0;
   wordsArray = ["Event", "Party", "Gig", "Karaoke", "Quiz", "Beer"];
   setInterval(function () {
-    count++;
+    count1++;
     $("#photos-word").fadeOut(0, function () {
-      $(this).text(wordsArray[count % wordsArray.length]).fadeIn(0);
+      $(this).text(wordsArray[count1 % wordsArray.length]).fadeIn(0);
     });
-  }, 500);
+  }, 250);
 });
 
 $(function () {
-  count = 0;
-  eventsWordsArray = ["Events", "Parties", "Gigs", "Karaokes", "Quizes", "Festivals"];
+  count2 = 0;
+  eventsWordsArray = ["Events", "Parties", "Gigs", "Karaoke", "Quizes", "Festivals"];
   setInterval(function () {
-    count++;
+    count2++;
     $("#events-word").fadeOut(0, function () {
-      $(this).text(eventsWordsArray[count % eventsWordsArray.length]).fadeIn(0);
+      $(this).text(eventsWordsArray[count2 % eventsWordsArray.length]).fadeIn(0);
     });
-  }, 500);
+  }, 250);
 });
 
 $(function () {
-  count = 0;
-  eventsWordsArray = ["Hey", "Hi", "Yo", "Aye", "Hello"];
+  count1 = 0;
+  contactWordsArray = ["Hey", "Hi", "Yo", "Aye", "Hello"];
   setInterval(function () {
-    count++;
+    count3++;
     $("#contact-word").fadeOut(0, function () {
-      $(this).text(eventsWordsArray[count % eventsWordsArray.length]).fadeIn(0);
+      $(this).text(contactWordsArray[count3 % contactWordsArray.length]).fadeIn(0);
     });
-  }, 500);
+  }, 250);
 });
 
 
@@ -61,25 +61,25 @@ heroTimeline
     targets: '#heroTimeline .hero-one',
     duration: 1,
     opacity: 1,
-    delay: 500,
+    delay: 250,
   })
   .add({
     targets: '#heroTimeline .hero-two',
     duration: 1,
     opacity: 1,
-    delay: 500,
+    delay: 250,
   })
   .add({
     targets: '#heroTimeline .hero-three',
     duration: 1,
     opacity: 1,
-    delay: 500,
+    delay: 250,
   })
     .add({
     targets: '#heroTimeline .hero-four',
-    duration: 500,
+    duration: 250,
     opacity: 1,
-    delay: 500,
+    delay: 250,
   });
 
 

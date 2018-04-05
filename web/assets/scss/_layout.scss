@@ -64,12 +64,16 @@ p a {
 .inverted {
   background-color: $white;
   color: $primary-color;
-  @include links ($primary-color, $black) 
+  @include links ($primary-color, $primary-color) 
 }
 
 .grid-container {
   padding-left: 2rem;
   padding-right: 2rem;
+  @include breakpoint(large) {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  }
 }
 
 // 3. Typography
@@ -84,7 +88,7 @@ p a {
 }
 
 .inverted .underline {
-  border-bottom: 2px $primary-color solid;
+  border-bottom: 2px $white solid;
 }
 
 i, cite, em, var, address, dfn {
@@ -92,8 +96,10 @@ i, cite, em, var, address, dfn {
 }
 
 h1 {
+  font-family: $secondary-font-family;
   margin-bottom: 0;
   line-height: 1.1;
+  padding-left: 0.1rem;
 }
 
 // 4. Age Gate
@@ -175,6 +181,10 @@ h1 {
 // 7. Featured
 // -----------
 
+.featured h2, .featured h5 {
+  font-family: $body-font-family;
+}
+
 .featured__title {
   position:absolute;
   width: 100%;
@@ -183,12 +193,17 @@ h1 {
   z-index: 1;
 }
 
+.featured__image img {
+  filter: grayscale(1) contrast(1.75);
+  opacity: 0.1;
+}
+
 .featured {
   background-color: $primary-color;
   position:relative;
   &:hover .featured__image img {
-  filter: grayscale(1) contrast(1.75);
-  opacity: 0.1;
+  filter: grayscale(0) contrast(1);
+  opacity: 1;
   }
 }
 
@@ -202,9 +217,14 @@ h1 {
 .home__hero__cans {
   background-position: 0 0;
   background-image: url("/assets/images/can-new.png");
-  background-repeat: spaced;
-//   animation: scrolling-animation 10s linear infinite;
+  background-repeat: repeat-x;
+//   animation: scrolling-animation 5s linear infinite;
+  @include breakpoint(small) { 
   height: 50vh;
+  }
+  @include breakpoint(large) { 
+  height: 70vh;
+  }
   background-size: contain;
   margin-bottom: -8rem;
   position: relative;

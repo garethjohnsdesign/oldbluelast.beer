@@ -142,7 +142,7 @@ $block-grid-max: 8;
 // ------------------
 
 // $header-font-family: $body-font-family;
-$header-font-family: $secondary-font-family;
+$header-font-family: $body-font-family;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
@@ -167,7 +167,7 @@ $header-styles: (
     'h6': ('font-size': 16),
   ),
   large: (
-  'h1': ('font-size': 86),
+  'h1': ('font-size': 132),
   'h2': ('font-size': 70),
   'h3': ('font-size': 44),
   'h4': ('font-size': 36),
@@ -175,7 +175,7 @@ $header-styles: (
   'h6': ('font-size': 16),
   ),
   xxlarge: (
-  'h1': ('font-size': 86),
+  'h1': ('font-size': 120),
   'h2': ('font-size': 70),
   'h3': ('font-size': 44),
   'h4': ('font-size': 36),
