@@ -4195,6 +4195,32 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/bower_components\/jquery.cookie\/.bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/jquery.cookie\/.bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/jquery.cookie\/bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/jquery.cookie\/bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/jquery.cookie\/jquery.cookie.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/bower_components\/jquery.cookie\/jquery.cookie.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/bower_components\/jquery\/.bower.json": {
 		"ft": 524288,
 		"oA": 2,
@@ -7577,6 +7603,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/images\/can-new.png": {
+		"ft": 32768,
+		"iS": 521584,
+		"oA": 0,
+		"oAP": "\/images\/can-new.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/js\/app.js": {
 		"ft": 64,
 		"ma": 0,
@@ -7676,19 +7713,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/scss\/_loading.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/scss\/_loading.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/scss\/_settings.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -7698,19 +7722,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/scss\/_settings.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/scss\/_storelocator.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/scss\/_storelocator.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -7805,6 +7816,13 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/videos\/manc.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/videos\/manc.mp4",
+		"oF": 0
 		}
 	},
 "hooks": [
@@ -7851,6 +7869,12 @@
 			"followForSyntaxChecking": 0,
 			"linkedFileAbbreviatedPath": "\/bower_components\/animejs\/anime.min.js",
 			"position": 6,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 0,
+			"linkedFileAbbreviatedPath": "\/bower_components\/jquery.cookie\/jquery.cookie.js",
+			"position": 7,
 			"type": 0
 			}
 		]

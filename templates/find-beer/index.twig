@@ -2,45 +2,10 @@
 
 {% block main %}
 
-{% set target = craft.request.getParam('near') %}
-{% if target %}
-    {% set params = {
-        target: target,
-        range: 500
-    } %}
-    {% set locations = craft.entries.section('locations').address(params).order('distance').all() %}
-{% else %}
-    {% set locations = craft.entries.section('locations').all() %}
-{% endif %}
-
-{% set options = {
-    height: 500,
-    zoom: 15,
-    draggable: true,
-    markerInfo: '_includes/map/bubble',
-    markerOptions: {
-        icon: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png'
-    },
-    infoWindowOptions: {
-        maxWidth: 200
-    }
-} %}
-
-<div class="grid-container">
-  <div class="grid-x grid-padding-x grid-padding-y small-up-3 margin-top-2">
-    {% for entry in locations %}
-    <div class="cell">
-    <h4>{{ entry.title }}</h4>
-    <h6>{{ entry.address.street1 }}<h6>
-    <h6>{{ entry.address.city }}, {{ entry.address.zip }}<h6>
-    </div>
-    {% endfor %}
-  </div>
-</div>
-
+{#
 <section class="inverted">
 <div class="grid-container">
-  <div class="grid-x grid-padding-x grid-padding-y margin-top-2">
+  <div class="grid-x grid-padding-x grid-padding-y">
   <div class="small-12 cell">
   <form action="" method="GET">
     <input name="near" type="text" placeholder="Enter your postcode">
@@ -50,10 +15,57 @@
   </div>
 </div>
 </section>
+#}
+
+{% set target = craft.request.getParam('near') %}
+{% if target %}
+    {% set params = {
+        target: target,
+        range: 60
+    } %}
+    {% set locations = craft.entries.section('locations').address(params).order('distance').all() %}
+{% else %}
+    {% set locations = craft.entries.section('locations').all() %}
+{% endif %}
+
+{% set options = {
+    height: 600,
+    zoom: 14,
+    draggable: true,
+    center: {'lat':51.525114, 'lng':-0.079938},
+    markerInfo: '_includes/map/bubble',
+    markerOptions: {
+        icon: {
+            url: 'images/global/can-small.png',
+            scaledSize: 'new google.maps.Size(32,32)'
+        }
+    },
+    infoWindowOptions: {
+        maxWidth: 200
+    }
+} %}
 
 <div class="grid-x">
   <div class="small-12 cell">
     {{ craft.smartMap.map(locations, options) }}
+  </div>
+</div>
+
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y small-up-3 padding-top-2 padding-bottom-2">
+  
+{% set entries = craft.entries
+.section('locations')
+.order('title asc')
+.all() %}
+
+    {% for entry in entries %}
+    <div class="cell">
+    <h5 class="text-uppercase">{{ entry.title }}</h5>
+    <h6>{{ entry.address.street1 }}<h6>
+    <h6>{{ entry.address.city }}, {{ entry.address.zip }}<h6>
+    </div>
+    {% endfor %}
   </div>
 </div>
 

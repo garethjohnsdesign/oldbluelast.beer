@@ -2,6 +2,12 @@
 
 {% block body %}
 
+<div id="content" class="content">
+
+<!-- Age Gate -->
+{% include "_includes/age-gate/overlay" %}
+<!-- End Age Gate -->
+
 <!-- Overlay Navigation -->
 {% include "_includes/navigation/overlay" %}
 <!-- End Overlay Navigation -->
@@ -15,7 +21,7 @@
 </main>
 
 <!-- Footer -->
-<footer class="inverted">
+<footer>
 <!-- Newsletter -->
 {% include "_includes/footer/footer" %}
 <!-- End Newsletter -->
@@ -25,6 +31,8 @@
 <!-- End Copyright -->
 </footer>
 <!-- End Footer -->
+
+</div>
 
 {% endblock %}
 

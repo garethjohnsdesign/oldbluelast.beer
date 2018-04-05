@@ -1,16 +1,25 @@
 <div data-sticky-container>
   <div data-sticky data-options="marginTop:0;" style="width:100%" class="scrollhide-nav">
-    <div class="grid-x align-justify align-middle navigation inverted padding-0">
+    <div class="grid-x align-justify align-middle navigation padding-1">
       <div class="shrink cell uppercase">
-        <a href="{{ siteUrl }}" class="padding-left-1"><svg class="icon icon-logo"><use xlink:href="/assets/icons/symbol-defs.svg#icon-logo"></use></svg></a>
+        <a href="{{ siteUrl }}"><svg class="icon icon-logo"><use xlink:href="/assets/icons/symbol-defs.svg#icon-logo"></use></svg></a>
       </div>
       
       <div class="shrink cell">
         <ul class="menu align-middle">
         
           <li class="show-for-large"><svg class="icon icon-beer"><use xlink:href="/assets/icons/symbol-defs.svg#icon-beer"></use></svg></li>
-          
-          <li><a data-toggle="overlay-menu"><svg class="icon icon-menu"><use xlink:href="/assets/icons/symbol-defs.svg#icon-menu"></use></svg></a></li>
+
+          <li>
+          <a data-toggle="overlay-menu">
+          <div class="hamburger" id="hamburger-2">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+          </a>
+          </li>
+
         </ul>
       </div>
     </div>

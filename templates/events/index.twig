@@ -1,38 +1,51 @@
-{% extends "_layouts/main" %}
+{% extends "_layouts/site" %}
 
 {% block main %}
 
-<div class="full-bleed-header" style="background-size: 100%; height: 200px; background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(/images/drinks/espresso-shot.jpg); background-repeat: no-repeat, repeat;">
-    <div class="page-title text-center">
-        <h2 class="logo"><span class="scripty">Our Drinks</h2>
+{# Upcoming Events #}
+<section class="home__upcoming-events">
+<div class="grid-container">
+    <div class="grid-x grid-padding-x grid-padding-y">
+      <div class="small-12 cell text-uppercase">
+        <h1>Upcoming</h1>
+        <h1 id="events-word">Events</h1>        
+      </div>
     </div>
-</div>
-<div class="row page-content">
-    <div class="large-12 small-12 columns">
-        <p>The most recent drinks we've enjoyed.</p>
-        <table width="100%">
-            <tr>
-                <th>Drink Name</th>
-                <th>Added to Menu On</th>
-                <th>Style</th>
-            </tr>
-            
-            {% for drink in craft.entries.section('drinks').all() %}
-            <tr>
+</div>         
+</section>
 
-                <td><a href="{{ drink.url }}">Perfect Espresso</a></td>
-                <td>{{ drink.dateAddedToMenu | date }}</td>
-                <td><a href="/styles/index.html">Espresso</a></td>
-            </tr>
-            {% endfor %}
-            
+<ul class="vertical menu home__upcoming-events__list padding-bottom-3">
           
-              
-            
-        </table>
-    </div>
-</div>
+{% set entries = craft.entries
+.section('events')
+.eventDate('>' ~ now.getTimestamp())
+.order('eventDate asc')
+.all() %}
+
+{% for entry in entries %}
+  <li>
+	  <a href="{{ entry.eventLink}}" class="padding-left-0 padding-top-2" target="_blank">
+	  
+	    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+      
+      <div class="small-8 cell text-uppercase">
+      <h6>{{ entry.eventDate | date('D j M') }}</h6>
+      <h5>{{ entry.title}} @ {% if entry.eventVenue|length %}{{ entry.eventVenue }},{% endif %} {{ entry.eventLocation}}</h5>
+      </div>
+      
+      <div class="small-4 cell text-uppercase text-right align-self-bottom margin-bottom-1">
+      <span class="underline">Event Page</span>
+      </div>
+      
+      </div>
+      </div>
+	  
+	  </a>
+  </li>
+ {% endfor %}
+</ul>
+
+{# End Upcoming Events #}
 
 {% endblock %}
-
-

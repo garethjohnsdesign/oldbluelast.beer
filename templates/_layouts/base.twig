@@ -1,7 +1,7 @@
 {# SEO #}
 {% set globalSeoTitle = seo.seoTitle %}
 {% set globalSeoDescription = seo.seoDescription %}
-{% set globalSeoImage = seo.seoImage|length ? globalSeo.seoImage.first().getUrl() : '' %}
+{% set globalSeoImage = seo.seoImage|length ? seo.seoImage.first().getUrl() : '' %}
 {# END SEO #}
 
 {# Navigation #}

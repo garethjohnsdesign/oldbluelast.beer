@@ -1,0 +1,66 @@
+<div class="age-gate grid-y align-center" id="age-gate">
+
+<div class="grid-container">
+
+
+    <div class="grid-x grid-padding-y align-center">
+    <div class="small-12 medium-6 cell text-uppercase text-center">
+    <svg class="icon icon-logo icon-logo-age"><use xlink:href="/assets/icons/symbol-defs.svg#icon-logo"></use></svg>
+    </div>
+    </div>
+    
+    <div class="grid-x grid-padding-y align-center">
+    <div class="small-12 medium-6 cell text-uppercase text-center">
+    <h3>How Old Are You?</h3>
+    </div>
+    </div>
+    
+    <div class="grid-x align-center">
+      <div class="small-12 medium-6 cell text-uppercase">
+       <form name='agegate' data-abide novalidate>  
+       
+          <select name='year' required>
+           <option value="">YEAR</option>
+           <option value="1990">1990</option>
+           <option value="2017">2017</option>
+          </select>
+          <span class="form-error">
+          Yo, you had better fill this out, it's required.
+          </span>
+      
+  
+        
+          <select name='month' required>
+           <option value="">MONTH</option>
+           <option value="1">January</option>
+           <option value="12">December</option>
+          </select>
+          <span class="form-error">
+          Yo, you had better fill this out, it's required.
+          </span>
+     
+          
+        
+          <select name='day' required>
+          <option value="">DAY</option>
+           <option value="1">1st</option>
+           <option value="30">30th</option>
+          </select>
+          <span class="form-error">
+          Yo, you had better fill this out, it's required.
+          </span>
+        
+          <button type='submit' class="button expanded text-uppercase">Enter</button>
+        </form>             
+      </div>
+    </div>
+    
+    <div class="grid-x grid-padding-y align-center">
+    <div class="small-12 medium-6 cell text-uppercase text-center">
+    <small>© {{ now|date('Y') }} AB InBev. By submitting this form, you agree to be bound by the Terms & Conditions and Privacy Policy</small>
+    </div>
+    </div>
+    
+</div>        
+
+</div>

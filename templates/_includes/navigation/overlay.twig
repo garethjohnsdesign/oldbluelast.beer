@@ -5,14 +5,14 @@
   "manchester":    { title: "Manchester" }
 } %}
 
-<div class="overlay-menu grid-y align-center inverted" id="overlay-menu" data-toggler=".open">
+<div class="overlay-menu grid-y align-center" id="overlay-menu" data-toggler=".open">
   <div class="shrink cell">
     <div class="grid-x grid-padding-x align-center">
     	<div class="shrink cell">
         
         <ul class="vertical menu align-center">
           {% for slug, item in navigation %}
-      	  <li class="text-uppercase"><a href="{{ url(slug) }}">{{ item.title }}</a></li>
+      	  <li class="text-uppercase"><a href="{{ url(slug) }}"><h3>{{ item.title }}</h3></a></li>
       		{% endfor %}
         </ul>
         

@@ -16,7 +16,8 @@
     "svgxuse": "^1.2.6",
     "what-input": "^5.0.5",
     "lightgallery": "^1.6.8",
-    "animejs": "^2.2.0"
+    "animejs": "^2.2.0",
+    "jquery.cookie": "jquery-cookie#^1.4.1"
   },
   "ignore": [
     "**/.*",
