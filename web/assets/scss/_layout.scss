@@ -1,14 +1,14 @@
-//  Table of Contents:
+// Table of Contents:
 //
-//   1. Mixins
-//   2. Global
-//   3. Typography
-//   4. Navigation
-//   5. Index
-//   6. Category / Class
-//   7. Article
-//   8. Footer
-
+// 1. Mixins
+// 2. Global
+// 3. Typography
+// 4. Age Gate
+// 5. Navigation
+// 6. Excerpt
+// 7. Featured
+// 8. Home
+// 9. Map
 
 // 1. Mixins
 // ---------
@@ -72,8 +72,6 @@ p a {
   padding-right: 2rem;
 }
 
-  
-
 // 3. Typography
 // -------------
 
@@ -93,69 +91,45 @@ i, cite, em, var, address, dfn {
   font-style: normal;
 }
 
-// 4. Navigation
-// -------------
-
-.off-canvas {
-  padding: $global-padding;
-  font-size: 1.75rem;
-  font-family: $secondary-font-family;
+h1 {
+  margin-bottom: 0;
+  line-height: 1.1;
 }
 
-// 5. Index
-// -------------
+// 4. Age Gate
+// -----------
 
-// 5. Footer
-// -------------
-
-
-
-
-// 5. Page
-// -------------
-
-  
-input#search-box.search {
-    background-color: #fff;
+.age-gate {
+  z-index: 12;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; 
+  visibility: visible;
+  background-color: $primary-color;
+  form { 
+    display: none; 
   }
+}
 
+.is-invalid-input:not(:focus) {
+  border-color: $white;
+  background-color: transparent;
+}
+
+// 5. Navigation
+// -------------
 
 .sticky {
     z-index: 10;
 }
 
-$scrollhide-nav-transition-speed: 1s;
-
 .scrollhide-nav {
-  transition: transform $scrollhide-nav-transition-speed cubic-bezier(0.86, 0, 0.07, 1);
-
+  transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
   &.hidden {
     transform: translateY(-100%);
   }
-}
-
-
-
-.locations__map {
-  @include breakpoint(small) {
-  height: 70vh;
-  }
-  @include breakpoint(medium) { 
-  height: 50vh;
-  }
-}
-
-
-
-// X. Navigation
-// -------------
-
-.navigation {
-  z-index: 3;
-}
-
-.navigation__inner {
-  z-index: 3;
 }
 
 .overlay-menu {
@@ -167,22 +141,13 @@ $scrollhide-nav-transition-speed: 1s;
   width: 100%; 
   visibility: hidden;
   background-color: $primary-color;
-
+  
   &.open {
     visibility: visible;
   }
-    
-  .menu .active>a {
-    color: $black;
-  }
-  
-  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-    background-color: $white;
-  } 
 }
 
-
-// 4. Excerpt
+// 6. Excerpt
 // ----------
 
 .excerpt__title {
@@ -198,137 +163,17 @@ $scrollhide-nav-transition-speed: 1s;
 .excerpt {
   background-color: $primary-color;
   position:relative;
-    &:hover .excerpt__image img {
-    filter: grayscale(1) contrast(1.75);
-    opacity: 0.1;
-    }
-    &:hover .excerpt__title {
-    opacity: 1;
-    } 
-}
-
-h1 {
-  margin-bottom: 0;
-  line-height: 1.1;
-}
-
-.hero__text {
-  opacity: 0;
-}
-
-/*
-.home__hero {
-  background-position: 0 0;
-  background-image: url("/images/global/can.png");
-  background-repeat: repeat-x;
-  animation: animate 15s linear infinite;
-  height: 50vh;
-  background-size: contain;
-}
-
-@keyframes animate
-{
-  from {
-    background-position: 0 0;
+  &:hover .excerpt__image img {
+  filter: grayscale(1) contrast(1.75);
+  opacity: 0.1;
   }
-  to {
-    background-position: 100% 0;
-  }
-}
-*/
-
-/*
-.home__hero {
-  height: 100vh;
-  background-position: 0 100;
-  background-image: url("/assets/images/can-new.png");
-  background-repeat: repeat-x;
-  animation: animate 15s linear infinite;
-  background-size: 15%;
-  margin-bottom: -5rem;
-  position: relative;
-  z-index: 5;
-}
-*/
-
-.home__hero__cans {
-  background-position: 0 0;
-  background-image: url("/assets/images/can-new.png");
-  background-repeat: spaced;
-//   animation: animate 10s linear infinite;
-  height: 50vh;
-  background-size: contain;
-  margin-bottom: -8rem;
-  position: relative;
+  &:hover .excerpt__title {
+  opacity: 1;
+  } 
 }
 
-@keyframes animate
-{
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 100% 0;
-  }
-}
-
-.home__recent-events {
-  padding-top: 10rem;
-}
-
-.home__upcoming-events__list li {
-  background-color: $primary-color;
-  .underline {
-  padding-bottom: 0.25rem;
-  border-bottom: 2px $white solid;
-  }
-    &:hover {
-      background-color: white;
-      .underline {
-      border-bottom: 2px $primary-color solid;
-      }
-      }
-    
-  a {
-    color: $white;
-    &:hover {
-      color: $primary-color;   
-    }
-  }
-}
-
-
-.hamburger .line{
-  width: 50px;
-  height: 5px;
-  background-color: $white;
-  display: block;
-  margin: 8px auto;
-  transition: all 0.1s ease-in-out;
-}
-
-.hamburger:hover{
-  cursor: pointer;
-}
-
-#hamburger-2.is-active .line:nth-child(1){
-  -webkit-transform: translateY(13px);
-  -ms-transform: translateY(13px);
-  -o-transform: translateY(13px);
-  transform: translateY(13px);
-}
-
-#hamburger-2.is-active .line:nth-child(3){
-  -webkit-transform: translateY(-13px);
-  -ms-transform: translateY(-13px);
-  -o-transform: translateY(-13px);
-  transform: translateY(-13px);
-}
-
-
-.map__infobox {
-  font-family: $primary-font-family;
-}
+// 7. Featured
+// -----------
 
 .featured__title {
   position:absolute;
@@ -341,26 +186,86 @@ h1 {
 .featured {
   background-color: $primary-color;
   position:relative;
-    &:hover .featured__image img {
-    filter: grayscale(1) contrast(1.75);
-    opacity: 0.1;
+  &:hover .featured__image img {
+  filter: grayscale(1) contrast(1.75);
+  opacity: 0.1;
+  }
+}
+
+// 8. Home
+// -------
+
+.hero__text {
+  opacity: 0;
+}
+
+.home__hero__cans {
+  background-position: 0 0;
+  background-image: url("/assets/images/can-new.png");
+  background-repeat: spaced;
+//   animation: scrolling-animation 10s linear infinite;
+  height: 50vh;
+  background-size: contain;
+  margin-bottom: -8rem;
+  position: relative;
+}
+
+@keyframes scrolling-animation {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+.home__upcoming-events__list li {
+
+  .underline {
+    padding-bottom: 0.25rem;
+    border-bottom: 2px $white solid;
+  }
+  
+  &:hover {
+    background-color: white;
+    .underline {
+    border-bottom: 2px $primary-color solid;
+      }
+  }
+    
+  a {
+    color: $white;
+    &:hover {
+      color: $primary-color;   
     }
+  }
+}
+
+.home__recent-events {
+  padding-top: 10rem;
+}
+
+// 9. Map
+// ------
+
+.locations__map {
+  @include breakpoint(small) {
+  height: 70vh;
+  }
+  @include breakpoint(medium) { 
+  height: 50vh;
+  }
+}
+
+.locations__map__infobox {
+  font-family: $primary-font-family;
 }
 
 
-.age-gate {
-  z-index: 12;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%; 
-  visibility: visible;
-  background-color: $primary-color;
-  form { display: none; }
-}
-
-.is-invalid-input:not(:focus) {
-    border-color: $white;
-    background-color: transparent;
+.social-links {
+  z-index: 10;
+	position: fixed;
+	right: -3rem;
+	top: 50%;
+	transform:rotate(90deg);
 }

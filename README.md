@@ -1,6 +1,6 @@
-# Hot Feet
+# Old Blue Last Beer
 
-Site for Hot Feet. Please go to [www.hotfeet.co](https://www.hotfeet.co) in case you want to take a look at the website.
+Site for Old Blue Last Beer. Please go to [www.oldbluelast.beer](https://oldbluelast.beer) in case you want to take a look at the website.
 
 * * *
 

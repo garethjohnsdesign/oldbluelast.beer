@@ -2,8 +2,6 @@
 
 {% block body %}
 
-<div id="content" class="content">
-
 <!-- Age Gate -->
 {% include "_includes/age-gate/overlay" %}
 <!-- End Age Gate -->
@@ -16,6 +14,11 @@
 {% include "_includes/navigation/desktop" %}
 <!-- End Navigation Desktop -->
 
+<!-- Social Links -->
+{% include "_includes/social-links/overlay" %}
+<!-- End Social Links -->
+
+      
 <main id="main" role="main">
 {% block main %}{% endblock %}
 </main>
@@ -31,8 +34,6 @@
 <!-- End Copyright -->
 </footer>
 <!-- End Footer -->
-
-</div>
 
 {% endblock %}
 

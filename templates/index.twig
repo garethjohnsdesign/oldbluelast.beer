@@ -2,43 +2,44 @@
 
 {% block main %}
 
+<div class="full reveal" id="exampleModal8" data-reveal>
+  <p>OH I'M SO FUUUUL</p>
+  <img src="https://placekitten.com/1920/1280" alt="Introspective Cage">
+  <button class="close-button" data-close aria-label="Close reveal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
 {# Hero #}
-<section class="home__hero padding-top-2">
+<section class="home__hero">
 
-  <div class="grid-container padding-bottom-3">
-    <div class="grid-x grid-padding-x grid-padding-y">
-      <div class="small-12 medium-6 cell text-uppercase">
-      
-
-      <div id="heroTimeline">
-          <h1>A</h1>
-          <h1>Beer</h1>
-          <h1>Website</h1>
-          <h1 class="hero-one hero__text">Website</h1>
-          <h1 class="hero-two hero__text">Website</h1>
-          <h1 class="hero-three hero__text">Website</h1>
-          <h1 class="hero-four hero__text">Website</h1>
-      </div>
-
-
-      </div>
-      <div class="small-12 medium-6 cell align-self-middle">
-      {{entry.heroText}}
-        <a href="#" class="underline text-uppercase">Learn More</a>
-      </div>
-    </div>
-  </div>
-  
-  <div class="home__hero__cans"></div>
-  
+      <div class="grid-container">
+        <div class="grid-x grid-padding-x grid-padding-y">
+          
+            <div class="small-12 medium-6 xxlarge-6 cell text-uppercase">
+            <div id="heroTimeline">
+              <h1>A</h1>
+              <h1>Beer</h1>
+              <h1 class="hero-one hero__text">Website</h1>
+              <h1 class="hero-two hero__text">Website</h1>
+              <h1 class="hero-three hero__text">Website</h1>
+            </div>
+          </div>
+          
+          <div class="small-12 medium-6 large-5 cell align-self-middle">
+            {{entry.heroText}}
+            <a class="underline text-uppercase" data-toggle="exampleModal8">Learn More</a>
+          </div>
+          
+        </div>
+      </div>      
+      <div class="home__hero__cans"></div>
+    
 </section>
 {# End Hero #}
 
-
-
 {# Photos #}
-<section class="home__recent-events padding-top-2 padding-bottom-2 inverted">
-
+<section class="home__recent-events inverted">
     
     <div class="grid-container">
       <div class="grid-x grid-padding-x grid-padding-y">
@@ -49,14 +50,14 @@
       </div>
     </div>
     
-    <div class="grid-x small-up-2 medium-up-4 large-up-4">
+    <div class="grid-x small-up-1 medium-up-3 large-up-3">
       
-                {% set evententries = craft.entries
-    .section('events')
-    .eventFeatured('1')
-    .eventDate('<' ~ now.getTimestamp())
-    .order('eventDate desc')
-    .all() %}
+        {% set evententries = craft.entries
+        .section('events')
+        .eventFeatured('1')
+        .eventDate('<' ~ now.getTimestamp())
+        .order('eventDate desc')
+        .all() %}
         
         {% for entry in evententries %}
         <div class="cell">
@@ -78,57 +79,57 @@
             </a>
           </div>
         </div>
-      {% endfor %}
-      
-
-
+        {% endfor %}
+        
+    </div>
 </section>
 {# End Photos #}
 
 {# Upcoming Events #}
-<section class="home__upcoming-events padding-top-2 inverted">
-<div class="grid-container">
+<section class="home__upcoming-events padding-top-3">
+
+  <div class="grid-container">
     <div class="grid-x grid-padding-x grid-padding-y">
       <div class="small-12 cell text-uppercase">
         <h1>Upcoming</h1>
         <h1 id="events-word">Events</h1>        
       </div>
     </div>
-</div>         
-</section>
+  </div>
 
-<ul class="vertical menu home__upcoming-events__list">
+  <ul class="vertical menu home__upcoming-events__list">
+            
+  {% set entries = craft.entries
+  .section('events')
+  .eventDate('>' ~ now.getTimestamp())
+  .order('eventDate asc')
+  .all() %}
+  
+  {% for entry in entries %}
+    <li>
+  	  <a href="{{ entry.eventLink}}" class="padding-left-0 padding-top-2 padding-bottom-1" target="_blank">
+  	  
+  	    <div class="grid-container">
+          <div class="grid-x grid-padding-x">
           
-{% set entries = craft.entries
-.section('events')
-.eventDate('>' ~ now.getTimestamp())
-.order('eventDate asc')
-.all() %}
-
-{% for entry in entries %}
-  <li>
-	  <a href="{{ entry.eventLink}}" class="padding-left-0 padding-top-2" target="_blank">
-	  
-	    <div class="grid-container">
-      <div class="grid-x grid-padding-x">
-      
-      <div class="small-8 cell text-uppercase">
-      <h6>{{ entry.eventDate | date }}</h6>
-      <h5>{{ entry.title}} @ {{ entry.eventVenue}}, {{ entry.eventLocation}}</h5>
-      </div>
-      
-      <div class="small-4 cell text-uppercase text-right align-self-bottom margin-bottom-1">
-      <span class="underline">Event Page</span>
-      </div>
-      
-      </div>
-      </div>
-	  
-	  </a>
-  </li>
- {% endfor %}
-</ul>
-
+            <div class="small-12 medium-8 cell text-uppercase">
+              <h6>{{ entry.eventDate | date('D j M') }}</h6>
+              <h5>{{ entry.title}} @ {% if entry.eventVenue|length %}{{ entry.eventVenue }},{% endif %} {{ entry.eventLocation }}</h5>
+            </div>
+            
+            <div class="small-12 medium-4 cell text-uppercase text-left medium-text-right align-self-bottom margin-bottom-1">
+              <span class="underline">Event Page</span>
+            </div>
+          
+          </div>
+        </div>
+  	  
+  	  </a>
+    </li>
+   {% endfor %}
+  </ul>
+  
+</section>
 {# End Upcoming Events #}
 
 {# Location #}
@@ -170,15 +171,15 @@
     }
 } %}
 
-
-<div class="grid-x">
-  <div class="small-12 cell">
-    {{ craft.smartMap.map(locations, options) }}
+<section class="home__map">
+  <div class="grid-x">
+    <div class="small-12 cell">
+      {{ craft.smartMap.map(locations, options) }}
+    </div>
   </div>
-</div>
+</section>
 
 {% js %}
-
 $(function () {
         var styles = [
  {
@@ -399,6 +400,4 @@ $(function () {
         smartMap.styleMap('smartmap-mapcanvas-1', styles);
     });
 {% endjs %}
-
-
 {% endblock %}

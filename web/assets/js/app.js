@@ -40,6 +40,17 @@ $(function () {
   }, 500);
 });
 
+$(function () {
+  count = 0;
+  eventsWordsArray = ["Hey", "Hi", "Yo", "Aye", "Hello"];
+  setInterval(function () {
+    count++;
+    $("#contact-word").fadeOut(0, function () {
+      $(this).text(eventsWordsArray[count % eventsWordsArray.length]).fadeIn(0);
+    });
+  }, 500);
+});
+
 
 var heroTimeline = anime.timeline({
   loop: true,
@@ -71,11 +82,6 @@ heroTimeline
     delay: 500,
   });
 
-
-
-$(".hamburger").click(function(){
-  $(this).toggleClass("is-active");
-});
 
 function checkIfVerified(){
   if ($.cookie('age-gate') == 'of_age') {

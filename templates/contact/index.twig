@@ -1,0 +1,24 @@
+{% extends "_layouts/site" %}
+
+{% block main %}
+
+<!-- Contact Header -->
+<div class="grid-x grid-padding-x grid-padding-y align-center">
+  <div class="small-12 medium-8 cell">
+		<h1 id="contact-word" class="text-uppercase">Hello</h1>
+		<p class="lead">Contact us for more information either using the form below or email us at <a href="mailto:hello@oldbluelast.beer" target="_top">hello@oldbluelast.beer</a></p>
+  </div>
+</div>
+<!-- End Contact Header -->
+
+<!-- Contact Form -->
+<div class="grid-x grid-padding-x grid-padding-y align-center">
+  <div class="small-11 medium-10 large-8 cell">
+    
+  {% include "_includes/contact/form" %}
+
+  </div>
+</div>
+<!-- End Contact Form -->
+
+{% endblock %}
