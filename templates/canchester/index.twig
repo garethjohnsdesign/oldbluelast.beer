@@ -1,0 +1,93 @@
+{% extends "_layouts/site" %}
+
+{% block main %}
+
+<div class="grid-x">
+  <div class="small-12 cell">
+  <div class="responsive-embed panorama">
+    <video autoplay muted loop>
+      <source src="assets/videos/can-spin.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>  
+  </div>
+  </div>
+</div>
+
+<div class="grid-container">
+  <div class="grid-x padding-3 margin-top-3 margin-bottom-3">
+    <div class="small-12 cell text-center">
+  {{entry.heroText}}
+    </div>
+  </div>
+</div>
+          
+{% set entries = craft.entries
+.section('events')
+.eventLocation('Manchester')
+.order('eventDate asc')
+.all() %}
+
+<div class="grid-x">
+{% for entry in entries %}
+<div class="small-12 cell">
+
+<div class="featured">
+
+  
+    
+    <div class="grid-x featured__title align-middle show-for-medium">
+      <div class="small-12 cell text-center">
+        <h2 class="text-uppercase">{% if entry.eventExcerpt|length %}{{ entry.eventExcerpt}}{% else %}{{ entry.title}}{% endif %}</h2>
+      </div>
+    </div>
+    
+    <div class="grid-x featured__title align-bottom text-uppercase">
+    <div class="small-12 cell">
+      
+      <div class="grid-x hide-for-medium">
+        <div class="small-12 cell">
+          <h4 class="text-uppercase">{% if entry.eventExcerpt|length %}{{ entry.eventExcerpt}}{% else %}{{ entry.title}}{% endif %}</h4>
+        </div>
+      </div>
+      
+      <div class="grid-x">
+      
+        <div class="small-6 medium-6 cell">
+      
+          <div class="padding-right-2">
+            <h6>{{ entry.eventDate | date('D j M') }}</h6>
+          </div>
+          
+          <div>
+            <h6>{% if entry.eventVenue|length %}@{{ entry.eventVenue }}{% endif %}</h6>
+          </div>
+      
+        </div>
+        
+        <div class="small-6 medium-6 cell text-right">
+        
+            {% if entry.eventTicketLink|length %}
+            <h6><a href="{{ entry.eventTicketLink}}" class="underline" target="_blank">Tickets</a></h6>
+            {% endif %}
+          
+            <h6><a href="{{ entry.eventFacebookLink}}" class="underline" target="_blank">Event Page</a></h6>
+        </div>
+    
+      </div>
+      
+
+    </div>
+    </div>
+    
+    <div class="featured__image">
+      {% for asset in entry.eventFeatureImage %}
+      <img src="{{ asset.getUrl('xxlarge') }}">
+      {% endfor %}
+    </div>
+  
+</div>
+{% endfor %}
+</div>
+
+
+{% endblock %}

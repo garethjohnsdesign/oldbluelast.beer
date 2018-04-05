@@ -41,8 +41,8 @@ $(function () {
 });
 
 $(function () {
-  count1 = 0;
-  contactWordsArray = ["Hey", "Hi", "Yo", "Aye", "Hello"];
+  count3 = 0;
+  contactWordsArray = ["Hey", "Hi", "Yo", "Hello"];
   setInterval(function () {
     count3++;
     $("#contact-word").fadeOut(0, function () {

@@ -2,19 +2,6 @@
 
 {% block main %}
 
-<section>
-<div class="grid-container">
-  <div class="grid-x grid-padding-x grid-padding-y">
-  <div class="small-12 cell">
-  <form action="" method="GET">
-    <input name="near" type="text" placeholder="Enter your postcode">
-    <input type="submit" class="button" value="Submit">
-  </form>
-  </div>
-  </div>
-</div>
-</section>
-
 {% set target = craft.request.getParam('near') %}
 {% set coords = craft.smartMap.lookupCoords(target) %}
 
@@ -59,6 +46,29 @@ zoom: 14,
     {{ craft.smartMap.map(locations, options) }}
   </div>
 </div>
+
+<section class="padding-top-3">
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y">
+    <div class="small-12 cell">
+      <form action="" method="GET">
+        
+                <div class="input-group">
+                  
+                  <input class="input-group-field" name="near" type="text" placeholder="Where are you?">
+                  
+                  <div class="input-group-button">
+                    <button type="submit" class="button postfix" name="subscribe" value="Submit">
+                      <svg class="icon icon-arrow_forward"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow_forward"></use></svg>
+                    </button>
+                  </div>
+                </div>
+                
+      </form>
+    </div>
+  </div>
+</div>
+</section>
 
 <div class="grid-container">
   <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-2 large-up-3 padding-top-2 padding-bottom-2">

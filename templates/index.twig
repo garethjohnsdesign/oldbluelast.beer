@@ -21,7 +21,7 @@
           
           <div class="small-12 medium-6 large-3 xxlarge-3 cell align-self-middle">
             {{entry.heroText}}
-            <a class="underline text-uppercase" data-toggle="exampleModal8">Learn More</a>
+{#             <a class="underline text-uppercase" data-toggle="exampleModal8">Learn More</a> #}
           </div>
           
         </div>
@@ -78,18 +78,16 @@
 </section>
 
 <section class="home__see-more inverted padding-3">
-  <div class="grid-container">
     <div class="grid-x grid-padding-x grid-padding-y">
       <div class="small-12 cell text-uppercase text-center">
         <h5><a href="/photos" class="underline">See More Photos</a></h5>
       </div>
     </div>  
-  </div>
 </section>
 {# End Photos #}
 
 {# Upcoming Events #}
-<section class="home__upcoming-events padding-top-3">
+<section class="home__upcoming-events padding-top-3 margin-top-3">
 
   <div class="grid-container">
     <div class="grid-x grid-padding-x grid-padding-y">
@@ -110,7 +108,7 @@
   
   {% for entry in entries %}
     <li>
-  	  <a href="{{ entry.eventLink}}" class="padding-left-0 padding-top-2 padding-bottom-1" target="_blank">
+  	  <a href="{{ entry.eventFacebookLink}}" class="padding-left-0 padding-top-2 padding-bottom-1" target="_blank">
   	  
   	    <div class="grid-container">
           <div class="grid-x grid-padding-x">
@@ -146,41 +144,74 @@
   </div>
 </section>
 
-{% set target = craft.request.getParam('near') %}
-{% if target %}
-    {% set params = {
-        target: target,
-        range: 500
-    } %}
-    {% set locations = craft.entries.section('locations').address(params).order('distance').all() %}
-{% else %}
-    {% set locations = craft.entries.section('locations').all() %}
-{% endif %}
-
-{% set options = {
-    height: 500,
-    zoom: 14,
-    draggable: true,
-    center: {'lat':51.525114, 'lng':-0.079938},
-    markerInfo: '_includes/map/bubble',
-    markerOptions: {
-        icon: {
-            url: 'images/global/can-small.png',
-            scaledSize: 'new google.maps.Size(32,32)'
-        }
-    },
-    infoWindowOptions: {
-        maxWidth: 200
-    }
-} %}
-
-<section class="home__map">
-  <div class="grid-x">
+<section class="padding-top-1">
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y">
     <div class="small-12 cell">
-      {{ craft.smartMap.map(locations, options) }}
+      <form action="" method="GET">
+        
+                <div class="input-group">
+                  
+                  <input class="input-group-field" name="near" type="text" placeholder="Where are you?">
+                  
+                  <div class="input-group-button">
+                    <button type="submit" class="button postfix" name="subscribe" value="Submit">
+                      <svg class="icon icon-arrow_forward"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow_forward"></use></svg>
+                    </button>
+                  </div>
+                </div>
+                
+      </form>
     </div>
   </div>
+</div>
 </section>
+
+
+{% set target = craft.request.getParam('near') %}
+{% set coords = craft.smartMap.lookupCoords(target) %}
+
+{% set sharedOptions = {
+height: 600,
+draggable: true,
+center: coords,
+markerInfo: '_includes/map/bubble',
+markerOptions: {
+icon: {
+url: 'images/global/can-small.png',
+scaledSize: 'new google.maps.Size(32,32)'
+}
+},
+infoWindowOptions: {
+maxWidth: 200
+}
+} %}
+
+{% if target %}
+{% set params = {
+target: target,
+range: 20
+} %}
+{% set locations = craft.entries.section('locations').address(params).order('distance').all() %}
+{% set customOptions = {
+center: coords,
+zoom: 12,
+} %}
+{% else %}
+{% set locations = craft.entries.section('locations').all() %}
+{% set customOptions = {
+center: {'lat':51.525114, 'lng':-0.079938},
+zoom: 14,
+} %}
+{% endif %}
+
+{% set options = sharedOptions|merge(customOptions) %}
+
+<div class="grid-x">
+  <div class="small-12 cell">
+    {{ craft.smartMap.map(locations, options) }}
+  </div>
+</div>
 
 {% js %}
 $(function () {

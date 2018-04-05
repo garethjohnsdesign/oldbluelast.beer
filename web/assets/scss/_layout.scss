@@ -76,11 +76,19 @@ p a {
   }
 }
 
+.social-links {
+  z-index: 10;
+	position: fixed;
+	right: -3rem;
+	top: 50%;
+	transform:rotate(90deg);
+}
+
 // 3. Typography
 // -------------
 
 .underline {
-  padding-bottom: 0.25rem;
+  padding-bottom: -0.5rem;
   border-bottom: 2px $white solid;
   &:hover {
     border-bottom: 2px transparent solid;
@@ -88,7 +96,10 @@ p a {
 }
 
 .inverted .underline {
-  border-bottom: 2px $white solid;
+  border-bottom: 2px $primary-color solid;
+  &:hover {
+    border-bottom: 2px transparent solid;
+  }
 }
 
 i, cite, em, var, address, dfn {
@@ -128,7 +139,8 @@ h1 {
 // -------------
 
 .sticky {
-    z-index: 10;
+  z-index: 10;
+  background-color: $primary-color;
 }
 
 .scrollhide-nav {
@@ -191,6 +203,13 @@ h1 {
   height: 100%;
   color: $white;
   z-index: 1;
+  padding: 3rem;
+  @include breakpoint(small) { 
+  padding: 1.5rem;
+  }
+  @include breakpoint(large) { 
+  padding: 4rem;
+  }
 }
 
 .featured__image img {
@@ -203,7 +222,7 @@ h1 {
   position:relative;
   &:hover .featured__image img {
   filter: grayscale(0) contrast(1);
-  opacity: 1;
+  opacity: 0.8;
   }
 }
 
@@ -218,12 +237,19 @@ h1 {
   background-position: 0 0;
   background-image: url("/assets/images/can-new.png");
   background-repeat: repeat-x;
-//   animation: scrolling-animation 5s linear infinite;
+  background-repeat: spaced;
+  animation: scrolling-animation 5s linear infinite;
   @include breakpoint(small) { 
-  height: 50vh;
+  height: 50vw;
+  }
+  @include breakpoint(medium) { 
+  height: 30vw;
   }
   @include breakpoint(large) { 
-  height: 70vh;
+  height: 40vw;
+  }
+  @include breakpoint(xxlarge) { 
+  height: 30vw;
   }
   background-size: contain;
   margin-bottom: -8rem;
@@ -242,7 +268,6 @@ h1 {
 .home__upcoming-events__list li {
 
   .underline {
-    padding-bottom: 0.25rem;
     border-bottom: 2px $white solid;
   }
   
@@ -262,7 +287,7 @@ h1 {
 }
 
 .home__recent-events {
-  padding-top: 10rem;
+  padding-top: 12rem;
 }
 
 // 9. Map
@@ -279,13 +304,4 @@ h1 {
 
 .locations__map__infobox {
   font-family: $primary-font-family;
-}
-
-
-.social-links {
-  z-index: 10;
-	position: fixed;
-	right: -3rem;
-	top: 50%;
-	transform:rotate(90deg);
 }

@@ -2,7 +2,7 @@
   "photos":    { title: "Photos" },
   "events":    { title: "Events" },
   "find-beer":    { title: "Find Beer" },
-  "manchester":    { title: "Manchester" },
+  "canchester":    { title: "Canchester" },
   "contact":    { title: "Contact" }
 } %}
 
@@ -13,7 +13,7 @@
         
         <ul class="vertical menu align-center">
           {% for slug, item in navigation %}
-      	  <li class="text-uppercase"><a href="{{ url(slug) }}"><h3>{{ item.title }}</h3></a></li>
+      	  <li class="text-uppercase"><a href="{{ url(slug) }}"><h2>{{ item.title }}</h2></a></li>
       		{% endfor %}
         </ul>
         

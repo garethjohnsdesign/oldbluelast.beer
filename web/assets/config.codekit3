@@ -7830,11 +7830,25 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/videos\/can-spin.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/videos\/can-spin.mp4",
+		"oF": 0
+		},
 	"\/videos\/manc.mp4": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/videos\/manc.mp4",
+		"oF": 0
+		},
+	"\/videos\/spinning-can.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/videos\/spinning-can.mp4",
 		"oF": 0
 		}
 	},
