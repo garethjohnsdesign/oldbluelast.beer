@@ -222,7 +222,7 @@ h1 {
   position:relative;
   &:hover .featured__image img {
   filter: grayscale(0) contrast(1);
-  opacity: 0.8;
+  opacity: 0.85;
   }
 }
 
@@ -304,4 +304,20 @@ h1 {
 
 .locations__map__infobox {
   font-family: $primary-font-family;
+}
+
+
+// 10. Canchester
+// ------
+
+.canchester__hero__text {
+  @include breakpoint(small) { 
+  padding: 2rem 1rem;
+  }
+  @include breakpoint(medium) { 
+  padding: 2rem;
+  }
+  @include breakpoint(large) { 
+  padding: 3rem;
+  }
 }
