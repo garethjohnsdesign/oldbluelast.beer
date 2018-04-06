@@ -18,6 +18,15 @@ $("#gallery").lightGallery({
     download: false
 });
 
+$('#video-gallery').lightGallery({
+   counter : false,
+    vimeoPlayerParams: {
+        byline : 0,
+        portrait : 0,
+        color : '272A67'
+    }
+});  
+
 $(function () {
   count1 = 0;
   wordsArray = ["Event", "Party", "Gig", "Karaoke", "Quiz", "Beer"];

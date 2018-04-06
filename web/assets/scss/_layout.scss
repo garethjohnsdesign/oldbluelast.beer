@@ -222,7 +222,7 @@ h1 {
   position:relative;
   &:hover .featured__image img {
   filter: grayscale(0) contrast(1);
-  opacity: 0.85;
+  opacity: 1;
   }
 }
 
@@ -314,10 +314,7 @@ h1 {
   @include breakpoint(small) { 
   padding: 2rem 1rem;
   }
-  @include breakpoint(medium) { 
-  padding: 2rem;
-  }
   @include breakpoint(large) { 
-  padding: 3rem;
+  padding: 5rem 3rem;
   }
 }

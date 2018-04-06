@@ -24,17 +24,17 @@
 
 {% for entry in entries %}
   <li>
-	  <a href="{{ entry.eventFacebookLink}}" class="padding-left-0 padding-top-2" target="_blank">
+	  <a href="{{ entry.eventFacebookLink}}" class="padding-left-0 padding-top-1" target="_blank">
 	  
 	    <div class="grid-container">
-      <div class="grid-x grid-padding-x">
+      <div class="grid-x grid-padding-x grid-padding-y">
       
-      <div class="small-8 cell text-uppercase">
+      <div class="small-12 medium-8 cell text-uppercase">
       <h6>{{ entry.eventDate | date('D j M') }}</h6>
       <h5>{{ entry.title}} @ {% if entry.eventVenue|length %}{{ entry.eventVenue }},{% endif %} {{ entry.eventLocation}}</h5>
       </div>
       
-      <div class="small-4 cell text-uppercase text-right align-self-bottom margin-bottom-1">
+      <div class="small-12 medium-4 cell text-uppercase medium-text-right align-self-bottom margin-bottom-1">
       <span class="underline">Event Page</span>
       </div>
       

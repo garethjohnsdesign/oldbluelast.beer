@@ -4007,7 +4007,7 @@ select {
     padding-bottom: 56.25%; }
   .responsive-embed.panorama,
   .flex-video.panorama {
-    padding-bottom: 41.6666666667%; }
+    padding-bottom: 56.25%; }
 
 .sticky-container {
   position: relative; }
@@ -6423,7 +6423,7 @@ h1 {
   position: relative; }
   .featured:hover .featured__image img {
     filter: grayscale(0) contrast(1);
-    opacity: 0.85; }
+    opacity: 1; }
 
 .hero__text {
   opacity: 0; }
@@ -6481,9 +6481,6 @@ h1 {
 
 .canchester__hero__text {
   padding: 2rem 1rem; }
-  @media print, screen and (min-width: 40em) {
-    .canchester__hero__text {
-      padding: 2rem; } }
   @media print, screen and (min-width: 64em) {
     .canchester__hero__text {
-      padding: 3rem; } }
+      padding: 5rem 3rem; } }
