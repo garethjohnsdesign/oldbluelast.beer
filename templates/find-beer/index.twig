@@ -12,7 +12,7 @@ center: coords,
 markerInfo: '_includes/map/bubble',
 markerOptions: {
 icon: {
-url: 'images/global/can-small.png',
+url: 'assets/images/can-small.png',
 scaledSize: 'new google.maps.Size(32,32)'
 }
 },
@@ -29,13 +29,13 @@ range: 20
 {% set locations = craft.entries.section('locations').address(params).order('distance').all() %}
 {% set customOptions = {
 center: coords,
-zoom: 12,
+zoom: 12
 } %}
 {% else %}
 {% set locations = craft.entries.section('locations').all() %}
 {% set customOptions = {
 center: {'lat':51.525114, 'lng':-0.079938},
-zoom: 14,
+zoom: 14
 } %}
 {% endif %}
 
@@ -46,6 +46,39 @@ zoom: 14,
     {{ craft.smartMap.map(locations, options) }}
   </div>
 </div>
+
+{# Loop through location entries #}
+
+{% for entry in locations %}
+
+    {#
+      Perform custom logic
+      to determine which icon
+      will be assigned to each entry
+    #}
+    {% switch entry.locationType %}
+        {% case 'venue' %}
+            {% set icon = 'assets/images/can-small.png' %}
+        {% case 'shop' %}
+            {% set icon = 'assets/images/bag.png' %}
+        {% default %}
+            {% set icon = 'assets/images/bag.png' %}
+    {% endswitch %}
+
+    {# JS: Change marker icon #}
+    {% js %}
+
+        var markerId = 'smartmap-mapcanvas-1.{{ entry.id }}.address';
+        smartMap.marker[markerId].setOptions(
+            {icon: {
+                url: '{{ icon }}',
+                scaledSize: new google.maps.Size(32,32)
+            }}
+        );
+
+    {% endjs %}
+
+{% endfor %}
 
 <section class="padding-top-3">
 <div class="grid-container">

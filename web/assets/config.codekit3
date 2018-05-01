@@ -7623,6 +7623,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/images\/bag.png": {
+		"ft": 32768,
+		"iS": 74754,
+		"oA": 0,
+		"oAP": "\/images\/bag.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/images\/can-new.png": {
 		"ft": 32768,
 		"iS": 521584,
@@ -7631,6 +7642,17 @@
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/can-small.png": {
+		"ft": 32768,
+		"iS": 5206,
+		"oA": 0,
+		"oAP": "\/images\/can-small.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
