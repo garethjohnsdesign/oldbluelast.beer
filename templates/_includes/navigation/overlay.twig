@@ -1,8 +1,6 @@
 {% set navigation = {
   "photos":    { title: "Photos" },
-  "events":    { title: "Events" },
   "find-beer":    { title: "Find Beer" },
-  "canchester":    { title: "Canchester" },
   "contact":    { title: "Contact" }
 } %}
 
@@ -11,7 +9,17 @@
     <div class="grid-x grid-padding-x align-center">
     	<div class="shrink cell">
         
-        <ul class="vertical menu align-center">
+          <ul class="vertical menu align-center">
+          {% set entries = craft.entries
+          .section('events')
+          .eventDate('>' ~ now.getTimestamp())
+          .order('eventDate asc')
+          .all() %}
+
+          {% if entries|length %}
+          <li class="text-uppercase"><a href="/events"><h2>Events</h2></a></li>
+          {% endif %}
+
           {% for slug, item in navigation %}
       	  <li class="text-uppercase"><a href="{{ url(slug) }}"><h2>{{ item.title }}</h2></a></li>
       		{% endfor %}

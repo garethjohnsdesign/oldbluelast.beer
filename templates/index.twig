@@ -87,6 +87,14 @@
 {# End Photos #}
 
 {# Upcoming Events #}
+
+{% set entries = craft.entries
+.section('events')
+.eventDate('>' ~ now.getTimestamp())
+.order('eventDate asc')
+.all() %}
+
+{% if entries|length %}
 <section class="home__upcoming-events padding-top-3 margin-top-3">
 
   <div class="grid-container">
@@ -99,12 +107,6 @@
   </div>
 
   <ul class="vertical menu home__upcoming-events__list">
-            
-  {% set entries = craft.entries
-  .section('events')
-  .eventDate('>' ~ now.getTimestamp())
-  .order('eventDate asc')
-  .all() %}
   
   {% for entry in entries %}
     <li>
@@ -127,10 +129,11 @@
   	  
   	  </a>
     </li>
-   {% endfor %}
+  {% endfor %}
   </ul>
   
 </section>
+{% endif %}
 {# End Upcoming Events #}
 
 {# Location #}
