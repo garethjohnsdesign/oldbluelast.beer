@@ -199,7 +199,7 @@
 		},
 	"\/bower_components\/animejs\/documentation\/assets\/img\/readme\/keyframes-advanced.gif": {
 		"ft": 4194304,
-		"iS": 106219,
+		"iS": 0,
 		"oA": 2,
 		"oAP": "\/bower_components\/animejs\/documentation\/assets\/img\/readme\/keyframes-advanced.gif",
 		"oF": 0,
@@ -510,183 +510,6 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
-		},
-	"\/bower_components\/animejs\/documentation\/examples\/anime-canvas-fireworks.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-canvas-fireworks.html",
-		"oF": 0
-		},
-	"\/bower_components\/animejs\/documentation\/examples\/anime-colors-test.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-colors-test.html",
-		"oF": 0
-		},
-	"\/bower_components\/animejs\/documentation\/examples\/anime-complex-properties.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-complex-properties.html",
-		"oF": 0
-		},
-	"\/bower_components\/animejs\/documentation\/examples\/anime-directions-testing.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-directions-testing.html",
-		"oF": 0
-		},
-	"\/bower_components\/animejs\/documentation\/examples\/anime-DOM-stress-test-02.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-DOM-stress-test-02.html",
-		"oF": 0
-		},
-	"\/bower_components\/animejs\/documentation\/examples\/anime-DOM-stress-test.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-DOM-stress-test.html",
-		"oF": 0
-		},
-	"\/bower_components\/animejs\/documentation\/examples\/anime-ease-visualizer.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-ease-visualizer.html",
-		"oF": 0
-		},
-	"\/bower_components\/animejs\/documentation\/examples\/anime-logo-animation.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-logo-animation.html",
-		"oF": 0
-		},
-	"\/bower_components\/animejs\/documentation\/examples\/anime-mgs-logo-animation.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-mgs-logo-animation.html",
-		"oF": 0
-		},
-	"\/bower_components\/animejs\/documentation\/examples\/anime-speed-test.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-speed-test.html",
-		"oF": 0
-		},
-	"\/bower_components\/animejs\/documentation\/examples\/anime-staggered-animations-02.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-staggered-animations-02.html",
-		"oF": 0
-		},
-	"\/bower_components\/animejs\/documentation\/examples\/anime-staggered-animations.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-staggered-animations.html",
-		"oF": 0
-		},
-	"\/bower_components\/animejs\/documentation\/examples\/anime-svg-lines-animations.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-svg-lines-animations.html",
-		"oF": 0
-		},
-	"\/bower_components\/animejs\/documentation\/examples\/anime-svg-path-animation.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-svg-path-animation.html",
-		"oF": 0
-		},
-	"\/bower_components\/animejs\/documentation\/examples\/anime-svg-tests.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-svg-tests.html",
-		"oF": 0
-		},
-	"\/bower_components\/animejs\/documentation\/examples\/anime-tests.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-tests.html",
-		"oF": 0
-		},
-	"\/bower_components\/animejs\/documentation\/examples\/anime-timeline.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-timeline.html",
-		"oF": 0
-		},
-	"\/bower_components\/animejs\/documentation\/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/bower_components\/animejs\/documentation\/index.html",
-		"oF": 0
-		},
-	"\/bower_components\/animejs\/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/bower_components\/animejs\/index.html",
-		"oF": 0
-		},
-	"\/bower_components\/animejs\/LICENSE.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 2,
-		"oAP": "\/bower_components\/animejs\/LICENSE.md",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/bower_components\/animejs\/package.json": {
-		"ft": 524288,
-		"oA": 2,
-		"oAP": "\/bower_components\/animejs\/package.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/bower_components\/animejs\/README.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 2,
-		"oAP": "\/bower_components\/animejs\/README.md",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
 		},
 	"\/bower_components\/aos\/.bower.json": {
 		"ft": 524288,
@@ -5874,7 +5697,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/bower_components\/lightgallery\/dist\/js\/lightgallery.js",
 		"oF": 0,
 		"sC": 3,
@@ -5884,7 +5707,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/bower_components\/lightgallery\/dist\/js\/lightgallery.min.js",
 		"oF": 0,
 		"sC": 3,
@@ -6081,7 +5904,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/bower_components\/lightgallery\/modules\/lg-video.js",
 		"oF": 0,
 		"sC": 3,
@@ -7479,55 +7302,11 @@
 		"oAP": "\/favicons\/favicon.ico",
 		"oF": 0
 		},
-	"\/favicons\/mstile-144x144.png": {
-		"ft": 32768,
-		"iS": 0,
-		"oA": 0,
-		"oAP": "\/favicons\/mstile-144x144.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"\/favicons\/mstile-150x150.png": {
 		"ft": 32768,
 		"iS": 3455,
 		"oA": 0,
 		"oAP": "\/favicons\/mstile-150x150.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/favicons\/mstile-310x150.png": {
-		"ft": 32768,
-		"iS": 0,
-		"oA": 0,
-		"oAP": "\/favicons\/mstile-310x150.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/favicons\/mstile-310x310.png": {
-		"ft": 32768,
-		"iS": 0,
-		"oA": 0,
-		"oAP": "\/favicons\/mstile-310x310.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/favicons\/mstile-70x70.png": {
-		"ft": 32768,
-		"iS": 0,
-		"oA": 0,
-		"oAP": "\/favicons\/mstile-70x70.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -7766,16 +7545,16 @@
 		"uL": 1
 		},
 	"\/scss\/app.scss": {
-		"aP": 1,
+		"aP": 0,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "css\/app.css",
-		"oF": 0,
-		"oS": 3,
+		"oAP": "\/css\/app.css",
+		"oF": 2,
+		"oS": 0,
 		"uL": 1
 		},
 	"\/scss\/scroll\/_animations.scss": {
@@ -7837,6 +7616,13 @@
 		"oAP": "\/videos\/can-spin.mp4",
 		"oF": 0
 		},
+	"\/videos\/canchester.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/videos\/canchester.mp4",
+		"oF": 0
+		},
 	"\/videos\/manc.mp4": {
 		"cB": 0,
 		"ft": 8192,
@@ -7864,44 +7650,50 @@
 			},
 		{
 			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/dist\/js\/foundation.min.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/jquery.cookie\/jquery.cookie.js",
 			"position": 1,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/bower_components\/aos\/dist\/aos.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/dist\/js\/foundation.min.js",
 			"position": 2,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/bower_components\/motion-ui\/dist\/motion-ui.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/aos\/dist\/aos.js",
 			"position": 3,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/bower_components\/svgxuse\/svgxuse.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/motion-ui\/dist\/motion-ui.js",
 			"position": 4,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/bower_components\/lightgallery\/dist\/js\/lightgallery.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/animejs\/anime.min.js",
 			"position": 5,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/bower_components\/animejs\/anime.min.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/svgxuse\/svgxuse.js",
 			"position": 6,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/bower_components\/jquery.cookie\/jquery.cookie.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/lightgallery\/dist\/js\/lightgallery.min.js",
 			"position": 7,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 0,
+			"linkedFileAbbreviatedPath": "\/bower_components\/lightgallery\/modules\/lg-video.js",
+			"position": 8,
 			"type": 0
 			}
 		]

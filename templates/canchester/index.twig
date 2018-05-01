@@ -3,20 +3,33 @@
 {% block main %}
 
 <div class="grid-x">
-  <div class="small-12 cell">
-  <div class="responsive-embed panorama">
-    <video autoplay muted loop>
-      <source src="assets/videos/can-spin.mp4" type="video/mp4">
-      Your browser does not support the video tag.
+  <div class="small-12 cell featured">
+    
+  <div class="grid-x featured__title align-middle">
+    <div class="small-12 cell text-center">
+      <h2>#canchester</h2>
+      <div id="video-gallery">
+      <a href="https://vimeo.com/263503407"><h5 class="text-uppercase">Play Video</h5></a>
+      </div>
+    </div>
+  </div>
+  
+    
+  <div class="featured__image responsive-embed panorama">
+    <video playsinline autoplay muted loop>
+      {% for asset in entry.featuredVideo %}
+      <source src="{{ asset.getUrl() }}" type="video/mp4">
+      {% endfor %}
     </video>  
   </div>
+  
   </div>
 </div>
 
-<div class="grid-container">
-  <div class="grid-x padding-3 margin-top-3 margin-bottom-3">
-    <div class="small-12 cell text-center">
-  {{entry.heroText}}
+<div class="grid-container canchester__hero__text">
+  <div class="grid-x align-center">
+    <div class="small-12 medium-10 cell text-center">
+      <h5>{{entry.pageIntro}}</h5>
     </div>
   </div>
 </div>
@@ -27,13 +40,11 @@
 .order('eventDate asc')
 .all() %}
 
-<div class="grid-x">
+<div class="grid-container">
 {% for entry in entries %}
-<div class="small-12 cell">
+<div class="grid-x margin-bottom-3">
+<div class="small-12 cell featured">
 
-<div class="featured">
-
-  
     
     <div class="grid-x featured__title align-middle show-for-medium">
       <div class="small-12 cell text-center">
@@ -86,8 +97,8 @@
     </div>
   
 </div>
+</div>
 {% endfor %}
 </div>
-
 
 {% endblock %}
