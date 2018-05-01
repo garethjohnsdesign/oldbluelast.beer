@@ -7,7 +7,7 @@
 		"uuidString": "F7CC2255-C147-4BFE-82DC-F393990E3BD5"
 		}
 	],
-"creatorBuild": "26330",
+"creatorBuild": "26680",
 "files": {
 	"\/bower.json": {
 		"ft": 524288,
@@ -510,6 +510,183 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-canvas-fireworks.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-canvas-fireworks.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-colors-test.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-colors-test.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-complex-properties.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-complex-properties.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-directions-testing.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-directions-testing.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-DOM-stress-test-02.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-DOM-stress-test-02.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-DOM-stress-test.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-DOM-stress-test.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-ease-visualizer.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-ease-visualizer.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-logo-animation.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-logo-animation.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-mgs-logo-animation.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-mgs-logo-animation.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-speed-test.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-speed-test.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-staggered-animations-02.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-staggered-animations-02.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-staggered-animations.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-staggered-animations.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-svg-lines-animations.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-svg-lines-animations.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-svg-path-animation.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-svg-path-animation.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-svg-tests.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-svg-tests.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-tests.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-tests.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/examples\/anime-timeline.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/examples\/anime-timeline.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/documentation\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/documentation\/index.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/index.html",
+		"oF": 0
+		},
+	"\/bower_components\/animejs\/LICENSE.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/LICENSE.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/bower_components\/animejs\/package.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/package.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/animejs\/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/bower_components\/animejs\/README.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		},
 	"\/bower_components\/aos\/.bower.json": {
 		"ft": 524288,
@@ -5337,6 +5514,7 @@
 	"\/bower_components\/lightgallery\/demo\/img\/1-1600.jpg": {
 		"ft": 16384,
 		"iS": 241923,
+		"jF": 0,
 		"oA": 2,
 		"oAP": "\/bower_components\/lightgallery\/demo\/img\/1-1600.jpg",
 		"oF": 0,
@@ -5347,6 +5525,7 @@
 	"\/bower_components\/lightgallery\/demo\/img\/1-375.jpg": {
 		"ft": 16384,
 		"iS": 23648,
+		"jF": 0,
 		"oA": 2,
 		"oAP": "\/bower_components\/lightgallery\/demo\/img\/1-375.jpg",
 		"oF": 0,
@@ -5357,6 +5536,7 @@
 	"\/bower_components\/lightgallery\/demo\/img\/1-480.jpg": {
 		"ft": 16384,
 		"iS": 34414,
+		"jF": 0,
 		"oA": 2,
 		"oAP": "\/bower_components\/lightgallery\/demo\/img\/1-480.jpg",
 		"oF": 0,
@@ -5367,6 +5547,7 @@
 	"\/bower_components\/lightgallery\/demo\/img\/1.jpg": {
 		"ft": 16384,
 		"iS": 91130,
+		"jF": 0,
 		"oA": 2,
 		"oAP": "\/bower_components\/lightgallery\/demo\/img\/1.jpg",
 		"oF": 0,
@@ -5377,6 +5558,7 @@
 	"\/bower_components\/lightgallery\/demo\/img\/13-1600.jpg": {
 		"ft": 16384,
 		"iS": 129996,
+		"jF": 0,
 		"oA": 2,
 		"oAP": "\/bower_components\/lightgallery\/demo\/img\/13-1600.jpg",
 		"oF": 0,
@@ -5387,6 +5569,7 @@
 	"\/bower_components\/lightgallery\/demo\/img\/13-375.jpg": {
 		"ft": 16384,
 		"iS": 22812,
+		"jF": 0,
 		"oA": 2,
 		"oAP": "\/bower_components\/lightgallery\/demo\/img\/13-375.jpg",
 		"oF": 0,
@@ -5397,6 +5580,7 @@
 	"\/bower_components\/lightgallery\/demo\/img\/13-480.jpg": {
 		"ft": 16384,
 		"iS": 35693,
+		"jF": 0,
 		"oA": 2,
 		"oAP": "\/bower_components\/lightgallery\/demo\/img\/13-480.jpg",
 		"oF": 0,
@@ -5407,6 +5591,7 @@
 	"\/bower_components\/lightgallery\/demo\/img\/13.jpg": {
 		"ft": 16384,
 		"iS": 124149,
+		"jF": 0,
 		"oA": 2,
 		"oAP": "\/bower_components\/lightgallery\/demo\/img\/13.jpg",
 		"oF": 0,
@@ -5417,6 +5602,7 @@
 	"\/bower_components\/lightgallery\/demo\/img\/2-1600.jpg": {
 		"ft": 16384,
 		"iS": 187925,
+		"jF": 0,
 		"oA": 2,
 		"oAP": "\/bower_components\/lightgallery\/demo\/img\/2-1600.jpg",
 		"oF": 0,
@@ -5427,6 +5613,7 @@
 	"\/bower_components\/lightgallery\/demo\/img\/2-375.jpg": {
 		"ft": 16384,
 		"iS": 30307,
+		"jF": 0,
 		"oA": 2,
 		"oAP": "\/bower_components\/lightgallery\/demo\/img\/2-375.jpg",
 		"oF": 0,
@@ -5437,6 +5624,7 @@
 	"\/bower_components\/lightgallery\/demo\/img\/2-480.jpg": {
 		"ft": 16384,
 		"iS": 48290,
+		"jF": 0,
 		"oA": 2,
 		"oAP": "\/bower_components\/lightgallery\/demo\/img\/2-480.jpg",
 		"oF": 0,
@@ -5447,6 +5635,7 @@
 	"\/bower_components\/lightgallery\/demo\/img\/2.jpg": {
 		"ft": 16384,
 		"iS": 326478,
+		"jF": 0,
 		"oA": 2,
 		"oAP": "\/bower_components\/lightgallery\/demo\/img\/2.jpg",
 		"oF": 0,
@@ -5457,6 +5646,7 @@
 	"\/bower_components\/lightgallery\/demo\/img\/4-1600.jpg": {
 		"ft": 16384,
 		"iS": 153989,
+		"jF": 0,
 		"oA": 2,
 		"oAP": "\/bower_components\/lightgallery\/demo\/img\/4-1600.jpg",
 		"oF": 0,
@@ -5467,6 +5657,7 @@
 	"\/bower_components\/lightgallery\/demo\/img\/4-375.jpg": {
 		"ft": 16384,
 		"iS": 18396,
+		"jF": 0,
 		"oA": 2,
 		"oAP": "\/bower_components\/lightgallery\/demo\/img\/4-375.jpg",
 		"oF": 0,
@@ -5477,6 +5668,7 @@
 	"\/bower_components\/lightgallery\/demo\/img\/4-480.jpg": {
 		"ft": 16384,
 		"iS": 25839,
+		"jF": 0,
 		"oA": 2,
 		"oAP": "\/bower_components\/lightgallery\/demo\/img\/4-480.jpg",
 		"oF": 0,
@@ -5487,6 +5679,7 @@
 	"\/bower_components\/lightgallery\/demo\/img\/4.jpg": {
 		"ft": 16384,
 		"iS": 70944,
+		"jF": 0,
 		"oA": 2,
 		"oAP": "\/bower_components\/lightgallery\/demo\/img\/4.jpg",
 		"oF": 0,
@@ -5497,6 +5690,7 @@
 	"\/bower_components\/lightgallery\/demo\/img\/thumb-1.jpg": {
 		"ft": 16384,
 		"iS": 68187,
+		"jF": 0,
 		"oA": 2,
 		"oAP": "\/bower_components\/lightgallery\/demo\/img\/thumb-1.jpg",
 		"oF": 0,
@@ -5507,6 +5701,7 @@
 	"\/bower_components\/lightgallery\/demo\/img\/thumb-13.jpg": {
 		"ft": 16384,
 		"iS": 76594,
+		"jF": 0,
 		"oA": 2,
 		"oAP": "\/bower_components\/lightgallery\/demo\/img\/thumb-13.jpg",
 		"oF": 0,
@@ -5517,6 +5712,7 @@
 	"\/bower_components\/lightgallery\/demo\/img\/thumb-2.jpg": {
 		"ft": 16384,
 		"iS": 92856,
+		"jF": 0,
 		"oA": 2,
 		"oAP": "\/bower_components\/lightgallery\/demo\/img\/thumb-2.jpg",
 		"oF": 0,
@@ -5527,6 +5723,7 @@
 	"\/bower_components\/lightgallery\/demo\/img\/thumb-4.jpg": {
 		"ft": 16384,
 		"iS": 53719,
+		"jF": 0,
 		"oA": 2,
 		"oAP": "\/bower_components\/lightgallery\/demo\/img\/thumb-4.jpg",
 		"oF": 0,
@@ -7302,11 +7499,55 @@
 		"oAP": "\/favicons\/favicon.ico",
 		"oF": 0
 		},
+	"\/favicons\/mstile-144x144.png": {
+		"ft": 32768,
+		"iS": 2803,
+		"oA": 0,
+		"oAP": "\/favicons\/mstile-144x144.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/favicons\/mstile-150x150.png": {
 		"ft": 32768,
 		"iS": 3455,
 		"oA": 0,
 		"oAP": "\/favicons\/mstile-150x150.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/favicons\/mstile-310x150.png": {
+		"ft": 32768,
+		"iS": 2966,
+		"oA": 0,
+		"oAP": "\/favicons\/mstile-310x150.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/favicons\/mstile-310x310.png": {
+		"ft": 32768,
+		"iS": 4920,
+		"oA": 0,
+		"oAP": "\/favicons\/mstile-310x310.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/favicons\/mstile-70x70.png": {
+		"ft": 32768,
+		"iS": 2257,
+		"oA": 0,
+		"oAP": "\/favicons\/mstile-70x70.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -7616,13 +7857,6 @@
 		"oAP": "\/videos\/can-spin.mp4",
 		"oF": 0
 		},
-	"\/videos\/canchester.mp4": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/videos\/canchester.mp4",
-		"oF": 0
-		},
 	"\/videos\/manc.mp4": {
 		"cB": 0,
 		"ft": 8192,
@@ -7702,7 +7936,8 @@
 	"creationDate": 534613424,
 	"displayValue": "Old Blue Last Beer",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "brackets_gray"
+	"iconImageName": "brackets_gray",
+	"iconImageWasSetByUser": 1
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -9505,6 +9740,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {
