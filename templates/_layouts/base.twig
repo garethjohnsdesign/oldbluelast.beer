@@ -32,7 +32,7 @@
     <meta property="og:type" content="{% if seoType is defined %}{{ seoType }}{% else %}website{% endif %}">
     <meta property="og:url" content="{% if seoUrl is defined %}{{ seoUrl }}{% else %}{{ siteUrl }}{% endif %}">
     <meta property="og:title" content="{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}">
-    <meta property="og:image" content="https://www.oldbluelast.beer{% if seoImage is defined %}{{ seoImage }}{% else %}{{ globalSeoImage }}{% endif %}">
+    <meta property="og:image" content="http://www.oldbluelast.beer{% if seoImage is defined %}{{ seoImage }}{% else %}{{ globalSeoImage }}{% endif %}">
     <meta property="og:description" content="{% if seoDescription is defined %}{{ seoDescription }}{% else %}{{ globalSeoDescription|raw }}{% endif %}">
     <meta property="og:site_name" content="{{ siteName }}">
     <meta property="og:locale" content="en_GB">
@@ -46,7 +46,7 @@
     <meta name="twitter:url" content="{% if seoUrl is defined %}{{ seoUrl }}{% else %}{{ siteUrl }}{% endif %}">
     <meta name="twitter:title" content="{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}">
     <meta name="twitter:description" content="{% if seoDescription is defined %}{{ seoDescription }}{% else %}{{ globalSeoDescription|raw }}{% endif %}">
-    <meta name="twitter:image" content="https://www.oldbluelast.beer{% if seoImage is defined %}{{ seoImage }}{% else %}{{ globalSeoImage }}{% endif %}">
+    <meta name="twitter:image" content="http://www.oldbluelast.beer{% if seoImage is defined %}{{ seoImage }}{% else %}{{ globalSeoImage }}{% endif %}">
     
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
