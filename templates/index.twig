@@ -197,13 +197,13 @@ maxWidth: 200
 target: target,
 range: 20
 } %}
-{% set locations = craft.entries.section('locations').address(params).order('distance').all() %}
+{% set locations = craft.entries.section('venues').address(params).order('distance').all() %}
 {% set customOptions = {
 center: coords,
 zoom: 12,
 } %}
 {% else %}
-{% set locations = craft.entries.section('locations').all() %}
+{% set locations = craft.entries.section('venues').all() %}
 {% set customOptions = {
 center: {'lat':51.525114, 'lng':-0.079938},
 zoom: 14,

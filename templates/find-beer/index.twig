@@ -26,13 +26,13 @@ maxWidth: 200
 target: target,
 range: 20
 } %}
-{% set locations = craft.entries.section('locations').address(params).order('distance').all() %}
+{% set locations = craft.entries.section(['venues', 'shops']).address(params).order('distance').all() %}
 {% set customOptions = {
 center: coords,
 zoom: 12
 } %}
 {% else %}
-{% set locations = craft.entries.section('locations').all() %}
+{% set locations = craft.entries.section(['venues', 'shops']).all() %}
 {% set customOptions = {
 center: {'lat':51.525114, 'lng':-0.079938},
 zoom: 14
@@ -104,10 +104,44 @@ zoom: 14
 </section>
 
 <div class="grid-container">
+  <div class="grid-x">
+    <div class="small-12 cell text-center text-uppercase">
+      <h3>Venues</h3>
+    </div>
+  </div>
+</div>
+
+<div class="grid-container">
   <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-2 large-up-3 padding-top-2 padding-bottom-2">
   
 {% set entries = craft.entries
-.section('locations')
+.section('venues')
+.order('title asc')
+.all() %}
+
+    {% for entry in entries %}
+    <div class="cell">
+    <h5 class="text-uppercase">{{ entry.title }}</h5>
+    <h6>{{ entry.address.street1 }}<h6>
+    <h6>{{ entry.address.city }}, {{ entry.address.zip }}<h6>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="grid-container">
+  <div class="grid-x">
+    <div class="small-12 cell text-center text-uppercase">
+      <h3>Shops</h3>
+    </div>
+  </div>
+</div>
+
+<div class="grid-container">
+  <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-2 large-up-3 padding-top-2 padding-bottom-2">
+  
+{% set entries = craft.entries
+.section('shops')
 .order('title asc')
 .all() %}
 
