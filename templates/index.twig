@@ -197,13 +197,13 @@ maxWidth: 200
 target: target,
 range: 20
 } %}
-{% set locations = craft.entries.section('venues').address(params).order('distance').all() %}
+{% set locations = craft.entries.section(['venues', 'shops']).address(params).order('distance').all() %}
 {% set customOptions = {
 center: coords,
 zoom: 12,
 } %}
 {% else %}
-{% set locations = craft.entries.section('venues').all() %}
+{% set locations = craft.entries.section(['venues', 'shops']).all() %}
 {% set customOptions = {
 center: {'lat':51.525114, 'lng':-0.079938},
 zoom: 14,
@@ -217,6 +217,39 @@ zoom: 14,
     {{ craft.smartMap.map(locations, options) }}
   </div>
 </div>
+
+{# Loop through location entries #}
+
+{% for entry in locations %}
+
+    {#
+      Perform custom logic
+      to determine which icon
+      will be assigned to each entry
+    #}
+    {% switch entry.locationType %}
+        {% case 'venue' %}
+            {% set icon = 'assets/images/can-small.png' %}
+        {% case 'shop' %}
+            {% set icon = 'assets/images/bag.png' %}
+        {% default %}
+            {% set icon = 'assets/images/bag.png' %}
+    {% endswitch %}
+
+    {# JS: Change marker icon #}
+    {% js %}
+
+        var markerId = 'smartmap-mapcanvas-1.{{ entry.id }}.address';
+        smartMap.marker[markerId].setOptions(
+            {icon: {
+                url: '{{ icon }}',
+                scaledSize: new google.maps.Size(32,32)
+            }}
+        );
+
+    {% endjs %}
+
+{% endfor %}
 
 {% js %}
 $(function () {
