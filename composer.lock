@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "be1d9f3e1b5f9e0d3553f5e5c14b58df",
+    "content-hash": "7d7e3605287bf2c8be70a11f890b9f7b",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -1066,6 +1066,45 @@
             "time": "2017-03-20T17:10:46+00:00"
         },
         {
+            "name": "jaybizzle/crawler-detect",
+            "version": "v1.2.63",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/3566bc69d0839ab2dfd739a660b00f25a6f02031",
+                "reference": "3566bc69d0839ab2dfd739a660b00f25a6f02031",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jaybizzle\\CrawlerDetect\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Beech",
+                    "email": "m@rkbee.ch",
+                    "role": "Developer"
+                }
+            ],
+            "description": "CrawlerDetect is a PHP class for detecting bots/crawlers/spiders via the user agent",
+            "homepage": "https://github.com/JayBizzle/Crawler-Detect/",
+            "keywords": [
+                "crawler",
+                "crawler detect",
+                "crawler detector",
+                "crawlerdetect",
+                "php crawler detect"
+            ],
+            "time": "2018-05-21T19:56:44+00:00"
+        },
+        {
             "name": "justinrainbow/json-schema",
             "version": "5.2.7",
             "dist": {
@@ -1331,6 +1370,60 @@
                 "random"
             ],
             "time": "2018-06-06T17:40:22+00:00"
+        },
+        {
+            "name": "pierrestoffe/craft-language-redirector",
+            "version": "1.0.5",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pierrestoffe/craft-language-redirector/zipball/e7ee25194aba6372ee392a177486259a696f0784",
+                "reference": "e7ee25194aba6372ee392a177486259a696f0784",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0-RC1",
+                "jaybizzle/crawler-detect": "^1.2"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Language Redirector",
+                "handle": "language-redirector",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/pierrestoffe/craft-language-redirector/master/CHANGELOG.md",
+                "components": {
+                    "languageRedirectorService": "pierrestoffe\\languageredirector\\services\\LanguageRedirectorService"
+                },
+                "class": "pierrestoffe\\languageredirector\\LanguageRedirector"
+            },
+            "autoload": {
+                "psr-4": {
+                    "pierrestoffe\\languageredirector\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pierre Stoffe",
+                    "homepage": "https://pierrestoffe.be"
+                }
+            ],
+            "description": "Automatically redirect visitors to their preferred language",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "language redirector"
+            ],
+            "support": {
+                "docs": "https://github.com/pierrestoffe/craft-language-redirector/blob/master/README.md",
+                "issues": "https://github.com/pierrestoffe/craft-language-redirector/issues"
+            },
+            "time": "2018-06-10T18:10:04+00:00"
         },
         {
             "name": "pixelandtonic/imagine",

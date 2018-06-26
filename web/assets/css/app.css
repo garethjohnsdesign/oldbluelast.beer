@@ -6432,6 +6432,10 @@ h1 {
   background-position: 0 0;
   background-image: url("/assets/images/can-new.png");
   background-repeat: repeat-x;
+  transform: translateX(0);
+  position: absolute;
+  top: 0px;
+  left: 0px;
   background-repeat: spaced;
   animation: scrolling-animation 5s linear infinite;
   height: 50vw;
@@ -6453,6 +6457,26 @@ h1 {
     background-position: 0 0; }
   to {
     background-position: 100% 0; } }
+
+.sliding-background {
+  background-image: url("/assets/images/can-new-rev.png");
+  background-repeat: repeat-x;
+  height: 500px;
+  width: 5076px;
+  transform: translateX(0);
+  position: absolute;
+  top: 0px;
+  left: 0px; }
+
+.sliding-background-left {
+  animation: slide-left 20s linear infinite; }
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(-1692px);
+    /* The image width */ } }
 
 .home__upcoming-events__list li .underline {
   border-bottom: 2px #fefefe solid; }

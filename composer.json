@@ -23,7 +23,8 @@
     "vlucas/phpdotenv": "^2.4.0",
     "craftcms/ckeditor": "1.0.0-beta.2",
     "doublesecretagency/craft-smartmap": "3.1.0",
-    "craftcms/contact-form": "2.1.1"
+    "craftcms/contact-form": "2.1.1",
+    "pierrestoffe/craft-language-redirector": "1.0.5"
   },
   "autoload": {
     "psr-4": {

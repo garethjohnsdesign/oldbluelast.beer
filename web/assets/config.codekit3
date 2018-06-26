@@ -7634,6 +7634,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/images\/can-new-rev.png": {
+		"ft": 32768,
+		"iS": 202860,
+		"oA": 0,
+		"oAP": "\/images\/can-new-rev.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/can-new-rev2.png": {
+		"ft": 32768,
+		"iS": 337045,
+		"oA": 0,
+		"oAP": "\/images\/can-new-rev2.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/images\/can-new.png": {
 		"ft": 32768,
 		"iS": 521584,
@@ -7650,6 +7672,17 @@
 		"iS": 5206,
 		"oA": 0,
 		"oAP": "\/images\/can-small.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/can.png": {
+		"ft": 32768,
+		"iS": 55052,
+		"oA": 0,
+		"oAP": "\/images\/can.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

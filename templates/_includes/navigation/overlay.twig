@@ -17,7 +17,7 @@
           .all() %}
 
           {% if entries|length %}
-          <li class="text-uppercase"><a href="/events"><h2>Events</h2></a></li>
+          <li class="text-uppercase"><a href="{{ siteUrl }}events"><h2>Events</h2></a></li>
           {% endif %}
 
           {% for slug, item in navigation %}
