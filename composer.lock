@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7d7e3605287bf2c8be70a11f890b9f7b",
+    "content-hash": "d4ba04d1f7be7b7fd85a8f7df2b74674",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -906,6 +906,47 @@
             "time": "2018-02-23T01:58:20+00:00"
         },
         {
+            "name": "geoip2/geoip2",
+            "version": "v2.9.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maxmind/GeoIP2-php/zipball/a807fbf65212eef5d8d2db1a1b31082b53633d77",
+                "reference": "a807fbf65212eef5d8d2db1a1b31082b53633d77",
+                "shasum": ""
+            },
+            "require": {
+                "maxmind-db/reader": "~1.0",
+                "maxmind/web-service-common": "~0.5",
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "GeoIp2\\": "src"
+                }
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Gregory J. Oschwald",
+                    "email": "goschwald@maxmind.com",
+                    "homepage": "http://www.maxmind.com/"
+                }
+            ],
+            "description": "MaxMind GeoIP2 PHP API",
+            "homepage": "https://github.com/maxmind/GeoIP2-php",
+            "keywords": [
+                "IP",
+                "geoip",
+                "geoip2",
+                "geolocation",
+                "maxmind"
+            ],
+            "time": "2018-04-10T15:32:59+00:00"
+        },
+        {
             "name": "guzzlehttp/guzzle",
             "version": "6.3.3",
             "dist": {
@@ -1066,12 +1107,48 @@
             "time": "2017-03-20T17:10:46+00:00"
         },
         {
-            "name": "jaybizzle/crawler-detect",
-            "version": "v1.2.63",
+            "name": "jasongrimes/paginator",
+            "version": "1.0.2",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/3566bc69d0839ab2dfd739a660b00f25a6f02031",
-                "reference": "3566bc69d0839ab2dfd739a660b00f25a6f02031",
+                "url": "https://api.github.com/repos/jasongrimes/php-paginator/zipball/8b18245b8a9dbdf69918ebd1e1f4a229a06030cd",
+                "reference": "8b18245b8a9dbdf69918ebd1e1f4a229a06030cd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JasonGrimes": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jason Grimes",
+                    "email": "jason@grimesit.com"
+                }
+            ],
+            "description": "A lightweight PHP paginator, for generating pagination controls in the style of Stack Overflow and Flickr. The 'first' and 'last' page links are shown inline as page numbers, and excess page numbers are replaced by ellipses.",
+            "homepage": "http://github.com/jasongrimes/php-paginator",
+            "keywords": [
+                "pager",
+                "pagination",
+                "paginator"
+            ],
+            "time": "2015-10-15T09:42:44+00:00"
+        },
+        {
+            "name": "jaybizzle/crawler-detect",
+            "version": "v1.2.64",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/f62200a42fdc5ea53c873f38c123a8e6b54ca0de",
+                "reference": "f62200a42fdc5ea53c873f38c123a8e6b54ca0de",
                 "shasum": ""
             },
             "require": {
@@ -1102,7 +1179,7 @@
                 "crawlerdetect",
                 "php crawler detect"
             ],
-            "time": "2018-05-21T19:56:44+00:00"
+            "time": "2018-06-22T20:32:56+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -1299,6 +1376,85 @@
                 "single sign on"
             ],
             "time": "2017-04-25T14:43:14+00:00"
+        },
+        {
+            "name": "maxmind-db/reader",
+            "version": "v1.3.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maxmind/MaxMind-DB-Reader-php/zipball/e042b4f8a2dff41e19019faf16427178b07fbd58",
+                "reference": "e042b4f8a2dff41e19019faf16427178b07fbd58",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "suggest": {
+                "ext-bcmath": "bcmath or gmp is required for decoding larger integers with the pure PHP decoder",
+                "ext-gmp": "bcmath or gmp is required for decoding larger integers with the pure PHP decoder",
+                "ext-maxminddb": "A C-based database decoder that provides significantly faster lookups"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MaxMind\\Db\\": "src/MaxMind/Db"
+                }
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Gregory J. Oschwald",
+                    "email": "goschwald@maxmind.com",
+                    "homepage": "http://www.maxmind.com/"
+                }
+            ],
+            "description": "MaxMind DB Reader API",
+            "homepage": "https://github.com/maxmind/MaxMind-DB-Reader-php",
+            "keywords": [
+                "database",
+                "geoip",
+                "geoip2",
+                "geolocation",
+                "maxmind"
+            ],
+            "time": "2018-02-21T21:23:33+00:00"
+        },
+        {
+            "name": "maxmind/web-service-common",
+            "version": "v0.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maxmind/web-service-common-php/zipball/61a9836fa3bb1743ab89752bae5005d71e78c73b",
+                "reference": "61a9836fa3bb1743ab89752bae5005d71e78c73b",
+                "shasum": ""
+            },
+            "require": {
+                "composer/ca-bundle": "^1.0.3",
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MaxMind\\Exception\\": "src/Exception",
+                    "MaxMind\\WebService\\": "src/WebService"
+                }
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Gregory Oschwald",
+                    "email": "goschwald@maxmind.com"
+                }
+            ],
+            "description": "Internal MaxMind Web Service API",
+            "homepage": "https://github.com/maxmind/web-service-common-php",
+            "time": "2018-02-12T22:31:54+00:00"
         },
         {
             "name": "mikehaertl/php-shellcommand",
@@ -1690,6 +1846,58 @@
                 "phra"
             ],
             "time": "2015-10-13T18:44:15+00:00"
+        },
+        {
+            "name": "superbig/craft-countryredirect",
+            "version": "2.0.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/superbigco/craft-countryredirect/zipball/ea3dc3c28df521dca8e6a451924fe927c7fea68d",
+                "reference": "ea3dc3c28df521dca8e6a451924fe927c7fea68d",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0",
+                "geoip2/geoip2": "^2.3",
+                "jasongrimes/paginator": "^1.0.0",
+                "jaybizzle/crawler-detect": "1.*"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Country Redirect",
+                "handle": "country-redirect",
+                "hasCpSettings": true,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/superbigco/craft-countryredirect/master/CHANGELOG.md",
+                "class": "superbig\\countryredirect\\CountryRedirect"
+            },
+            "autoload": {
+                "psr-4": {
+                    "superbig\\countryredirect\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Superbig",
+                    "homepage": "https://superbig.co"
+                }
+            ],
+            "description": "Easily redirect visitors to a locale based on their country of origin",
+            "keywords": [
+                "cms",
+                "country redirect",
+                "craft",
+                "craft-plugin",
+                "craftcms"
+            ],
+            "support": {
+                "docs": "https://github.com/superbigco/craft-countryredirect/blob/master/README.md",
+                "issues": "https://github.com/superbigco/craft-countryredirect/issues"
+            },
+            "time": "2018-06-15T10:36:47+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",

@@ -10,10 +10,8 @@
           
             <div class="small-12 medium-6 large-8 xxlarge-8 cell text-uppercase">
             <div id="heroTimeline">
-{#
               <h1>A</h1>
               <h1>Beer</h1>
-#}
               <h1 class="hero-one hero__text">Website</h1>
               <h1 class="hero-two hero__text">Website</h1>
               <h1 class="hero-three hero__text">Website</h1>
@@ -23,27 +21,11 @@
           
           <div class="small-12 medium-6 large-3 xxlarge-3 cell align-self-middle">
             {{entry.heroText}}
-            
-            {% set allLanguages = craft.languageSwitcher.getUrls() %}
-
-<ul>
-    {% for item in allLanguages %}
-        <li>
-            <a href="{{ item.url }}" hreflang="{{ item.id }}" lang="{{ item.id }}" title="{{ 'Switch to {language}'|translate({
-                language: item.name
-            }) }}">
-                {{ item.nativeName|capitalize }}
-            </a>
-        </li>
-    {% endfor %}
-</ul>
-
+{#             <a class="underline text-uppercase" data-toggle="exampleModal8">Learn More</a> #}
           </div>
           
         </div>
-      </div>
-      
-  
+      </div>      
       <div class="home__hero__cans"></div>
     
 </section>
@@ -201,7 +183,7 @@ center: coords,
 markerInfo: '_includes/map/bubble',
 markerOptions: {
 icon: {
-url: 'assets/images/can-small.png',
+url: 'images/global/can-small.png',
 scaledSize: 'new google.maps.Size(32,32)'
 }
 },
