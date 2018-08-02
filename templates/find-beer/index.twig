@@ -12,7 +12,7 @@ center: coords,
 markerInfo: '_includes/map/bubble',
 markerOptions: {
 icon: {
-url: 'assets/images/can-small.png',
+url: 'images/global/can-small.png',
 scaledSize: 'new google.maps.Size(32,32)'
 }
 },
@@ -29,15 +29,30 @@ range: 20
 {% set locations = craft.entries.section(['venues', 'shops']).address(params).order('distance').all() %}
 {% set customOptions = {
 center: coords,
-zoom: 12
+zoom: 12,
 } %}
 {% else %}
 {% set locations = craft.entries.section(['venues', 'shops']).all() %}
+
+{% if currentSite.handle == 'uk' %}
 {% set customOptions = {
 center: {'lat':51.525114, 'lng':-0.079938},
-zoom: 14
+zoom: 14,
+} %}
+{% elseif currentSite.handle == "usa" %}
+{% set customOptions = {
+center: {'lat':40.715525, 'lng':-73.965768},
+zoom: 12,
+} %}
+{% else %}
+{% set customOptions = {
+center: {'lat':51.525114, 'lng':-0.079938},
+zoom: 14,
 } %}
 {% endif %}
+
+{% endif %}
+
 
 {% set options = sharedOptions|merge(customOptions) %}
 
@@ -58,11 +73,11 @@ zoom: 14
     #}
     {% switch entry.locationType %}
         {% case 'venue' %}
-            {% set icon = 'assets/images/can-small.png' %}
+            {% set icon = '/assets/images/can-small.png' %}
         {% case 'shop' %}
-            {% set icon = 'assets/images/bag.png' %}
+            {% set icon = '/assets/images/bag.png' %}
         {% default %}
-            {% set icon = 'assets/images/bag.png' %}
+            {% set icon = '/assets/images/can-small.png' %}
     {% endswitch %}
 
     {# JS: Change marker icon #}

@@ -47,6 +47,14 @@ Single-colored icons can be modified like so:
   font-size: 2rem;
 }
 
+.icon-arrow_downward {
+  font-size: 1.75rem;
+  position: relative;
+  /* Adjust these values accordingly */
+  top: 5px;
+  margin-left: 1rem;
+}
+
 .icon-drinking {
   width: 8.41015625em;
   font-size: 1.25rem;

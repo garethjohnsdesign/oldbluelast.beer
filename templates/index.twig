@@ -21,7 +21,6 @@
           
           <div class="small-12 medium-6 large-3 xxlarge-3 cell align-self-middle">
             {{entry.heroText}}
-{#             <a class="underline text-uppercase" data-toggle="exampleModal8">Learn More</a> #}
           </div>
           
         </div>
@@ -136,6 +135,7 @@
 {% endif %}
 {# End Upcoming Events #}
 
+
 {# Location #}
 <section class="home__recent-events inverted padding-top-2">
   <div class="grid-container">
@@ -146,32 +146,6 @@
     </div>  
   </div>
 </section>
-
-{#
-<section class="padding-top-1">
-<div class="grid-container">
-  <div class="grid-x grid-padding-x grid-padding-y">
-    <div class="small-12 cell">
-      <form action="" method="GET">
-        
-                <div class="input-group">
-                  
-                  <input class="input-group-field" name="near" type="text" placeholder="Where are you?">
-                  
-                  <div class="input-group-button">
-                    <button type="submit" class="button postfix" name="subscribe" value="Submit">
-                      <svg class="icon icon-arrow_forward"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow_forward"></use></svg>
-                    </button>
-                  </div>
-                </div>
-                
-      </form>
-    </div>
-  </div>
-</div>
-</section>
-#}
-
 
 {% set target = craft.request.getParam('near') %}
 {% set coords = craft.smartMap.lookupCoords(target) %}
@@ -204,10 +178,25 @@ zoom: 12,
 } %}
 {% else %}
 {% set locations = craft.entries.section(['venues', 'shops']).all() %}
+
+{% if currentSite.handle == 'uk' %}
 {% set customOptions = {
 center: {'lat':51.525114, 'lng':-0.079938},
 zoom: 14,
 } %}
+{% elseif currentSite.handle == "usa" %}
+{% set customOptions = {
+center: {'lat':40.715525, 'lng':-73.965768},
+zoom: 14,
+} %}
+{% else %}
+{% set customOptions = {
+center: {'lat':51.525114, 'lng':-0.079938},
+zoom: 14,
+} %}
+{% endif %}
+
+
 {% endif %}
 
 {% set options = sharedOptions|merge(customOptions) %}
@@ -229,11 +218,11 @@ zoom: 14,
     #}
     {% switch entry.locationType %}
         {% case 'venue' %}
-            {% set icon = 'assets/images/can-small.png' %}
+            {% set icon = '/assets/images/can-small.png' %}
         {% case 'shop' %}
-            {% set icon = 'assets/images/bag.png' %}
+            {% set icon = '/assets/images/bag.png' %}
         {% default %}
-            {% set icon = 'assets/images/bag.png' %}
+            {% set icon = '/assets/images/can-small.png' %}
     {% endswitch %}
 
     {# JS: Change marker icon #}
@@ -472,4 +461,33 @@ $(function () {
         smartMap.styleMap('smartmap-mapcanvas-1', styles);
     });
 {% endjs %}
+
+<section class="home__upcoming-events padding-top-2 margin-top-2" id="freebeer">
+
+  <div class="grid-container">
+  
+    <div class="grid-x grid-padding-x grid-padding-y" style="z-index: 1">
+      <div class="small-12 medium-12 large-9 cell text-uppercase">
+        <h1>Free Pint</h1>
+        <h1>3 Aug</h1>
+        <h1>6 — 8PM</h1>
+      </div>
+    </div>
+    
+    <div class="grid-x grid-padding-x grid-padding-y" style="margin-top: -8rem;">
+      <div class="small-12 medium-9 cell text-uppercase" style="z-index: -2">
+        <img src="/assets/images/pint.jpg">
+      </div>
+      <div class="small-12 medium-3 cell">
+      <p>Londoners! Have a free pint on us for UK National Beer Day. Just print off this voucher and take it to the bar at The Old Blue Last or The Sebright Arms on Friday August 3rd between 6-8pm. One per person.</p>
+      <a class="button large expanded text-uppercase" href="/beer-day-voucher.pdf" download>Voucher<svg class="icon icon-arrow_downward"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow_downward"></use></svg></a>
+      <a href="/beer-day-terms-and-conditions" class="text-uppercase">Terms & Conditions Apply</a>
+      </div>
+    </div>
+    
+    
+  </div>
+  
+</section>
+
 {% endblock %}

@@ -1,5 +1,4 @@
 {% set navigation = {
-  "festivals":    { title: "Festivals" },
   "photos":    { title: "Photos" },
   "find-beer":    { title: "Find Beer" },
   "contact":    { title: "Contact" }
@@ -19,6 +18,16 @@
 
           {% if entries|length %}
           <li class="text-uppercase"><a href="{{ siteUrl }}events"><h2>Events</h2></a></li>
+          {% endif %}
+          
+          {% set festivalEntries = craft.entries
+          .section('events')
+          .eventIsFestival('1')
+          .order('eventDate asc')
+          .all() %}
+          
+          {% if festivalEntries|length %}
+          <li class="text-uppercase"><a href="{{ siteUrl }}festivals"><h2>Festivals</h2></a></li>
           {% endif %}
 
           {% for slug, item in navigation %}

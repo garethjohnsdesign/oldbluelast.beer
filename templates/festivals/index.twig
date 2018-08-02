@@ -2,7 +2,7 @@
 
 {% block main %}
 
-
+{% if entry.pageIntro|length %}
 <div class="grid-container canchester__hero__text">
   <div class="grid-x align-center">
     <div class="small-12 medium-10 cell text-center">
@@ -10,6 +10,7 @@
     </div>
   </div>
 </div>
+{% endif %}
           
 {% set entries = craft.entries
 .section('events')
