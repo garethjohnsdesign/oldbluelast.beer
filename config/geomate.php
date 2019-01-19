@@ -14,7 +14,7 @@ return [
   // USA
 //   'forceIp' => '64.90.164.158',
 
-  'autoRedirectEnabled' => true,
+  'autoRedirectEnabled' => false,
 
   'redirectMap' => [
       'usa' => 'US',
