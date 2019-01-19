@@ -12,13 +12,13 @@ return [
 //   'forceIp' => '5.152.197.179',
 
   // USA
-//   'forceIp' => '64.90.164.158',
+  'forceIp' => '64.90.164.158',
 
-  'autoRedirectEnabled' => false,
+  'autoRedirectEnabled' => true,
 
   'redirectMap' => [
       'usa' => 'US',
-      'uk' => 'GB'
+      'uk' => 'US'
   ],
     
 ];
