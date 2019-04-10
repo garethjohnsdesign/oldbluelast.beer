@@ -34,6 +34,14 @@
     </div>
   </div>
   
+  {% if entry.hasCopy %}
+  <div class="grid-x grid-padding-y">
+    <div class="small-12 cell">
+      {{ entry.pageCopy }}
+    </div>
+  </div>
+  {% endif %}
+
   <div class="grid-x grid-padding-y">
     <div class="small-12 cell">
     {% for asset in entry.eventFeatureImage %}
