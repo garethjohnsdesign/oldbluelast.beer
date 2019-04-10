@@ -52,7 +52,7 @@
 
   <div class="grid-x grid-padding-y">
     <div class="small-12 cell">
-      <div id="eventbrite-widget-container-60048717330"></div>
+      <div id="eventbrite-widget-container-{{ entry.evenbriteId }}"></div>
 
       <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
       <script type="text/javascript">
@@ -63,8 +63,8 @@
           window.EBWidgets.createWidget({
               // Required
               widgetType: 'checkout',
-              eventId: '60048717330',
-              iframeContainerId: 'eventbrite-widget-container-60048717330',
+              eventId: '{{ entry.evenbriteId }}',
+              iframeContainerId: 'eventbrite-widget-container-{{ entry.evenbriteId }}',
       
               // Optional
               iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
