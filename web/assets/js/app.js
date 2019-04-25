@@ -1,3 +1,8 @@
+Foundation.Interchange.SPECIAL_QUERIES['medium-retina'] = 'only screen and (min-width: 40em), (min-width: 40em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 40em) and (min--moz-device-pixel-ratio: 2), (min-width: 40em) and (-o-min-device-pixel-ratio: 2/1), (min-width: 40em) and (min-device-pixel-ratio: 2), (min-width: 40em) and (min-resolution: 192dpi), (min-width: 40em) and (min-resolution: 2dppx)';
+Foundation.Interchange.SPECIAL_QUERIES['large-retina'] = 'only screen and (min-width: 64em), (min-width: 64em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 64em) and (min--moz-device-pixel-ratio: 2), (min-width: 64em) and (-o-min-device-pixel-ratio: 2/1), (min-width: 64em) and (min-device-pixel-ratio: 2), (min-width: 64em) and (min-resolution: 192dpi), (min-width: 64em) and (min-resolution: 2dppx)';
+Foundation.Interchange.SPECIAL_QUERIES['xlarge-retina'] = 'only screen and (min-width: 75em), (min-width: 75em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 75em) and (min--moz-device-pixel-ratio: 2), (min-width: 75em) and (-o-min-device-pixel-ratio: 2/1), (min-width: 75em) and (min-device-pixel-ratio: 2), (min-width: 75em) and (min-resolution: 192dpi), (min-width: 75em) and (min-resolution: 2dppx)';
+Foundation.Interchange.SPECIAL_QUERIES['xxlarge-retina'] = 'only screen and (min-width: 90em), (min-width: 75em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 75em) and (min--moz-device-pixel-ratio: 2), (min-width: 75em) and (-o-min-device-pixel-ratio: 2/1), (min-width: 75em) and (min-device-pixel-ratio: 2), (min-width: 75em) and (min-resolution: 192dpi), (min-width: 75em) and (min-resolution: 2dppx)';
+
 $(document).foundation();
 
 var prev = 0;
@@ -60,36 +65,6 @@ $(function () {
   }, 250);
 });
 
-
-var heroTimeline = anime.timeline({
-  loop: true,
-});
-
-heroTimeline
-  .add({
-    targets: '#heroTimeline .hero-one',
-    duration: 1,
-    opacity: 1,
-    delay: 250,
-  })
-  .add({
-    targets: '#heroTimeline .hero-two',
-    duration: 1,
-    opacity: 1,
-    delay: 250,
-  })
-  .add({
-    targets: '#heroTimeline .hero-three',
-    duration: 1,
-    opacity: 1,
-    delay: 250,
-  })
-    .add({
-    targets: '#heroTimeline .hero-four',
-    duration: 250,
-    opacity: 1,
-    delay: 250,
-  });
 
 
 function checkIfVerified(){

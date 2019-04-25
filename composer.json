@@ -19,12 +19,13 @@
     "rss": "https://craftcms.com/changelog.rss"
   },
   "require": {
-    "craftcms/cms": "3.1.1",
+    "craftcms/cms": "3.1.24",
     "vlucas/phpdotenv": "^2.4.0",
     "craftcms/ckeditor": "1.0.0-beta.2",
-    "doublesecretagency/craft-smartmap": "3.2.1",
-    "craftcms/contact-form": "2.2.2",
-    "vaersaagod/geomate": "v1.0.2"
+    "doublesecretagency/craft-smartmap": "3.2.2.1",
+    "craftcms/contact-form": "2.2.4",
+    "vaersaagod/geomate": "v1.0.4",
+    "craftcms/google-cloud": "1.2.1"
   },
   "autoload": {
     "psr-4": {

@@ -14,10 +14,12 @@
   </div>
   
   <div class="grid-x grid-padding-x grid-padding-y small-up-2 medium-up-3 large-up-4 margin-bottom-2" id="gallery">
-    {% for asset in entry.eventPhotos %}
-    <div class="cell about__images" data-src="{{ asset.getUrl('gallery') }}">
-      <a href="{{ asset.getUrl('gallery') }}"><img src="{{ asset.getUrl('thumb') }}" width="{{ asset.getWidth('thumb') }}" height="{{ asset.getHeight('thumb') }}" class="excerpt__image"></a>
-    </div>
+    {% for image in entry.eventPhotos %}
+      <div class="cell">
+        <div class="image--square" data-interchange="{% include "_includes/images/interchange-img-small-12-medium-6-cell" %}">
+          <div class="content"></div>
+        </div>
+      </div>
     {% endfor %}
   </div>
 

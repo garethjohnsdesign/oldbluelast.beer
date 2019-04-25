@@ -2,88 +2,50 @@
 
 {% block main %}
 
-{# Hero #}
+<!-- Video Hero -->
 <section class="home__hero">
 
+  <div class="grid-y grid-padding-x height-100 align-center">
+    <div class="shrink cell white">
+
       <div class="grid-container">
-        <div class="grid-x grid-padding-x grid-padding-y">
-          
-            <div class="small-12 medium-6 large-8 xxlarge-8 cell text-uppercase">
-            <div id="heroTimeline">
-              <h1>A</h1>
-              <h1>Beer</h1>
-              <h1 class="hero-one hero__text">Website</h1>
-              <h1 class="hero-two hero__text">Website</h1>
-              <h1 class="hero-three hero__text">Website</h1>
-              <h1 class="hero-four hero__text">Website</h1>
-            </div>
+        <div class="grid-x align-right">
+          <div class="small-12 medium-6 cell">
+            <h6 class="sans-regular white padding-2">{{entry.heroText}} </h6>
           </div>
-          
-          <div class="small-12 medium-6 large-3 xxlarge-3 cell align-self-middle">
-            {{entry.heroText}}
-          </div>
-          
         </div>
-      </div>      
-      <div class="home__hero__cans"></div>
-    
-</section>
-{# End Hero #}
+      </div>
 
-{# Photos #}
-<section class="home__recent-events inverted">
-    
-    <div class="grid-container">
-      <div class="grid-x grid-padding-x grid-padding-y">
-        <div class="small-12 cell text-uppercase">
-          <h1 id="photos-word">Event</h1>
-          <h1>Photos</h1>
+    </div>
+  </div>
+
+  {% if entry.heroVideo | length %}
+    {% set video = entry.heroVideo.first() %}
+    <video playsinline autoplay muted loop class="video" poster="">
+      <source src="https://storage.googleapis.com/old-blue-last-beer/{{ video.filename }}" type="video/mp4">
+    </video>
+  {% endif %}
+
+</section>
+<!-- End Video Hero -->
+
+<!-- Campaign -->
+<div class="grid-x">
+  <div class="small-12 cell">
+  
+    {% set image = entry.campaignImage.first() %}
+    <div class="image--hero align-center-middle" data-interchange="{% include "_includes/images/interchange-img-small-12-medium-12-cell" %}">
+      <div class="grid-y height-100 align-center">
+        <div class="shrink cell text-center padding-2">
+          <h3 class="white">Play</h3>
         </div>
       </div>
     </div>
-    
-    <div class="grid-x small-up-1 medium-up-3 large-up-3">
-      
-        {% set evententries = craft.entries
-        .section('events')
-        .eventFeatured('1')
-        .eventDate('<' ~ now.getTimestamp())
-        .order('eventDate desc')
-        .all() %}
-        
-        {% for entry in evententries %}
-        <div class="cell">
-          <div class="excerpt">
-            <a href="{{ entry.url}}">
-              
-              <div class="grid-x excerpt__title align-middle">
-                <div class="small-12 cell text-center padding-3">
-                  <h5>{{ entry.title}}<br>@ {{ entry.eventVenue}}</h5>
-                </div>
-              </div>
-              
-              <div class="excerpt__image">
-                {% for asset in entry.eventThumb %}
-                <img src="{{ asset.getUrl('thumb') }}" width="{{ asset.getWidth('thumb') }}" height="{{ asset.getHeight('thumb') }}">
-                {% endfor %}
-              </div>
-            
-            </a>
-          </div>
-        </div>
-        {% endfor %}
-        
-    </div>
-</section>
+  
+  </div>
+</div>
+<!-- End Campaign -->
 
-<section class="home__see-more inverted padding-3">
-    <div class="grid-x grid-padding-x grid-padding-y">
-      <div class="small-12 cell text-uppercase text-center">
-        <h5><a href="/photos" class="underline">See More Photos</a></h5>
-      </div>
-    </div>  
-</section>
-{# End Photos #}
 
 {# Upcoming Events #}
 
@@ -135,110 +97,63 @@
 {% endif %}
 {# End Upcoming Events #}
 
-
-{# Location #}
-<section class="home__recent-events inverted padding-top-2">
-  <div class="grid-container">
-    <div class="grid-x grid-padding-x grid-padding-y">
-      <div class="small-12 cell text-uppercase">
-        <h1>Find Beer</h1>
+{# Photos #}
+<section class="inverted">
+    
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x grid-padding-y padding-top-2">
+        <div class="small-12 cell text-uppercase">
+          <h1 id="photos-word">Event</h1>
+          <h1>Photos</h1>
+        </div>
       </div>
-    </div>  
-  </div>
+    </div>
+    
+    <div class="grid-x small-up-1 medium-up-3 large-up-3">
+      
+        {% set evententries = craft.entries
+        .section('events')
+        .eventFeatured('1')
+        .eventDate('<' ~ now.getTimestamp())
+        .order('eventDate desc')
+        .limit(9)
+        .all() %}
+        
+        {% for entry in evententries %}
+        <div class="cell">
+          <div class="excerpt">
+            <a href="{{ entry.url}}">
+              
+              <div class="grid-x excerpt__title align-middle">
+                <div class="small-12 cell text-center padding-3">
+                  <h5>{{ entry.title}}<br>@ {{ entry.eventVenue}}</h5>
+                </div>
+              </div>
+              
+              <div class="excerpt__image">
+                {% for image in entry.eventThumb %}
+                <div class="image--square" data-interchange="{% include "_includes/images/interchange-img-small-12-medium-6-cell" %}">
+                  <div class="content"></div>
+                </div>
+                {% endfor %}
+              </div>
+            
+            </a>
+          </div>
+        </div>
+        {% endfor %}
+        
+    </div>
 </section>
 
-{% set target = craft.request.getParam('near') %}
-{% set coords = craft.smartMap.lookupCoords(target) %}
-
-{% set sharedOptions = {
-height: 600,
-draggable: true,
-center: coords,
-markerInfo: '_includes/map/bubble',
-markerOptions: {
-icon: {
-url: '/assets/images/can-small.png',
-scaledSize: 'new google.maps.Size(32,32)'
-}
-},
-infoWindowOptions: {
-maxWidth: 200
-}
-} %}
-
-{% if target %}
-{% set params = {
-target: target,
-range: 20
-} %}
-{% set locations = craft.entries.section(['venues', 'shops']).address(params).order('distance').all() %}
-{% set customOptions = {
-center: coords,
-zoom: 12,
-} %}
-{% else %}
-{% set locations = craft.entries.section(['venues', 'shops']).all() %}
-
-{% if currentSite.handle == 'uk' %}
-{% set customOptions = {
-center: {'lat':51.525114, 'lng':-0.079938},
-zoom: 14,
-} %}
-{% elseif currentSite.handle == "usa" %}
-{% set customOptions = {
-center: {'lat':40.715525, 'lng':-73.965768},
-zoom: 14,
-} %}
-{% else %}
-{% set customOptions = {
-center: {'lat':51.525114, 'lng':-0.079938},
-zoom: 14,
-} %}
-{% endif %}
-
-
-{% endif %}
-
-{% set options = sharedOptions|merge(customOptions) %}
-
-<div class="grid-x">
-  <div class="small-12 cell">
-    {{ craft.smartMap.map(locations, options) }}
-  </div>
-</div>
-
-{# Loop through location entries #}
-
-{% for entry in locations %}
-
-    {#
-      Perform custom logic
-      to determine which icon
-      will be assigned to each entry
-    #}
-    {% switch entry.locationType %}
-        {% case 'venue' %}
-            {% set icon = '/assets/images/can-small.png' %}
-        {% case 'shop' %}
-            {% set icon = '/assets/images/bag.png' %}
-        {% default %}
-            {% set icon = '/assets/images/can-small.png' %}
-    {% endswitch %}
-
-    {# JS: Change marker icon #}
-    {% js %}
-
-        var markerId = 'smartmap-mapcanvas-1.{{ entry.id }}.address';
-        smartMap.marker[markerId].setOptions(
-            {icon: {
-                url: '{{ icon }}',
-                scaledSize: new google.maps.Size(32,32)
-            }}
-        );
-
-    {% endjs %}
-
-{% endfor %}
+<section class="home__see-more inverted padding-3">
+    <div class="grid-x grid-padding-x grid-padding-y">
+      <div class="small-12 cell text-uppercase text-center">
+        <h5><a href="/photos" class="underline">See More Photos</a></h5>
+      </div>
+    </div>  
+</section>
+{# End Photos #}
 
 {% js %}
 $(function () {

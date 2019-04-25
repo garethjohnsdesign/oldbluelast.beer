@@ -1,23 +1,30 @@
-<div data-sticky-container>
+{#
+<nav data-sticky-container>
   <div data-sticky data-options="marginTop:0;" style="width:100%" class="scrollhide-nav">
-    <div class="grid-x align-justify align-middle navigation padding-1">
-      <div class="shrink cell uppercase">
-        <a href="{{ siteUrl }}"><svg class="icon icon-logo"><use xlink:href="/assets/icons/symbol-defs.svg#icon-logo"></use></svg></a>
-      </div>
-      
-      <div class="shrink cell">
-        <ul class="menu align-middle">
-        
-          <li class="show-for-medium"><a href="https://www.vice.com"><svg class="icon icon-drinking"><use xlink:href="/assets/icons/symbol-defs.svg#icon-drinking"></use></svg></a></li>
+#}
 
-          <li>
-            <button class="hamburger hamburger--slider" data-toggler=".is-active" id="toggle" type="button" data-toggle="overlay-menu toggle">
-              <span class="hamburger-box"><span class="hamburger-inner"></span></span>
-            </button>
-          </li>
+<div class="grid-x align-justify align-middle navigation padding-1">
 
-        </ul>
-      </div>
-    </div>
+  <div class="small-3 medium-3 cell uppercase">
+    <a href="{{ siteUrl }}"><svg class="icon icon-logo"><use xlink:href="/assets/icons/symbol-defs.svg#icon-logo"></use></svg></a>
   </div>
+  
+  <div class="auto cell show-for-medium">
+    <ul class="menu align-center text-uppercase">
+      <li><a href="https://www.vice.com">Drink</a></li>
+      <li><a href="https://www.vice.com">Get Some</a></li>
+      <li><a href="https://www.vice.com">Party</a></li>
+      <li><a href="https://www.vice.com">Events</a></li>
+    </ul>
+  </div>
+
+  <div class="small-3 medium-3 cell text-right">
+    <a href="https://www.vice.com"><svg class="icon icon-drinking"><use xlink:href="/assets/icons/symbol-defs.svg#icon-drinking"></use></svg></a>
+  </div>
+
 </div>
+
+{#
+  </div>
+</nav>
+#}

@@ -32,8 +32,10 @@
               </div>
               
               <div class="excerpt__image">
-                {% for asset in entry.eventThumb %}
-                <img src="{{ asset.getUrl('thumb') }}" width="{{ asset.getWidth('thumb') }}" height="{{ asset.getHeight('thumb') }}">
+                {% for image in entry.eventThumb %}
+                <div class="image--square" data-interchange="{% include "_includes/images/interchange-img-small-12-medium-6-cell" %}">
+                  <div class="content"></div>
+                </div>
                 {% endfor %}
               </div>
             

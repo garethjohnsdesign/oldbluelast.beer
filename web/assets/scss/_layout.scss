@@ -22,6 +22,27 @@
   }
 }
 
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+ .content {
+    transition: $primary-transition;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+
 // 2. Global
 // ---------
 
@@ -138,12 +159,20 @@ h1 {
 // 5. Navigation
 // -------------
 
-.sticky {
+.navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 10;
-  background-color: $primary-color;
+  background-color: transparent;
 }
 
 .scrollhide-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
   &.hidden {
     transform: translateY(-100%);
@@ -229,35 +258,12 @@ h1 {
 // 8. Home
 // -------
 
-.hero__text {
-  opacity: 0;
+.home__hero {
+  height: 100vh;
 }
 
-.home__hero__cans {
-  background-position: 0 0;
-  background-image: url("/assets/images/can-new.png");
-  background-repeat: repeat-x;
-  transform: translateX(0);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background-repeat: spaced;
-  animation: scrolling-animation 5s linear infinite;
-  @include breakpoint(small) { 
-  height: 50vw;
-  }
-  @include breakpoint(medium) { 
-  height: 30vw;
-  }
-  @include breakpoint(large) { 
-  height: 40vw;
-  }
-  @include breakpoint(xxlarge) { 
-  height: 30vw;
-  }
-  background-size: contain;
-  margin-bottom: -8rem;
-  position: relative;
+.hero__text {
+  opacity: 0;
 }
 
 @keyframes scrolling-animation {
@@ -268,32 +274,6 @@ h1 {
     background-position: 100% 0;
   }
 }
-
-
-.sliding-background {
-	background-image: url("/assets/images/can-new-rev.png");
-  background-repeat:repeat-x;
-  height: 500px;
-  width: 5076px;
-  transform: translateX(0);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
-
-.sliding-background-left {
-  animation: slide-left 20s linear infinite;
-}
-
-@keyframes slide-left {
-  0%{
-    transform: translateX(0);
-  }
-  100%{
-    transform: translateX(-1692px); /* The image width */
-  }
-}
-
 
 
 .home__upcoming-events__list li {
@@ -317,9 +297,6 @@ h1 {
   }
 }
 
-.home__recent-events {
-  padding-top: 12rem;
-}
 
 // 9. Map
 // ------
@@ -348,4 +325,86 @@ h1 {
   @include breakpoint(large) { 
   padding: 5rem 3rem;
   }
+}
+
+.home__hero {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.home__campaign {
+  height: 50vh;
+  background-size: cover; 
+  background-position: 50%;
+  background-color: red;
+}
+
+// 6. Images
+// ---------
+
+.image--portrait {
+  @include breakpoint(small) {
+  @include aspect-ratio (7, 5);
+  }
+  @include breakpoint(medium) {
+  @include aspect-ratio (5, 7);
+  }
+  background-size: cover; 
+  background-position: 50%;
+}
+
+.image--square {
+  @include breakpoint(small) {
+  @include aspect-ratio (7, 5);
+  }
+  @include breakpoint(medium) {
+  @include aspect-ratio (1, 1);
+  }
+  background-size: cover; 
+  background-position: 50%;
+  background-color: $medium-gray;
+}
+
+.image--default {
+  @include aspect-ratio (7, 5);
+  background-size: cover; 
+  background-position: 50%;
+  background-color: $medium-gray;
+}
+
+.image--panorama {
+  @include breakpoint(small) {
+  @include aspect-ratio (7, 5);
+  }
+  @include breakpoint(medium) {
+  @include aspect-ratio (16, 9);
+  }
+  background-size: cover; 
+  background-position: 50%;
+}
+
+.image--hero {
+  height: 100vh;
+  background-size: cover; 
+  background-position: 50%;
+}
+
+.video {
+    height: 100%;
+    width: 177.77777778vh; /* 100 * 16 / 9 */
+    min-width: 100%;
+    min-height: 56.25vw; /* 100 * 9 / 16 */
+    position: absolute;
+    left: 50%; /* % of surrounding element */
+    top: 50%;
+    transform: translate(-50%, -50%); /* % of current element */
+    z-index: -1;
+}
+
+nav {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
 }
