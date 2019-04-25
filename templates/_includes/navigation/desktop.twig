@@ -3,20 +3,26 @@
   <div data-sticky data-options="marginTop:0;" style="width:100%" class="scrollhide-nav">
 #}
 
-<div class="grid-x align-justify align-middle navigation padding-1">
+<div class="grid-x align-justify align-middle navigation {% if craft.request.getUrl() == siteUrl %}navigation--absolute{% endif %} padding-1">
 
   <div class="small-3 medium-3 cell uppercase">
     <a href="{{ siteUrl }}"><svg class="icon icon-logo"><use xlink:href="/assets/icons/symbol-defs.svg#icon-logo"></use></svg></a>
   </div>
-  
-  <div class="auto cell show-for-medium">
+
+{% if craft.request.getUrl() == siteUrl %}
+  <div class="auto cell show-for-large">
     <ul class="menu align-center text-uppercase">
-      <li><a href="https://www.vice.com">Drink</a></li>
-      <li><a href="https://www.vice.com">Get Some</a></li>
-      <li><a href="https://www.vice.com">Party</a></li>
-      <li><a href="https://www.vice.com">Events</a></li>
+      <li><a href="#home__drink">Drink</a></li>
+      <li><a href="#home__get-some">Get Some</a></li>
+      <li><a href="#home__party">Party</a></li>
+{#
+      <li><a href="#home__events">Events</a></li>
+      <li><a href="#home__photos">Photos</a></li>
+#}
+      <li><a href="#home__the-beer">The Beer</a></li>
     </ul>
   </div>
+{% endif %}
 
   <div class="small-3 medium-3 cell text-right">
     <a href="https://www.vice.com"><svg class="icon icon-drinking"><use xlink:href="/assets/icons/symbol-defs.svg#icon-drinking"></use></svg></a>

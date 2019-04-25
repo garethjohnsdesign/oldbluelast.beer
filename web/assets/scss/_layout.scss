@@ -129,7 +129,7 @@ i, cite, em, var, address, dfn {
 
 h1 {
   font-family: $secondary-font-family;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
   line-height: 1.1;
   padding-left: 0.1rem;
 }
@@ -159,7 +159,7 @@ h1 {
 // 5. Navigation
 // -------------
 
-.navigation {
+.navigation--absolute {
   position: absolute;
   top: 0;
   left: 0;
@@ -328,16 +328,27 @@ h1 {
 }
 
 .home__hero {
+  overflow: hidden;
+  position: relative;
+  @include breakpoint(small) {
+  height: 85vh;
+  }
+  @include breakpoint(medium) {
+  height: 100vh;
+  }
+}
+
+.home__party-video {
   height: 100vh;
   overflow: hidden;
   position: relative;
 }
 
+
 .home__campaign {
   height: 50vh;
   background-size: cover; 
   background-position: 50%;
-  background-color: red;
 }
 
 // 6. Images
@@ -356,21 +367,19 @@ h1 {
 
 .image--square {
   @include breakpoint(small) {
-  @include aspect-ratio (7, 5);
+  @include aspect-ratio (1, 1);
   }
   @include breakpoint(medium) {
   @include aspect-ratio (1, 1);
   }
   background-size: cover; 
   background-position: 50%;
-  background-color: $medium-gray;
 }
 
 .image--default {
   @include aspect-ratio (7, 5);
   background-size: cover; 
   background-position: 50%;
-  background-color: $medium-gray;
 }
 
 .image--panorama {
@@ -387,7 +396,12 @@ h1 {
 .image--hero {
   height: 100vh;
   background-size: cover; 
-  background-position: 50%;
+  @include breakpoint(small) {
+  background-position: 75% 50%;
+  }
+  @include breakpoint(medium) {
+  background-position: 50% 50%;
+  }
 }
 
 .video {
@@ -407,4 +421,23 @@ position: absolute;
 top: 0;
 left: 0;
 width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.home__the-beer h5 {
+  padding-bottom: 2rem;
+}
+
+.home__hero h1 {
+  font-family: $secondary-font-family;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.home__the-beer h3 {
+  font-family: $secondary-font-family;
+  text-transform: uppercase;
 }

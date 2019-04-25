@@ -2982,7 +2982,7 @@ h4, .h4 {
   margin-bottom: 0.5rem; }
 
 h5, .h5 {
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   line-height: 1.2;
   margin-top: 0;
   margin-bottom: 0.5rem; }
@@ -3017,7 +3017,7 @@ h6, .h6 {
   h4, .h4 {
     font-size: 2.25rem; }
   h5, .h5 {
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
   h6, .h6 {
     font-size: 1rem; } }
 
@@ -3031,7 +3031,7 @@ h6, .h6 {
   h4, .h4 {
     font-size: 2.25rem; }
   h5, .h5 {
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
   h6, .h6 {
     font-size: 1rem; } }
 
@@ -5417,7 +5417,8 @@ ol.list-upper-roman {
   height: 1em;
   stroke-width: 0;
   stroke: currentColor;
-  fill: currentColor; }
+  fill: currentColor;
+  vertical-align: sub; }
 
 /* ==========================================
 Single-colored icons can be modified like so:
@@ -6340,7 +6341,7 @@ i, cite, em, var, address, dfn {
 
 h1 {
   font-family: "Helvetica Neue Black", sans-serif;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
   line-height: 1.1;
   padding-left: 0.1rem; }
 
@@ -6360,7 +6361,7 @@ h1 {
   border-color: #fefefe;
   background-color: transparent; }
 
-.navigation {
+.navigation--absolute {
   position: absolute;
   top: 0;
   left: 0;
@@ -6474,6 +6475,14 @@ h1 {
       padding: 5rem 3rem; } }
 
 .home__hero {
+  overflow: hidden;
+  position: relative;
+  height: 85vh; }
+  @media print, screen and (min-width: 40em) {
+    .home__hero {
+      height: 100vh; } }
+
+.home__party-video {
   height: 100vh;
   overflow: hidden;
   position: relative; }
@@ -6481,8 +6490,7 @@ h1 {
 .home__campaign {
   height: 50vh;
   background-size: cover;
-  background-position: 50%;
-  background-color: red; }
+  background-position: 50%; }
 
 .image--portrait {
   position: relative;
@@ -6525,13 +6533,12 @@ h1 {
 .image--square {
   position: relative;
   background-size: cover;
-  background-position: 50%;
-  background-color: #cacaca; }
+  background-position: 50%; }
   .image--square:before {
     display: block;
     content: "";
     width: 100%;
-    padding-top: 71.4285714286%; }
+    padding-top: 100%; }
   .image--square .content {
     transition: all 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
     z-index: 1;
@@ -6564,8 +6571,7 @@ h1 {
 .image--default {
   position: relative;
   background-size: cover;
-  background-position: 50%;
-  background-color: #cacaca; }
+  background-position: 50%; }
   .image--default:before {
     display: block;
     content: "";
@@ -6623,7 +6629,10 @@ h1 {
 .image--hero {
   height: 100vh;
   background-size: cover;
-  background-position: 50%; }
+  background-position: 75% 50%; }
+  @media print, screen and (min-width: 40em) {
+    .image--hero {
+      background-position: 50% 50%; } }
 
 .video {
   height: 100%;
@@ -6645,3 +6654,18 @@ nav {
   top: 0;
   left: 0;
   width: 100%; }
+
+html {
+  scroll-behavior: smooth; }
+
+.home__the-beer h5 {
+  padding-bottom: 2rem; }
+
+.home__hero h1 {
+  font-family: "Helvetica Neue Black", sans-serif;
+  text-transform: uppercase;
+  line-height: 1; }
+
+.home__the-beer h3 {
+  font-family: "Helvetica Neue Black", sans-serif;
+  text-transform: uppercase; }
