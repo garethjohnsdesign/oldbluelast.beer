@@ -8050,7 +8050,7 @@
 		},
 	"/images/can-new.png": {
 		"ft": 32768,
-		"iS": 521584,
+		"iS": 55052,
 		"oA": 0,
 		"oAP": "/images/can-new.png",
 		"oF": 0,
@@ -8065,14 +8065,14 @@
 		"oA": 0,
 		"oAP": "/images/can-small.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
 	"/images/can.png": {
 		"ft": 32768,
-		"iS": 55052,
+		"iS": 93693,
 		"oA": 0,
 		"oAP": "/images/can.png",
 		"oF": 0,
