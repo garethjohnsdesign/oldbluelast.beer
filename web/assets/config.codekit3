@@ -7825,6 +7825,16 @@
 		"oAP": "/bower_components/what-input/yarn.lock",
 		"oF": 0
 		},
+	"/css/app-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/css/app-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/css/app.css": {
 		"aP": 1,
 		"bl": 0,
@@ -8238,16 +8248,16 @@
 		"uL": 1
 		},
 	"/scss/app.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/css/app.css",
+		"oAP": "/css/app-min.css",
 		"oF": 2,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/scss/scroll/_animations.scss": {
