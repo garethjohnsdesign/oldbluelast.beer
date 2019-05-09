@@ -28,13 +28,12 @@ return [
         
         'extraAllowedFileExtensions' => 'kmz',
         
-        'siteUrl' => getenv('SITE_URL'),
     ],
 
     // Dev environment settings
     'dev' => [
         // Base site URL
-        'siteUrl' => null,
+        'siteUrl' => 'https://oldbluelast.test',
 
         // Dev Mode (see https://craftcms.com/support/dev-mode)
         'devMode' => true,
@@ -45,13 +44,15 @@ return [
     // Staging environment settings
     'staging' => [
         // Base site URL
-        'siteUrl' => null,
+        'siteUrl' => 'https://oblb-staging.frb.io',
+
+        'devMode' => true,
     ],
 
     // Production environment settings
     'production' => [
         // Base site URL
-        'siteUrl' => null,
+        'siteUrl' => 'https://www.oldbluelast.beer',
     ],
     
 
