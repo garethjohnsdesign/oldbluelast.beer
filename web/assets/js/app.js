@@ -25,6 +25,7 @@ $("#gallery").lightGallery({
 
 $('#video-gallery').lightGallery({
    counter : false,
+   controls: false,
     vimeoPlayerParams: {
         byline : 0,
         portrait : 0,
