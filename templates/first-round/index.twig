@@ -45,24 +45,17 @@
 <ul class="vertical menu home__upcoming-events__list padding-bottom-3">
           
 {% for block in entry.firstRoundDirectory.all() %}
-{% if block.type == "location" %}
+  {% set venue = block.location.one() %}
   <li>
-	  <a href="" class="padding-left-0 padding-top-1" target="_blank">
+	  <a data-open="{{ venue.title |kebab }}" class="padding-left-0 padding-top-1">
 	  
 	    <div class="grid-container">
       <div class="grid-x grid-padding-x grid-padding-y">
       
       <div class="small-12 medium-8 cell">
-
-      {% set venue = block.location.one() %}
-      {% if venue %}
-          <h3 class="text-uppercase">{{ venue.address.city }}</h3>
-          <h5 class="text-uppercase">{{ venue.title }}</h5>
-          <h5>{{ venue.address.street1 }}, {{ venue.address.zip }}</h5>
-      {% endif %}
-
-      
-
+        <h3 class="text-uppercase">{{ venue.address.city }}</h3>
+        <h5 class="text-uppercase">{{ venue.title }}</h5>
+        <h5>{{ venue.address.street1 }}, {{ venue.address.zip }}</h5>
       </div>
       
       <div class="small-12 medium-4 cell text-uppercase medium-text-right align-self-bottom margin-bottom-1">
@@ -74,10 +67,51 @@
 	  
 	  </a>
   </li>
-{% endif %}
- {% endfor %}
+{% endfor %}
 </ul>
 
-{# End Upcoming Events #}
+{% for block in entry.firstRoundDirectory.all() %}
+  {% set venue = block.location.one() %}
+  <div class="reveal" id="{{ venue.title |kebab }}" data-reveal>
+
+  <button class="close-button" aria-label="Close alert" type="button" data-close>
+    <span aria-hidden="true">&times;</span>
+  </button>
+
+        <h4 class="text-uppercase">{{ venue.title }}</h4>
+        <h5>{{ venue.address.street1 }}, {{ venue.address.city }} {{ venue.address.zip }}</h5>
+        {{entry.firstRoundRevealText}}
+
+
+        <form action="{{block.mailchimp}}" method="post" target="_blank" data-abide novalidate>
+
+        <div data-abide-error class="alert callout" style="display: none;">
+          <p><i class="fi-alert"></i> There are some errors in your form.</p>
+        </div>
+    
+        <input type="email" value="" name="EMAIL" class="required" placeholder="your@email.com" aria-errormessage="emailError" required pattern="email"> 
+
+        <span class="form-error" id="emailError">
+          Yo, you had better fill this out, it's required. We need a valid email address
+        </span>
+
+        <input type="text" value="" name="FNAME" placeholder="First Name" aria-errormessage="fnameError" required pattern="alpha">
+
+        <span class="form-error" id="fnameError">
+          Yo, you had better fill this out, it's required.
+        </span>
+
+        <input type="text" value="" name="LNAME" placeholder="Last Name" aria-errormessage="lnameError" required pattern="alpha">
+
+
+        <span class="form-error" id="lnameError">
+          Yo, you had better fill this out, it's required.
+        </span>
+
+        <input type="submit" class="button expanded" value="Sign Up" name="subscribe">
+    
+        </form>
+</div>
+{% endfor %}
 
 {% endblock %}
