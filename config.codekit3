@@ -9141,6 +9141,14 @@
 		"oAP": "/templates/photos/index.twig",
 		"oF": 0
 		},
+	"/templates/thanks/index.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/templates/thanks/index.twig",
+		"oF": 0
+		},
 	"/vendor": {
 		"ft": 65536,
 		"oA": 1,
