@@ -26,7 +26,8 @@
     "craftcms/contact-form": "2.2.4",
     "vaersaagod/geomate": "v1.0.4",
     "craftcms/google-cloud": "1.2.1",
-    "craftcms/redactor": "2.3.2"
+    "craftcms/redactor": "2.3.2",
+    "craftcms/contact-form-honeypot": "1.0.2"
   },
   "autoload": {
     "psr-4": {
