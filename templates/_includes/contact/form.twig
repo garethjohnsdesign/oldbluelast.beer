@@ -22,6 +22,9 @@
   
   {{ getCsrfInput() }}
   <input type="hidden" name="action" value="contact-form/send">
+  {{ redirectInput('/thanks') }}
+
+  <input id="honeypot" name="honeypot" type="text">
   
   <div class="grid-x">
   

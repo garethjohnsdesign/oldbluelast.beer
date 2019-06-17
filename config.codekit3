@@ -272,12 +272,12 @@
 		"oAP": "/templates/_includes/age-gate/overlay.twig",
 		"oF": 0
 		},
-	"/templates/_includes/contact/form.html": {
+	"/templates/_includes/contact/form.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates/_includes/contact/form.html",
+		"oAP": "/templates/_includes/contact/form.twig",
 		"oF": 0
 		},
 	"/templates/_includes/footer/copyright.twig": {
@@ -727,6 +727,17 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"/web/assets/js/app-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/assets/js/app-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/web/assets/js/app.js": {
 		"bF": 0,
