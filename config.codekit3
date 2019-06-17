@@ -4694,7 +4694,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http://oldbluelast.test",
+	"externalServerAddress": "https://oldbluelast.test",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
