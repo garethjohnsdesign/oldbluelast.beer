@@ -408,14 +408,6 @@
 		"oAP": "/templates/find-beer/index.twig",
 		"oF": 0
 		},
-	"/templates/first-round/index.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/first-round/index.twig",
-		"oF": 0
-		},
 	"/templates/index.twig": {
 		"cB": 0,
 		"ft": 8192,
