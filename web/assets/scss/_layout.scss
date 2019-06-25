@@ -449,3 +449,8 @@ h3, h4 {
 input#honeypot { 
   display: none; 
 }
+
+
+.small li {
+font-size: $small-font-size;
+}
