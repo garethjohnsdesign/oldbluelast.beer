@@ -75,10 +75,9 @@ select {
 }
 
 p a {
-  padding-bottom: 0.25rem;
-  border-bottom: 2px $medium-gray solid;
+  border-bottom: 1px $white solid;
   &:hover {
-    border-bottom: 2px transparent solid;
+    border-bottom: 1px transparent solid;
   }
 }
 
@@ -108,6 +107,11 @@ p a {
 // 3. Typography
 // -------------
 
+strong, b {
+font-weight: normal;
+font-family: $secondary-font-family;
+}
+
 .underline {
   padding-bottom: -0.5rem;
   border-bottom: 2px $white solid;
@@ -126,6 +130,12 @@ p a {
 i, cite, em, var, address, dfn {
   font-style: normal;
 }
+
+h1, h2, h3, h4 {
+  font-family: $secondary-font-family;
+  text-transform: uppercase;
+}
+
 
 h1 {
   font-family: $secondary-font-family;
