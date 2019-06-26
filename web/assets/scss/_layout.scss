@@ -464,3 +464,15 @@ input#honeypot {
 .small li {
 font-size: $small-font-size;
 }
+
+#optanon *, #optanon *:before, #optanon *:after {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+#optanon, #optanon *, #optanon div, #optanon span, #optanon ul, #optanon li, #optanon a, #optanon p, .optanon-alert-box-wrapper * {
+    font-family: Arial, sans-serif;
+    background: none;
+    border: none;
+    bottom: auto;
+}
