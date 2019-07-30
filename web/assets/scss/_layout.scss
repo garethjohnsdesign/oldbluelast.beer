@@ -476,3 +476,15 @@ font-size: $small-font-size;
     border: none;
     bottom: auto;
 }
+
+.optanon-alert-box-wrapper .optanon-button-more .optanon-alert-box-button-middle button {
+border-bottom: 1px solid $white;
+padding-bottom: 1px;
+color: $white !important;
+cursor: pointer;
+}
+
+.optanon-alert-box-wrapper .optanon-button-more .optanon-alert-box-button-middle button:before {
+content: '';
+display: none;
+}
