@@ -14,12 +14,15 @@
     <ul class="menu align-center text-uppercase">
       <li><a href="#home__drink">Drink</a></li>
       <li><a href="#home__get-some">Get Some</a></li>
+      <li>
       <li><a href="#home__party">Party</a></li>
 {#
       <li><a href="#home__events">Events</a></li>
       <li><a href="#home__photos">Photos</a></li>
 #}
       <li><a href="#home__the-beer">The Beer</a></li>
+      <li><button data-open="shopModal">Shop</button></li>
+      
     </ul>
   </div>
 {% endif %}
@@ -34,3 +37,13 @@
   </div>
 </nav>
 #}
+
+<div class="reveal text-center" id="shopModal" data-reveal>
+  <h1>Heads Up!</h1>
+  <p>You’re being redirected to a website operated by Beer Hawk Limited therefore their <a href="https://www.beerhawk.co.uk/privacy-policy">Privacy Policy</a> applies</p>
+
+  <button class="button" data-close aria-label="Close modal">Nope</button> <a class="button" href="https://shop.oldbluelast.beer">Sure</a>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
