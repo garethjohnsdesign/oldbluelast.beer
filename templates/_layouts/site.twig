@@ -2,6 +2,8 @@
 
 {% block body %}
 
+<div class="content">
+
 <!-- Age Gate -->
 {# {% include "_includes/age-gate/overlay" %} #}
 <!-- End Age Gate -->
@@ -17,14 +19,15 @@
 <!-- Social Links -->
 {% include "_includes/social-links/overlay" %}
 <!-- End Social Links -->
-
       
-<main id="main" role="main">
+<main class="align-self-center" id="main" role="main">
 {% block main %}{% endblock %}
 </main>
 
+</div>
+
 <!-- Footer -->
-<footer>
+<footer class="footer">
 <!-- Newsletter -->
 {% include "_includes/footer/footer" %}
 <!-- End Newsletter -->
@@ -41,7 +44,7 @@
 
 {% include "_includes/scripts/scripts" %}
 
-<!-- OneTrust Cookies Consent Notice start -->
+<!-- OneTrust Cookies Consent Notice -->
 <script src="https://optanon.blob.core.windows.net/consent/684f20d3-5e83-4b86-ba47-ea0ed44019e0.js" type="text/javascript" charset="UTF-8"></script>
 <script type="text/javascript">
 function OptanonWrapper() {
@@ -60,6 +63,6 @@ var a;
 ;
 }
 </script>
-<!-- OneTrust Cookies Consent Notice end -->
+<!-- OneTrust Cookies Consent Notice End -->
 
 {% endblock %}

@@ -1,0 +1,20 @@
+{% extends "_layouts/site" %}
+
+{% block main %}
+
+<!-- Contact Header -->
+<div class="grid-x grid-padding-x grid-padding-y align-center padding-vertical-3">
+  <div class="small-12 medium-8 cell">
+		{{ entry.pageCopy }}
+  </div>
+</div>
+<!-- End Contact Header -->
+
+{% js %}
+setTimeout(function () {
+   window.location.href= 'https://shop.oldbluelast.beer';
+}, 5000);
+{% endjs %}
+
+{% endblock %}
+
