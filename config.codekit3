@@ -89,14 +89,6 @@
 		"oAP": "/config/geomate.php",
 		"oF": 0
 		},
-	"/config/imager.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/config/imager.php",
-		"oF": 0
-		},
 	"/config/license.key": {
 		"cB": 0,
 		"ft": 8192,
@@ -165,17 +157,6 @@
 		"oAP": "/build/node_modules",
 		"oF": 0
 		},
-	"/node_modules/../node_modules/aos/dist/aos.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/../node_modules/aos/dist/aos-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/node_modules/aos/dist/aos.js": {
 		"bF": 0,
 		"ft": 64,
@@ -209,7 +190,7 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/node_modules/lightGallery/dist/js/lightgallery.js": {
+	"/node_modules/lightgallery/dist/js/lightgallery.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
@@ -3304,6 +3285,17 @@
 		"oA": 1,
 		"oAP": "/build/web/cpresources",
 		"oF": 0
+		},
+	"/web/imager/events/42/og-image_5b448ae262dd44f69dc0b7815a5e804c.png": {
+		"ft": 32768,
+		"iS": 14273,
+		"oA": 0,
+		"oAP": "/web/imager/events/42/og-image_5b448ae262dd44f69dc0b7815a5e804c.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"/web/index.php": {
 		"cB": 0,
