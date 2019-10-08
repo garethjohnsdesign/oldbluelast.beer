@@ -28,6 +28,8 @@ return [
       ],
         
       // Enables the use of https for image urls
+
+ // Tst
       'imgixUseHttps' => true,
       
       // Sign key (also called token). This is needed for all web proxy sources. And a good idea in general.
