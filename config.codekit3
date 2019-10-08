@@ -168,61 +168,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/node_modules/../node_modules/foundation-sites/dist/js/foundation.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/../node_modules/foundation-sites/dist/js/foundation-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/node_modules/../node_modules/jquery/dist/jquery.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/../node_modules/jquery/dist/jquery-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/node_modules/../node_modules/lightgallery/dist/js/lightgallery-all.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/../node_modules/lightgallery/dist/js/lightgallery-all-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/node_modules/../node_modules/motion-ui/dist/motion-ui.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/../node_modules/motion-ui/dist/motion-ui-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/node_modules/../node_modules/what-input/dist/what-input.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/../node_modules/what-input/dist/what-input-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/node_modules/aos/dist/aos.js": {
 		"bF": 0,
 		"ft": 64,
@@ -308,188 +253,308 @@
 		"oAP": "/templates/.gitkeep",
 		"oF": 0
 		},
-	"/templates/_includes/age-gate/overlay.twig": {
+	"/templates/shop/_includes/age-gate/overlay.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates/_includes/age-gate/overlay.twig",
+		"oAP": "/templates/shop/_includes/age-gate/overlay.twig",
 		"oF": 0
 		},
-	"/templates/_includes/contact/form.twig": {
+	"/templates/shop/_includes/contact/form.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates/_includes/contact/form.twig",
+		"oAP": "/templates/shop/_includes/contact/form.twig",
 		"oF": 0
 		},
-	"/templates/_includes/footer/copyright.twig": {
+	"/templates/shop/_includes/footer/copyright.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates/_includes/footer/copyright.twig",
+		"oAP": "/templates/shop/_includes/footer/copyright.twig",
 		"oF": 0
 		},
-	"/templates/_includes/footer/footer.twig": {
+	"/templates/shop/_includes/footer/footer.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates/_includes/footer/footer.twig",
+		"oAP": "/templates/shop/_includes/footer/footer.twig",
 		"oF": 0
 		},
-	"/templates/_includes/images/interchange-img-small-12-medium-12-cell.twig": {
+	"/templates/shop/_includes/images/interchange-img-small-12-medium-12-cell.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates/_includes/images/interchange-img-small-12-medium-12-cell.twig",
+		"oAP": "/templates/shop/_includes/images/interchange-img-small-12-medium-12-cell.twig",
 		"oF": 0
 		},
-	"/templates/_includes/images/interchange-img-small-12-medium-4-cell.twig": {
+	"/templates/shop/_includes/images/interchange-img-small-12-medium-4-cell.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates/_includes/images/interchange-img-small-12-medium-4-cell.twig",
+		"oAP": "/templates/shop/_includes/images/interchange-img-small-12-medium-4-cell.twig",
 		"oF": 0
 		},
-	"/templates/_includes/images/interchange-img-small-12-medium-6-cell.twig": {
+	"/templates/shop/_includes/images/interchange-img-small-12-medium-6-cell.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates/_includes/images/interchange-img-small-12-medium-6-cell.twig",
+		"oAP": "/templates/shop/_includes/images/interchange-img-small-12-medium-6-cell.twig",
 		"oF": 0
 		},
-	"/templates/_includes/map/bubble.twig": {
+	"/templates/shop/_includes/navigation/desktop.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates/_includes/map/bubble.twig",
+		"oAP": "/templates/shop/_includes/navigation/desktop.twig",
 		"oF": 0
 		},
-	"/templates/_includes/navigation/desktop.twig": {
+	"/templates/shop/_includes/scripts/scripts.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates/_includes/navigation/desktop.twig",
+		"oAP": "/templates/shop/_includes/scripts/scripts.html",
 		"oF": 0
 		},
-	"/templates/_includes/navigation/overlay.twig": {
+	"/templates/shop/_includes/social-links/overlay.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates/_includes/navigation/overlay.twig",
+		"oAP": "/templates/shop/_includes/social-links/overlay.twig",
 		"oF": 0
 		},
-	"/templates/_includes/scripts/scripts.html": {
+	"/templates/shop/_layouts/base.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates/_includes/scripts/scripts.html",
+		"oAP": "/templates/shop/_layouts/base.twig",
 		"oF": 0
 		},
-	"/templates/_includes/social-links/overlay.twig": {
+	"/templates/shop/_layouts/site.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates/_includes/social-links/overlay.twig",
+		"oAP": "/templates/shop/_layouts/site.twig",
 		"oF": 0
 		},
-	"/templates/_layouts/base.twig": {
+	"/templates/shop/index.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates/_layouts/base.twig",
+		"oAP": "/templates/shop/index.twig",
 		"oF": 0
 		},
-	"/templates/_layouts/site.twig": {
+	"/templates/shop/page/index.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates/_layouts/site.twig",
+		"oAP": "/templates/shop/page/index.twig",
 		"oF": 0
 		},
-	"/templates/contact/index.twig": {
+	"/templates/shop/thanks/index.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates/contact/index.twig",
+		"oAP": "/templates/shop/thanks/index.twig",
 		"oF": 0
 		},
-	"/templates/events/_entry.twig": {
+	"/templates/uk/_includes/age-gate/overlay.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/uk/_includes/age-gate/overlay.twig",
+		"oF": 0
+		},
+	"/templates/uk/_includes/contact/form.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/uk/_includes/contact/form.twig",
+		"oF": 0
+		},
+	"/templates/uk/_includes/footer/copyright.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/uk/_includes/footer/copyright.twig",
+		"oF": 0
+		},
+	"/templates/uk/_includes/footer/footer.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/uk/_includes/footer/footer.twig",
+		"oF": 0
+		},
+	"/templates/uk/_includes/images/interchange-img-small-12-medium-12-cell.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/uk/_includes/images/interchange-img-small-12-medium-12-cell.twig",
+		"oF": 0
+		},
+	"/templates/uk/_includes/images/interchange-img-small-12-medium-4-cell.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/uk/_includes/images/interchange-img-small-12-medium-4-cell.twig",
+		"oF": 0
+		},
+	"/templates/uk/_includes/images/interchange-img-small-12-medium-6-cell.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/uk/_includes/images/interchange-img-small-12-medium-6-cell.twig",
+		"oF": 0
+		},
+	"/templates/uk/_includes/map/bubble.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/uk/_includes/map/bubble.twig",
+		"oF": 0
+		},
+	"/templates/uk/_includes/navigation/desktop.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/uk/_includes/navigation/desktop.twig",
+		"oF": 0
+		},
+	"/templates/uk/_includes/scripts/scripts.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/uk/_includes/scripts/scripts.html",
+		"oF": 0
+		},
+	"/templates/uk/_includes/social-links/overlay.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/uk/_includes/social-links/overlay.twig",
+		"oF": 0
+		},
+	"/templates/uk/_layouts/base.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/uk/_layouts/base.twig",
+		"oF": 0
+		},
+	"/templates/uk/_layouts/site.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/uk/_layouts/site.twig",
+		"oF": 0
+		},
+	"/templates/uk/contact/index.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/uk/contact/index.twig",
+		"oF": 0
+		},
+	"/templates/uk/events/_entry.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/templates/events/_entry.twig",
+		"oAP": "/templates/uk/events/_entry.twig",
 		"oF": 0
 		},
-	"/templates/events/index.twig": {
+	"/templates/uk/events/index.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates/events/index.twig",
+		"oAP": "/templates/uk/events/index.twig",
 		"oF": 0
 		},
-	"/templates/find-beer/index.twig": {
+	"/templates/uk/find-beer/index.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates/find-beer/index.twig",
+		"oAP": "/templates/uk/find-beer/index.twig",
 		"oF": 0
 		},
-	"/templates/index.twig": {
+	"/templates/uk/index.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates/index.twig",
+		"oAP": "/templates/uk/index.twig",
 		"oF": 0
 		},
-	"/templates/page/index.twig": {
+	"/templates/uk/page/index.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates/page/index.twig",
+		"oAP": "/templates/uk/page/index.twig",
 		"oF": 0
 		},
-	"/templates/photos/index.twig": {
+	"/templates/uk/photos/index.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates/photos/index.twig",
+		"oAP": "/templates/uk/photos/index.twig",
 		"oF": 0
 		},
-	"/templates/redirection/index.twig": {
+	"/templates/uk/redirection/index.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates/redirection/index.twig",
+		"oAP": "/templates/uk/redirection/index.twig",
 		"oF": 0
 		},
-	"/templates/thanks/index.twig": {
+	"/templates/uk/shop/index.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates/thanks/index.twig",
+		"oAP": "/templates/uk/shop/index.twig",
+		"oF": 0
+		},
+	"/templates/uk/thanks/index.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/uk/thanks/index.twig",
 		"oF": 0
 		},
 	"/vendor": {
@@ -761,6 +826,17 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"/web/assets/js/app-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/assets/js/app-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/web/assets/js/app.js": {
 		"bF": 4,

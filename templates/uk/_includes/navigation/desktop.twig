@@ -1,8 +1,3 @@
-{#
-<nav data-sticky-container>
-  <div data-sticky data-options="marginTop:0;" style="width:100%" class="scrollhide-nav">
-#}
-
 <div class="grid-x align-justify align-middle navigation {% if craft.app.request.absoluteUrl == siteUrl %}navigation--absolute{% endif %} padding-1">
 
   <div class="small-3 medium-3 cell uppercase">
@@ -24,19 +19,4 @@
     <a href="https://www.vice.com"><svg class="icon icon-drinking"><use xlink:href="/assets/icons/symbol-defs.svg#icon-drinking"></use></svg></a>
   </div>
 
-</div>
-
-{#
-  </div>
-</nav>
-#}
-
-<div class="reveal text-center" id="shopModal" data-reveal>
-  <h1>Heads Up!</h1>
-  <p>You’re being redirected to a website operated by Beer Hawk Limited therefore their <a href="https://www.beerhawk.co.uk/privacy-policy">Privacy Policy</a> applies</p>
-
-  <button class="button" data-close aria-label="Close modal">Nope</button> <a class="button" href="https://shop.oldbluelast.beer">Sure</a>
-  <button class="close-button" data-close aria-label="Close modal" type="button">
-    <span aria-hidden="true">&times;</span>
-  </button>
 </div>

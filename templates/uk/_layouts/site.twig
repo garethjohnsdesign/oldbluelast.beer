@@ -1,0 +1,64 @@
+{% extends "_layouts/base" %}
+
+{% block body %}
+
+<div class="content">
+
+<!-- Age Gate -->
+{# {% include "_includes/age-gate/overlay" %} #}
+<!-- End Age Gate -->
+
+<!-- Navigation Desktop -->
+{% include "_includes/navigation/desktop" %}
+<!-- End Navigation Desktop -->
+
+<!-- Social Links -->
+{% include "_includes/social-links/overlay" %}
+<!-- End Social Links -->
+      
+<main class="align-self-center" id="main" role="main">
+{% block main %}{% endblock %}
+</main>
+
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+<!-- Newsletter -->
+{% include "_includes/footer/footer" %}
+<!-- End Newsletter -->
+
+<!-- Copyright -->
+{% include "_includes/footer/copyright" %}
+<!-- End Copyright -->
+</footer>
+<!-- End Footer -->
+
+{% endblock %}
+
+{% block foot %}
+
+{% include "_includes/scripts/scripts" %}
+
+<!-- OneTrust Cookies Consent Notice -->
+<script src="https://optanon.blob.core.windows.net/consent/684f20d3-5e83-4b86-ba47-ea0ed44019e0.js" type="text/javascript" charset="UTF-8"></script>
+<script type="text/javascript">
+function OptanonWrapper() {
+var a;
+    //BEHAVIOUR(IsIABEnabled == true)
+!function(t) {
+    var r= {
+}
+;
+    function o(e) {
+    if(r[e])return r[e].exports;
+    var n=r[e]= {
+    i: e, l:!1, exports: {
+}
+}
+;
+}
+</script>
+<!-- OneTrust Cookies Consent Notice End -->
+
+{% endblock %}

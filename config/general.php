@@ -34,6 +34,7 @@ return [
     'dev' => [
         // Base site URL
         'siteUrl' => 'https://oldbluelast.test',
+        'shopUrl' => 'https://oldbluelast.test',
 
         // Dev Mode (see https://craftcms.com/support/dev-mode)
         'devMode' => true,
@@ -45,6 +46,7 @@ return [
     'staging' => [
         // Base site URL
         'siteUrl' => 'https://oblb-staging.frb.io',
+        'shopUrl' => 'https://oblb-staging.frb.io',
 
         'devMode' => true,
     ],
@@ -53,6 +55,9 @@ return [
     'production' => [
         // Base site URL
         'siteUrl' => 'https://www.oldbluelast.beer',
+        'shopUrl' => 'https://shop.oldbluelast.beer',
+
+        'devMode' => false,
     ],
     
 

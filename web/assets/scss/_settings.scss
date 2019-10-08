@@ -462,6 +462,7 @@ $form-label-color: $white;
 $form-label-font-size: rem-calc(16);
 $form-label-font-weight: $global-weight-normal;
 $form-label-line-height: 1.8;
+$form-label-line-height: 1.2;
 // $select-background: $white;
 $select-background: transparent;
 // $select-triangle-color: $dark-gray;
@@ -932,7 +933,7 @@ $grid-margin-gutters: (
 */
 $grid-margin-gutters: (
   small: 32px,
-  medium: 32px
+  medium: 64px
 );
 $grid-padding-gutters: $grid-margin-gutters;
 $grid-container-padding: $grid-padding-gutters;
