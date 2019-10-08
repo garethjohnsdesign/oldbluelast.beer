@@ -46,6 +46,15 @@
 // 2. Global
 // ---------
 
+input::-webkit-input-placeholder {
+  transform:translate3d(0,2px,0)
+}
+
+input::-webkit-input-email {
+  transform:translate3d(0,2px,0)
+}
+
+
 body {
   cursor: default;
   font-kerning: normal;
