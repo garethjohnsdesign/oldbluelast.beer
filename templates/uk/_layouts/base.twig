@@ -1,17 +1,7 @@
-{# SEO #}
-{% set globalSeoTitle = seo.seoTitle %}
-{% set globalSeoDescription = seo.seoDescription %}
-{% set globalSeoImage = seo.seoImage|length ? seo.seoImage.one().getUrl() : '' %}
-{# END SEO #}
-
-{# Navigation #}
-{% set navigation = {
-  "about":    { title: "About" },
-  "locations":    { title: "Locations" },
-  "events":    { title: "Events" },
-  "contact":    { title: "Contact" },
-} %}
-{# END Navigation #}
+{% set seoTitle = seo.seoTitle %}
+{% set seoDescription = seo.seoDescription %}
+{% set asset = seo.seoImage.one() %}
+{% set seoImage = craft.imager.transformImage(asset, { width: 1200, height: 630, dpr: 1, position: asset.getFocalPoint() }) %}
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="{{ craft.app.language }}">
@@ -32,7 +22,7 @@
     <meta property="og:type" content="{% if seoType is defined %}{{ seoType }}{% else %}website{% endif %}">
     <meta property="og:url" content="{% if seoUrl is defined %}{{ seoUrl }}{% else %}{{ siteUrl }}{% endif %}">
     <meta property="og:title" content="{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}">
-    <meta property="og:image" content="http://www.oldbluelast.beer{% if seoImage is defined %}{{ seoImage }}{% else %}{{ globalSeoImage }}{% endif %}">
+    <meta property="og:image" content="{% if seoImage is defined %}{{ seoImage }}{% else %}{{ globalSeoImage }}{% endif %}">
     <meta property="og:description" content="{% if seoDescription is defined %}{{ seoDescription }}{% else %}{{ globalSeoDescription|raw }}{% endif %}">
     <meta property="og:site_name" content="{{ siteName }}">
     <meta property="og:locale" content="en_GB">
@@ -46,7 +36,7 @@
     <meta name="twitter:url" content="{% if seoUrl is defined %}{{ seoUrl }}{% else %}{{ siteUrl }}{% endif %}">
     <meta name="twitter:title" content="{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}">
     <meta name="twitter:description" content="{% if seoDescription is defined %}{{ seoDescription }}{% else %}{{ globalSeoDescription|raw }}{% endif %}">
-    <meta name="twitter:image" content="http://www.oldbluelast.beer{% if seoImage is defined %}{{ seoImage }}{% else %}{{ globalSeoImage }}{% endif %}">
+    <meta name="twitter:image" content="{% if seoImage is defined %}{{ seoImage }}{% else %}{{ globalSeoImage }}{% endif %}">
     
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
