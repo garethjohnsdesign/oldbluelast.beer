@@ -1,16 +1,29 @@
-// @codekit-prepend "/../node_modules/jquery/dist/jquery.js";
-// @codekit-prepend "/../node_modules/foundation-sites/dist/js/foundation.js";
-// @codekit-prepend "/../node_modules/motion-ui/dist/motion-ui.js";
-// @codekit-prepend "/../node_modules/what-input/dist/what-input.js";
-// @codekit-prepend "/../node_modules/aos/dist/aos.js";
-// @codekit-prepend "/../node_modules/lightgallery/dist/js/lightgallery-all.js";
+// 1. Imports
+// ----------
+
+import $ from "jquery";
+import Foundation from 'foundation-sites';
+import "lightGallery";
+import "lg-fullscreen";
+import "lg-video";
+import AOS from 'aos';
+
+// 2. Special Queries
+// ------------------
 
 Foundation.Interchange.SPECIAL_QUERIES['medium-retina'] = 'only screen and (min-width: 40em), (min-width: 40em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 40em) and (min--moz-device-pixel-ratio: 2), (min-width: 40em) and (-o-min-device-pixel-ratio: 2/1), (min-width: 40em) and (min-device-pixel-ratio: 2), (min-width: 40em) and (min-resolution: 192dpi), (min-width: 40em) and (min-resolution: 2dppx)';
 Foundation.Interchange.SPECIAL_QUERIES['large-retina'] = 'only screen and (min-width: 64em), (min-width: 64em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 64em) and (min--moz-device-pixel-ratio: 2), (min-width: 64em) and (-o-min-device-pixel-ratio: 2/1), (min-width: 64em) and (min-device-pixel-ratio: 2), (min-width: 64em) and (min-resolution: 192dpi), (min-width: 64em) and (min-resolution: 2dppx)';
 Foundation.Interchange.SPECIAL_QUERIES['xlarge-retina'] = 'only screen and (min-width: 75em), (min-width: 75em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 75em) and (min--moz-device-pixel-ratio: 2), (min-width: 75em) and (-o-min-device-pixel-ratio: 2/1), (min-width: 75em) and (min-device-pixel-ratio: 2), (min-width: 75em) and (min-resolution: 192dpi), (min-width: 75em) and (min-resolution: 2dppx)';
 Foundation.Interchange.SPECIAL_QUERIES['xxlarge-retina'] = 'only screen and (min-width: 90em), (min-width: 75em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 75em) and (min--moz-device-pixel-ratio: 2), (min-width: 75em) and (-o-min-device-pixel-ratio: 2/1), (min-width: 75em) and (min-device-pixel-ratio: 2), (min-width: 75em) and (min-resolution: 192dpi), (min-width: 75em) and (min-resolution: 2dppx)';
 
+// 3. Foundation
+// -------------
+
 $(document).foundation();
+
+
+// 4. Scroll Hide Nav
+// ------------------
 
 var prev = 0;
 var $window = $(window);
@@ -24,6 +37,8 @@ $window.on('scroll', function() {
     prev = scrollTop;
 });
 
+// 5. Lightgallery
+// ---------------
 
 $("#gallery").lightGallery({
     selector: '.about__images',
@@ -44,42 +59,10 @@ $('#video-gallery').lightGallery({
         rel: 0,
         controls: 0
     }
-});  
-
-$(function () {
-  count1 = 0;
-  wordsArray = ["Event", "Party", "Gig", "Karaoke", "Quiz", "Beer"];
-  setInterval(function () {
-    count1++;
-    $("#photos-word").fadeOut(0, function () {
-      $(this).text(wordsArray[count1 % wordsArray.length]).fadeIn(0);
-    });
-  }, 250);
 });
 
-$(function () {
-  count2 = 0;
-  eventsWordsArray = ["Events", "Parties", "Gigs", "Karaoke", "Quizes", "Festivals"];
-  setInterval(function () {
-    count2++;
-    $("#events-word").fadeOut(0, function () {
-      $(this).text(eventsWordsArray[count2 % eventsWordsArray.length]).fadeIn(0);
-    });
-  }, 250);
-});
-
-$(function () {
-  count3 = 0;
-  contactWordsArray = ["Hey", "Hi", "Yo", "Hello"];
-  setInterval(function () {
-    count3++;
-    $("#contact-word").fadeOut(0, function () {
-      $(this).text(contactWordsArray[count3 % contactWordsArray.length]).fadeIn(0);
-    });
-  }, 250);
-});
-
-
+// 6. Age Gate
+// -----------
 
 function checkIfVerified(){
   if ($.cookie('age-gate') == 'of_age') {
@@ -125,7 +108,9 @@ $('form[name=agegate]').submit(function(ev){
   return false;
 });
 
-// Select all links with hashes
+// 7. Links Scroll to Section
+// --------------------------
+
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
