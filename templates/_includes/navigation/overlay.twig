@@ -13,7 +13,7 @@
           {% set entries = craft.entries
           .section('events')
           .eventDate('>' ~ now.getTimestamp())
-          .order('eventDate asc')
+          .orderBy('eventDate asc')
           .all() %}
 
           {% if entries|length %}
@@ -23,7 +23,7 @@
           {% set festivalEntries = craft.entries
           .section('events')
           .eventIsFestival('1')
-          .order('eventDate asc')
+          .orderBy('eventDate asc')
           .all() %}
           
           {% if festivalEntries|length %}

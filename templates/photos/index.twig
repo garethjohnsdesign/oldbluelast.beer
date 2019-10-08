@@ -17,7 +17,7 @@
         .section('events')
         .eventFeatured('1')
         .eventDate('<' ~ now.getTimestamp())
-        .order('eventDate desc')
+        .orderBy('eventDate desc')
         .all() %}
         
         {% for entry in evententries %}

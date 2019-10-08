@@ -2,7 +2,7 @@
 
 {% block main %}
 
-{% set target = craft.request.getParam('near') %}
+{% set target = craft.app.request.getParam('near') %}
 {% set coords = craft.smartMap.lookupCoords(target) %}
 
 {% set sharedOptions = {
@@ -26,7 +26,7 @@ maxWidth: 200
 target: target,
 range: 20
 } %}
-{% set locations = craft.entries.section(['venues', 'shops']).address(params).order('distance').all() %}
+{% set locations = craft.entries.section(['venues', 'shops']).address(params).orderBy('distance').all() %}
 {% set customOptions = {
 center: coords,
 zoom: 12,
@@ -133,7 +133,7 @@ zoom: 14,
   
 {% set entries = craft.entries
 .section('venues')
-.order('title asc')
+.orderBy('title asc')
 .all() %}
 
     {% for entry in entries %}
@@ -149,7 +149,7 @@ zoom: 14,
 
 {% set entries = craft.entries
 .section('shops')
-.order('title asc')
+.orderBy('title asc')
 .all() %}
 
 {% if entries|length %}
