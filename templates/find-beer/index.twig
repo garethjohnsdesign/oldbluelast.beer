@@ -146,6 +146,13 @@ zoom: 14,
   </div>
 </div>
 
+
+{% set entries = craft.entries
+.section('shops')
+.order('title asc')
+.all() %}
+
+{% if entries|length %}
 <div class="grid-container">
   <div class="grid-x">
     <div class="small-12 cell text-center text-uppercase">
@@ -156,12 +163,6 @@ zoom: 14,
 
 <div class="grid-container">
   <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-2 large-up-3 padding-top-2 padding-bottom-2">
-  
-{% set entries = craft.entries
-.section('shops')
-.order('title asc')
-.all() %}
-
     {% for entry in entries %}
     <div class="cell">
     <h5 class="text-uppercase">{{ entry.title }}</h5>
@@ -171,6 +172,7 @@ zoom: 14,
     {% endfor %}
   </div>
 </div>
+{% endif %}
 
 {% js %}
 
