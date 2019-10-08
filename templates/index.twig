@@ -19,20 +19,19 @@
     </div>
   </div>
 
-    <div class="show-for-small-only">
-    {% set video = entry.heroVideoMobile.one() %}
-    <video playsinline autoplay muted loop class="video" poster="">
-      <source src="https://storage.googleapis.com/old-blue-last-beer/{{ video.filename }}" type="video/mp4">
-    </video>
-    </div>
-  
-    <div class="show-for-medium">
-    {% set video = entry.heroVideo.one() %}
-    <video playsinline autoplay muted loop class="video" poster="">
-      <source src="https://storage.googleapis.com/old-blue-last-beer/{{ video.filename }}" type="video/mp4">
-    </video>
-    </div>
+  <div class="show-for-small-only">
+  {% set video = entry.heroVideoMobile.one() %}
+  <video playsinline autoplay muted loop class="video" poster="">
+    <source src="https://storage.googleapis.com/old-blue-last-beer/{{ video.filename }}" type="video/mp4">
+  </video>
+  </div>
 
+  <div class="show-for-medium">
+  {% set video = entry.heroVideo.one() %}
+  <video playsinline autoplay muted loop class="video" poster="">
+    <source src="https://storage.googleapis.com/old-blue-last-beer/{{ video.filename }}" type="video/mp4">
+  </video>
+  </div>
 
 </section>
 <!-- End Video Hero -->
@@ -493,7 +492,7 @@ $(function () {
               
               <div class="excerpt__image">
                 {% for image in entry.eventThumb.all() %}
-                <div class="image--square" data-interchange="{% include "_includes/images/interchange-img-small-12-medium-6-cell" %}">
+                <div class="image--square" data-interchange="{% include "_includes/images/interchange-img-small-12-medium-4-cell" %}">
                   <div class="content"></div>
                 </div>
                 {% endfor %}
@@ -534,6 +533,5 @@ $(function () {
   </div>
 </section>
 <!-- End Contact Form  -->
-
 
 {% endblock %}
