@@ -89,6 +89,14 @@
 		"oAP": "/config/geomate.php",
 		"oF": 0
 		},
+	"/config/imager.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/config/imager.php",
+		"oF": 0
+		},
 	"/config/license.key": {
 		"cB": 0,
 		"ft": 8192,
