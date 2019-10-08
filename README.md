@@ -4,4 +4,4 @@ Site for Old Blue Last Beer. Please go to [www.oldbluelast.beer](https://oldblue
 
 * * *
 
-Copyright (c) 2018 Gareth Johns Design + Development – info@garethjohnsdesign.com
+Copyright (c) 2019 Gareth Johns Design + Development – info@garethjohnsdesign.com
