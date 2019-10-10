@@ -19,6 +19,7 @@
     </div>
   </div>
 
+{#
   <div class="show-for-small-only">
   {% set video = entry.heroVideoMobile.one() %}
   <video playsinline autoplay muted loop class="video" poster="">
@@ -32,6 +33,7 @@
     <source src="https://storage.googleapis.com/old-blue-last-beer/{{ video.filename }}" type="video/mp4">
   </video>
   </div>
+#}
 
 </section>
 <!-- End Video Hero -->
@@ -41,7 +43,7 @@
   <div class="small-12 cell">
   
     {% set image = entry.campaignImage.one() %}
-    <div class="image--hero align-center-middle" data-interchange="{% include "_includes/images/interchange-img-small-12-medium-12-cell" %}">
+    <div class="image--hero align-center-middle" data-interchange="{% include "_includes/images/full/full/interchange-img-small-12-medium-12" %}">
       <div class="grid-y height-100 align-center">
         <div class="shrink cell text-center padding-2" id="video-gallery">
 
@@ -492,7 +494,7 @@ $(function () {
               
               <div class="excerpt__image">
                 {% for image in entry.eventThumb.all() %}
-                <div class="image--square" data-interchange="{% include "_includes/images/interchange-img-small-12-medium-4-cell" %}">
+                <div class="image--square" data-interchange="{% include "_includes/images/full/1-1/interchange-img-small-12-medium-4" %}">
                   <div class="content"></div>
                 </div>
                 {% endfor %}
@@ -527,7 +529,7 @@ $(function () {
     <div class="grid-x">
       <div class="small-12 medium-12 cell">
       <h1 class="text-uppercase">Contact</h1>
-      {% include "_includes/contact/form" %}
+      {% include "_includes/blocks/form" %}
       </div>
     </div>
   </div>

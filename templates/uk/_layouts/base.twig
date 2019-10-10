@@ -3,82 +3,12 @@
 {% set asset = seo.seoImage.one() %}
 {% set seoImage = craft.imager.transformImage(asset, { width: 1200, height: 630, dpr: 1, position: asset.getFocalPoint() }) %}
 
+{%- minify -%}
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="{{ craft.app.language }}">
+<html lang="{{ craft.app.language |slice(0,2) }}" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" class="no-js" dir="ltr">
 <head>
 	{% block head %}
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="google" content="notranslate" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="generator" content="Craft CMS, http://craftcms.com" />
-    
-		<title>{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}</title>
-		
-    <meta name="description" content="{% if seoDescription is defined %}{{ seoDescription }}{% else %}{{ globalSeoDescription|raw }}{% endif %}">
-    
-    <!-- Facebook Opengraph -->
-    <meta property="og:type" content="{% if seoType is defined %}{{ seoType }}{% else %}website{% endif %}">
-    <meta property="og:url" content="{% if seoUrl is defined %}{{ seoUrl }}{% else %}{{ siteUrl }}{% endif %}">
-    <meta property="og:title" content="{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}">
-    <meta property="og:image" content="{% if seoImage is defined %}{{ seoImage }}{% else %}{{ globalSeoImage }}{% endif %}">
-    <meta property="og:description" content="{% if seoDescription is defined %}{{ seoDescription }}{% else %}{{ globalSeoDescription|raw }}{% endif %}">
-    <meta property="og:site_name" content="{{ siteName }}">
-    <meta property="og:locale" content="en_GB">
-    <!-- Next tags are optional but recommended -->
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-
-    <!-- Twitter Cards -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@oldbluelastbeer">
-    <meta name="twitter:url" content="{% if seoUrl is defined %}{{ seoUrl }}{% else %}{{ siteUrl }}{% endif %}">
-    <meta name="twitter:title" content="{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}">
-    <meta name="twitter:description" content="{% if seoDescription is defined %}{{ seoDescription }}{% else %}{{ globalSeoDescription|raw }}{% endif %}">
-    <meta name="twitter:image" content="{% if seoImage is defined %}{{ seoImage }}{% else %}{{ globalSeoImage }}{% endif %}">
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/assets/favicons/site.webmanifest">
-    <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#272a67">
-    <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#272a67">
-    <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#272a67">
-    
-    <link rel="home" href="{{ siteUrl }}" />
-    <link rel="stylesheet" type="text/css" href="/assets/css/app.css">
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{seo.seoAnalytics}}"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    
-    gtag('config', '{{seo.seoAnalytics}}');
-    </script>
-
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window,document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-     fbq('init', '782589578427709'); 
-    fbq('track', 'PageView');
-    </script>
-    <noscript>
-     <img height="1" width="1" 
-    src="https://www.facebook.com/tr?id=782589578427709&ev=PageView
-    &noscript=1"/>
-    </noscript>
-
-
+    {% include "_includes/global/head" %}
 	{% endblock %}
 </head>
   <body {% if bodyClass is defined %}class="{{ bodyClass }}"{% endif %}>
@@ -86,3 +16,4 @@
 	{% block foot %}{% endblock %}
 	</body>
 </html>
+{%- endminify -%}

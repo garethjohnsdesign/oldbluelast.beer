@@ -21,6 +21,24 @@ return [
         // Control Panel trigger word
         'cpTrigger' => 'brew',
 
+        'smallbreakpoint' => '1400',
+
+        'breakpoints' => [
+                'small' => '640',
+                'medium' => '1024',
+                'large' => '1440',
+                'xlarge' => '1440',
+                'xxlarge' => '1440',
+        ],
+
+        'breakpointsContained' => [
+                'small' => '640',
+                'medium' => '1024',
+                'large' => '1200',
+                'xlarge' => '1200',
+                'xxlarge' => '1200',
+        ],
+
         // The secure key Craft will use for hashing and encrypting data
         'securityKey' => getenv('SECURITY_KEY'),
         
