@@ -501,6 +501,13 @@ content: '';
 display: none;
 }
 
+.optanon-alert-box-wrapper .optanon-button-more .optanon-alert-box-button-middle button {
+border-bottom: 1px solid #ccc;
+padding-bottom: 1px;
+color: #000 !important;
+cursor: pointer;
+}
+
 html, body {
   height: 100%;
 }
