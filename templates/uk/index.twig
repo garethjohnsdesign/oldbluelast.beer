@@ -6,12 +6,16 @@
 <section class="home__hero">
 
   <div class="grid-y grid-padding-x height-100 align-center">
-    <div class="shrink cell white">
+    <div class="shrink cell">
 
       <div class="grid-container">
-        <div class="grid-x align-right">
-          <div class="small-12 medium-6 cell">
-            <h6 class="sans-regular white padding-2">{{entry.heroText}}</h6>
+        <div class="grid-x grid-padding-x grid-padding-y">
+          <div class="small-12 medium-8 cell">
+            {{entry.heroText}}
+          </div>
+          <div class="small-12 medium-4 cell">
+            {{entry.heroSubheader}}
+            <div><a href="https://shop.oldbluelast.beer" class="h5 text-uppercase">Click for Beer <svg class="icon icon-arrow_forward"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow_forward"></use></svg
           </div>
         </div>
       </div>
@@ -46,8 +50,6 @@
     <div class="image--hero align-center-middle" data-interchange="{% include "_includes/images/full/full/interchange-img-small-12-medium-12" %}">
       <div class="grid-y height-100 align-center">
         <div class="shrink cell text-center padding-2" id="video-gallery">
-
-
           <a href="https://www.youtube.com/watch?v=CciUPWG6Kp8" class="h1 white play_arrow"><svg class="icon icon-play_arrow"><use xlink:href="/assets/icons/symbol-defs.svg#icon-play_arrow"></use></svg></a>
         </div>
       </div>
