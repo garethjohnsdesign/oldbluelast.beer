@@ -42,7 +42,7 @@ $window.on('scroll', function() {
 // ---------------
 
 $("#gallery").lightGallery({
-    selector: '.about__images',
+    selector: ".item",
     download: false
 });
 
