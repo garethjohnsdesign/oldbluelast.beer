@@ -152,6 +152,9 @@ i, cite, em, var, address, dfn {
   font-style: normal;
 }
 
+.primary-color {
+ color: $primary-color;
+}
 // 4. Age Gate
 // -----------
 
@@ -444,9 +447,25 @@ padding: 0.4rem 1rem !important
   max-width: 200px;
 }
 
+/*
 .mapboxgl-popup-content {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
+}
+*/
+
+.mapboxgl-popup-close-button {
+  display: none;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  padding: 1rem !important; 
+  width: 180px;
+}
+
+.mapboxgl-popup-content-wrapper {
+  padding: 1%;
 }
 
 .geocoder {

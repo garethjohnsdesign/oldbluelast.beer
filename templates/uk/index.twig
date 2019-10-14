@@ -119,7 +119,7 @@ var geojson = {
       coordinates: [-122.414, 37.776]
     },
     properties: {
-      title: 'Mapbox',
+      title: 'Test',
       description: 'San Francisco, California'
     }
   }]
@@ -136,7 +136,7 @@ geojson.features.forEach(function(marker) {
   new mapboxgl.Marker(el)
     .setLngLat(marker.geometry.coordinates)
     .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-      .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'))
+      .setHTML('<h4 class="primary-color secondary-font">' + marker.properties.title + '</h4><p class="primary-color">' + marker.properties.description + '</p>'))
     .addTo(map);
 });
 
@@ -152,18 +152,6 @@ mapboxgl: mapboxgl
 });
 
 document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
-
-{#
-var geolocate = new GeolocateControl({
-positionOptions: {
-enableHighAccuracy: true,
-trackUserLocation: true},
-accessToken: mapboxgl.accessToken,
-mapboxgl: mapboxgl
-});
-
-document.getElementById('geolocate').appendChild(geolocate.onAdd(map));
-#}
 
 </script>
 
@@ -220,8 +208,8 @@ document.getElementById('geolocate').appendChild(geolocate.onAdd(map));
           <div class="grid-x grid-padding-x">
           
             <div class="small-12 medium-8 cell text-uppercase">
-              <h6>{{ entry.eventDate | date('D j M') }}</h6>
-              <h5>{{ entry.title}} @ {% if entry.eventVenue|length %}{{ entry.eventVenue }},{% endif %} {{ entry.eventLocation }}</h5>
+              <h5>{{ entry.eventDate | date('D j M') }}</h5>
+              <h4>{{ entry.title}} @ {% if entry.eventVenue|length %}{{ entry.eventVenue }},{% endif %} {{ entry.eventLocation }}</h4>
             </div>
             
             <div class="small-12 medium-4 cell text-uppercase text-left medium-text-right align-self-bottom margin-bottom-1">
