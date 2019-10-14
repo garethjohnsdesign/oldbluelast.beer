@@ -1093,6 +1093,16 @@
 		"oAP": "/web/assets/fonts/helvetica-neue-bold.woff2",
 		"oF": 0
 		},
+	"/web/assets/icons/can.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/web/assets/icons/can.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/web/assets/icons/mapbox-icon.png": {
 		"ft": 32768,
 		"iS": 2496,
@@ -1131,8 +1141,8 @@
 		"oA": 0,
 		"oAP": "/web/assets/images/can-new.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
