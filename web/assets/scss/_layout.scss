@@ -196,7 +196,7 @@ i, cite, em, var, address, dfn {
   overflow: hidden;
   position: relative;
   @include breakpoint(small) {
-  height: 85vh;
+  height: 100vh;
   }
   @include breakpoint(medium) {
   height: 100vh;
