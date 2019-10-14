@@ -58,6 +58,9 @@
 #}
 <!-- End Campaign -->
 
+{% set locations = craft.entries
+.section('locations')
+.one() %}
 
 <!-- Location -->
 <section class="home__drink inverted padding-vertical-2" id="home__drink">
@@ -68,7 +71,7 @@
       </div>
       <div class="small-12 medium-4 cell text-uppercase">
 
-      <button class="h5 text-uppercase mapboxgl-ctrl-geolocate">Find Beer <svg class="icon icon-arrow_forward"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow_forward"></use></svg></button>
+      <button class="h5 text-uppercase findbeer">Find Beer <svg class="icon icon-arrow_forward"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow_forward"></use></svg></button>
       <div id='geocoder' class='geocoder'></div>
 {#       <div id='geolocate' class='geolocate'></div> #}
 
@@ -78,11 +81,8 @@
   </div>
 </section>
 
-{% set entry = craft.entries
-.section('locations')
-.one() %}
-
 <div id="map" style="width: 100%; height: 500px;"></div>
+
 
 <script>
 mapboxgl.accessToken = "{{ craft.maps.mapToken }}";

@@ -220,6 +220,28 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/node_modules/ssr-window/dist/ssr-window.esm.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/ssr-window/dist/ssr-window.esm-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/node_modules/swiper/js/swiper.esm.bundle.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/swiper/js/swiper.esm.bundle-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/package.json": {
 		"ft": 524288,
 		"oA": 1,

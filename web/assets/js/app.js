@@ -161,3 +161,7 @@ var swiper = new Swiper('.carousel--hero', {
     delay: 750,
   },
 })
+
+  $(".findbeer").click(function(){
+    alert("The paragraph was clicked.");
+  });
