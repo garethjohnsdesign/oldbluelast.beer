@@ -32,6 +32,7 @@ $("#gallery").lightGallery({
 });
 
 $('#video-gallery').lightGallery({
+   download: false,
    counter : false,
    controls: false,
     vimeoPlayerParams: {
