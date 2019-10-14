@@ -209,6 +209,28 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/node_modules/ssr-window/dist/ssr-window.esm.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/ssr-window/dist/ssr-window.esm-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/node_modules/swiper/js/swiper.esm.bundle.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/swiper/js/swiper.esm.bundle-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/package.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -754,6 +776,14 @@
 		"oAP": "/templates/uk/_includes/images/full/full/interchange-img-small-12-medium-12.twig",
 		"oF": 0
 		},
+	"/templates/uk/_includes/scripts/map.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/uk/_includes/scripts/map.twig",
+		"oF": 0
+		},
 	"/templates/uk/_layouts/base.twig": {
 		"cB": 0,
 		"ft": 8192,
@@ -800,6 +830,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/uk/find-beer/index.twig",
+		"oF": 0
+		},
+	"/templates/uk/index copy.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/uk/index copy.twig",
 		"oF": 0
 		},
 	"/templates/uk/index.twig": {
@@ -1120,25 +1158,14 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/web/assets/js/app-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/web/assets/js/app-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/web/assets/js/app.js": {
 		"bF": 4,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/web/assets/js/app-min.js",
-		"oF": 0,
+		"oAP": "/web/assets/js/min/app-min.js",
+		"oF": 2,
 		"sC": 3,
 		"tS": 0
 		},
@@ -2396,6 +2423,16 @@
 		"oF": 0,
 		"oS": 3,
 		"uL": 0
+		},
+	"/web/assets/scss/_swiper.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/web/assets/scss/_swiper-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"/web/assets/scss/_transitions.scss": {
 		"aP": 1,

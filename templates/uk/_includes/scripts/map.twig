@@ -1,0 +1,83 @@
+{% js %}
+
+// 1. Initial Map
+// --------------
+
+mapboxgl.accessToken = "{{ craft.maps.mapToken }}";
+
+var start = [-0.144,51.511];
+
+var map = new mapboxgl.Map({
+  container: "map",
+  style: "mapbox:///garethjohnsdesign/cju1g1emy19yu1fn0odqdxir1?optimize=true",
+  zoom: 16,
+  center: start,
+  pitch: 0,
+  bearing: 0,
+  scrollZoom: false
+});
+
+// 2. Data
+// -------
+
+var places = {
+  "type": "FeatureCollection",
+  "features": [
+   {% for entry in entries %}
+    {
+    type: 'Feature',
+    "properties": {
+      "id": "{{entry.title | kebab}}",
+      "description": "{{entry.title}}",
+      "url": "{{entry.url}}",
+      "phone": "{{ entry.title }}",
+      "address": "{{ entry.location.parts.number }} {{ entry.location.parts.address }}",
+      "postalCode": "{{ entry.location.parts.postcode }}",
+      "icon": "map-marker"
+    },
+    geometry: {
+    type: "Point",
+    coordinates: [{{ entry.location.lng }}, {{ entry.location.lat }}]
+    }
+    },
+    {% endfor %}
+  ]
+};
+
+// 3. Markers
+// ----------
+
+var popupsMap = {};
+for (var i = 0; i < places.features.length; i++) {
+  (function(){ // closure over places.features[i] and associated variables is needed  in the callback functions
+    var place_closure = places.features[i];
+    var coordinates = place_closure.geometry.coordinates.slice();
+    var description = place_closure.properties.description;
+    var phone = place_closure.properties.phone;
+    var link = place_closure.properties.url;
+    var popupContent = '<div>' + description + '</div>' + '<div>' + phone + '</div>';
+  
+  
+    var markerElement = document.createElement('div')
+    markerElement.className = 'customMarker'
+    markerElement.innerHTML = '<a data-place-id="' + place_closure.properties.id + '" href="' + place_closure.properties.url + '"><svg class="icon icon-location"><use xlink:href="/assets/icons/symbol-defs.svg#icon-location"></use></svg></a>'
+  
+  // 6. Add Marker to Map
+  // --------------------
+  
+    new mapboxgl.Marker(markerElement).setLngLat(places.features[i].geometry.coordinates).addTo(map)
+  })();
+}
+
+// 7. Navigation Control
+// ---------------------
+
+map.addControl(new mapboxgl.NavigationControl());
+map.addControl(new mapboxgl.GeolocateControl({
+positionOptions: {
+enableHighAccuracy: true
+},
+trackUserLocation: true
+}));
+
+{% endjs %}

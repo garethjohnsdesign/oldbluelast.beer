@@ -67,7 +67,7 @@
 
 $global-font-size: 100%;
 // $global-width: rem-calc(1200);
-$global-width: rem-calc(1440);
+$global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 /*
 $foundation-palette: (
@@ -103,7 +103,7 @@ $global-weight-normal: normal;
 $global-weight-bold: bold;
 $global-radius: 0;
 // $global-menu-padding: 0.7rem 1rem;
-$global-menu-padding: 0rem 1rem;
+$global-menu-padding: 0.7rem 1rem;
 $global-menu-nested-margin: 1rem;
 $global-text-direction: ltr;
 $global-flexbox: true;
@@ -149,40 +149,33 @@ $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: inherit;
-$header-lineheight: 1.2;
-$header-margin-bottom: 0.5rem;
+// $header-lineheight: 1.2;
+$header-lineheight: 1.4;
+$header-margin-bottom: 1rem;
 $header-styles: (
-  small: (
-    'h1': ('font-size': 48),
-    'h2': ('font-size': 32),
-    'h3': ('font-size': 24),
-    'h4': ('font-size': 24),
-    'h5': ('font-size': 18),
-    'h6': ('font-size': 16),
+  'small': (
+    'h1': ('font-size': 48, 'line-height': 1.0, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
+    'h2': ('font-size': 32, 'line-height': 1.0, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
+    'h3': ('font-size': 24, 'line-height': 1.0, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
+    'h4': ('font-size': 20, 'line-height': $header-lineheight, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
+    'h5': ('font-size': 18, 'line-height': $header-lineheight, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
+    'h6': ('font-size': 16, 'line-height': $header-lineheight, 'margin-top': 0, 'margin-bottom': $header-margin-bottom)
   ),
-  medium: (
-    'h1': ('font-size': 72),
-    'h2': ('font-size': 40),
-    'h3': ('font-size': 31),
-    'h4': ('font-size': 25),
-    'h5': ('font-size': 20),
-    'h6': ('font-size': 16),
+  'medium': (
+    'h1': ('font-size': 72, 'line-height': 1.0, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
+    'h2': ('font-size': 40, 'line-height': 1.0, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
+    'h3': ('font-size': 32, 'line-height': 1.0, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
+    'h4': ('font-size': 24, 'line-height': $header-lineheight, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
+    'h5': ('font-size': 18, 'line-height': $header-lineheight, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
+    'h6': ('font-size': 16, 'line-height': $header-lineheight, 'margin-top': 0, 'margin-bottom': $header-margin-bottom)
   ),
-  large: (
-  'h1': ('font-size': 120),
-  'h2': ('font-size': 70),
-  'h3': ('font-size': 44),
-  'h4': ('font-size': 24),
-  'h5': ('font-size': 20),
-  'h6': ('font-size': 16),
-  ),
-  xxlarge: (
-  'h1': ('font-size': 120),
-  'h2': ('font-size': 70),
-  'h3': ('font-size': 44),
-  'h4': ('font-size': 24),
-  'h5': ('font-size': 20),
-  'h6': ('font-size': 16),
+  'large': (
+    'h1': ('font-size': 120, 'line-height': 1.0, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
+    'h2': ('font-size': 64, 'line-height': 1.0, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
+    'h3': ('font-size': 32, 'line-height': 1.0, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
+    'h4': ('font-size': 24, 'line-height': $header-lineheight, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
+    'h5': ('font-size': 18, 'line-height': $header-lineheight, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
+    'h6': ('font-size': 16, 'line-height': $header-lineheight, 'margin-top': 0, 'margin-bottom': $header-margin-bottom)
   ),
 );
 $header-text-rendering: optimizeLegibility;

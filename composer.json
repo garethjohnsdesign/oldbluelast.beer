@@ -28,7 +28,8 @@
     "craftcms/redactor": "2.4.0",
     "craftcms/contact-form-honeypot": "1.0.2",
     "nystudio107/craft-minify": "1.2.9",
-    "aelvan/imager": "v2.3.0"
+    "aelvan/imager": "v2.3.0",
+    "ether/simplemap": "3.6.4.3"
   },
   "autoload": {
     "psr-4": {

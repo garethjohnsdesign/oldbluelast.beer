@@ -46,11 +46,26 @@
 // 2. Global
 // ---------
 
-input::-webkit-input-placeholder {
-  transform:translate3d(0,2px,0)
+html, body {
+  height: 100%;
 }
 
-input::-webkit-input-email {
+body {
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+  font-kerning: normal;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+}
+
+input::-webkit-input-placeholder {
   transform:translate3d(0,2px,0)
 }
 
@@ -58,19 +73,8 @@ small {
   line-height: 1.4;
 }
 
-body {
-  cursor: default;
-  font-kerning: normal;
-}
-
 svg {
   max-width: 100%;
-}
-
-img {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 ::selection {
@@ -99,15 +103,6 @@ p a {
   @include links ($primary-color, $primary-color) 
 }
 
-.grid-container {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  @include breakpoint(large) {
-  padding-left: 4rem;
-  padding-right: 4rem;
-  }
-}
-
 .social-links {
   z-index: 10;
 	position: fixed;
@@ -120,8 +115,22 @@ p a {
 // -------------
 
 strong, b {
-font-weight: normal;
-font-family: $secondary-font-family;
+  font-weight: normal;
+  font-family: $secondary-font-family;
+}
+
+.primary-font {
+  font-family: $primary-font-family;
+}
+
+.secondary-font {
+  font-family: $secondary-font-family;
+}
+
+.secondary-font {
+  h1, h2, h3, h4, h5 {
+  font-family: $secondary-font-family;
+  }
 }
 
 .underline {
@@ -141,19 +150,6 @@ font-family: $secondary-font-family;
 
 i, cite, em, var, address, dfn {
   font-style: normal;
-}
-
-h1, h2, h3, h4 {
-  font-family: $secondary-font-family;
-  text-transform: uppercase;
-}
-
-
-h1 {
-  font-family: $secondary-font-family;
-  margin-bottom: 1rem;
-  line-height: 1.1;
-  padding-left: 0.1rem;
 }
 
 // 4. Age Gate
@@ -190,93 +186,6 @@ h1 {
   background-color: transparent;
 }
 
-.scrollhide-nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
-  &.hidden {
-    transform: translateY(-100%);
-  }
-}
-
-.overlay-menu {
-  z-index: 2;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%; 
-  visibility: hidden;
-  background-color: $primary-color;
-  
-  &.open {
-    visibility: visible;
-  }
-}
-
-// 6. Excerpt
-// ----------
-
-.excerpt__title {
-  position:absolute;
-  width: 100%;
-  height: 100%;
-  margin: 0rem;
-  color: $white;
-  opacity: 0;
-  z-index: 1;
-}
-
-.excerpt {
-  background-color: $primary-color;
-  position:relative;
-  &:hover .excerpt__image img {
-  filter: grayscale(1) contrast(1.75);
-  opacity: 0.1;
-  }
-  &:hover .excerpt__title {
-  opacity: 1;
-  } 
-}
-
-// 7. Featured
-// -----------
-
-.featured h2, .featured h5 {
-  font-family: $body-font-family;
-}
-
-.featured__title {
-  position:absolute;
-  width: 100%;
-  height: 100%;
-  color: $white;
-  z-index: 1;
-  padding: 3rem;
-  @include breakpoint(small) { 
-  padding: 1.5rem;
-  }
-  @include breakpoint(large) { 
-  padding: 4rem;
-  }
-}
-
-.featured__image img {
-  filter: grayscale(1) contrast(1.75);
-  opacity: 0.1;
-}
-
-.featured {
-  background-color: $primary-color;
-  position:relative;
-  &:hover .featured__image img {
-  filter: grayscale(0) contrast(1);
-  opacity: 1;
-  }
-}
-
 // 8. Home
 // -------
 
@@ -284,8 +193,27 @@ h1 {
   height: 100vh;
 }
 
-.hero__text {
-  opacity: 0;
+.home__hero {
+  overflow: hidden;
+  position: relative;
+  @include breakpoint(small) {
+  height: 85vh;
+  }
+  @include breakpoint(medium) {
+  height: 100vh;
+  }
+}
+
+.home__party-video {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.home__campaign {
+  height: 50vh;
+  background-size: cover; 
+  background-position: 50%;
 }
 
 @keyframes scrolling-animation {
@@ -337,17 +265,8 @@ h1 {
 }
 
 
-// 10. Canchester
-// ------
-
-.canchester__hero__text {
-  @include breakpoint(small) { 
-  padding: 2rem 1rem;
-  }
-  @include breakpoint(large) { 
-  padding: 5rem 3rem;
-  }
-}
+// 10. Home
+// --------
 
 .home__hero {
   overflow: hidden;
@@ -365,7 +284,6 @@ h1 {
   overflow: hidden;
   position: relative;
 }
-
 
 .home__campaign {
   height: 50vh;
@@ -438,34 +356,8 @@ h1 {
     z-index: -1;
 }
 
-nav {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-}
-
 html {
   scroll-behavior: smooth;
-}
-
-.home__the-beer h5 {
-  padding-bottom: 2rem;
-}
-
-.home__hero h1 {
-  font-family: $secondary-font-family;
-  text-transform: uppercase;
-  line-height: 1;
-}
-
-.home__the-beer h3 {
-  font-family: $secondary-font-family;
-  text-transform: uppercase;
-}
-
-h3, h4 {
-  font-family: $secondary-font-family;
 }
 
 input#honeypot { 
@@ -477,6 +369,7 @@ input#honeypot {
 font-size: $small-font-size;
 }
 
+/*
 #optanon *, #optanon *:before, #optanon *:after {
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
@@ -507,17 +400,39 @@ padding-bottom: 1px;
 color: #000 !important;
 cursor: pointer;
 }
+*/
 
-html, body {
+
+.home__hero__text {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
   height: 100%;
 }
-body {
-  display: flex;
-  flex-direction: column;
+
+.global__photos {
+ .content:hover {
+  background-color: rgba($primary-color, 0.95);
+ }
 }
-.content {
-  flex: 1 0 auto;
+
+.links {
+  width: 100vh;
+  left: calc(100% - 5rem);
+  position: fixed;
+  top: 50%;
+  transform: rotate(-90deg) translate(-50%, 0%);
+  transform-origin: left top;
+  z-index: 21;
 }
-.footer {
-  flex-shrink: 0;
+
+.icon-socials {
+-webkit-transform: rotate(90deg);
+transform: rotate(90deg);
+}
+
+.social {
+padding: 0.4rem 1rem !important
 }

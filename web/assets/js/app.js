@@ -7,6 +7,7 @@ import "lightGallery";
 import "lg-fullscreen";
 import "lg-video";
 import AOS from 'aos';
+import Swiper from 'swiper';
 
 // 2. Special Queries
 // ------------------
@@ -64,6 +65,7 @@ $('#video-gallery').lightGallery({
 // 6. Age Gate
 // -----------
 
+/*
 function checkIfVerified(){
   if ($.cookie('age-gate') == 'of_age') {
     // Hide overlay
@@ -107,6 +109,7 @@ $('form[name=agegate]').submit(function(ev){
   checkIfVerified();  
   return false;
 });
+*/
 
 // 7. Links Scroll to Section
 // --------------------------
@@ -146,3 +149,15 @@ $('a[href*="#"]')
       }
     }
   });
+
+
+var swiper = new Swiper('.carousel--hero', {
+  effect: 'fade',
+  slidesPerView: '1',
+  centeredSlides: true,
+  spaceBetween: 0,
+  loop: true,
+  autoplay: {
+    delay: 750,
+  },
+})
