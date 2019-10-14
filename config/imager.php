@@ -21,7 +21,7 @@ return [
               'useCloudSourcePath' => true,
               'shardStrategy' => 'cycle',
               'getExternalImageDimensions' => true,
-              'defaultParams' => ['auto'=>'compress,format', 'q'=>50, 'fp-debug'=>true, 'blur'=>0, 'ch'=>'dpr', 'cs'=>'tinysrgb'],
+              'defaultParams' => ['auto'=>'compress,format', 'q'=>50, 'fp-debug'=>false, 'blur'=>0, 'ch'=>'dpr', 'cs'=>'tinysrgb'],
               'apiKey' => '',
               'excludeFromPurge' => false,
           ]
