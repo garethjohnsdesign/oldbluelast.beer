@@ -68,7 +68,8 @@
       </div>
       <div class="small-12 medium-4 cell text-uppercase">
 
-<button class="mapboxgl-ctrl-geolocate button" type="button" title="Find my location" aria-label="Find my location">Test</button>
+      <button class="h5 text-uppercase mapboxgl-ctrl-geolocate">Find Beer <svg class="icon icon-arrow_forward"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow_forward"></use></svg></button>
+      <div id='geocoder' class='geocoder'></div>
 
       </div>
 
@@ -138,6 +139,13 @@ map.addControl(new mapboxgl.GeolocateControl ({positionOptions: {enableHighAccur
 
 // disable map zoom when using scroll
 map.scrollZoom.disable();
+
+var geocoder = new MapboxGeocoder({
+accessToken: mapboxgl.accessToken,
+mapboxgl: mapboxgl
+});
+ 
+document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
 
 </script>
 
