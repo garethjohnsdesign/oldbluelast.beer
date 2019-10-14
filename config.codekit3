@@ -1093,6 +1093,17 @@
 		"oAP": "/web/assets/fonts/helvetica-neue-bold.woff2",
 		"oF": 0
 		},
+	"/web/assets/icons/mapbox-icon.png": {
+		"ft": 32768,
+		"iS": 2496,
+		"oA": 0,
+		"oAP": "/web/assets/icons/mapbox-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/web/assets/icons/symbol-defs.svg": {
 		"ft": 2097152,
 		"miP": 0,
