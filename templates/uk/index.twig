@@ -85,11 +85,12 @@ mapboxgl.accessToken = "{{ craft.maps.mapToken }}";
 
 var map = new mapboxgl.Map({
   container: "map",
-  style: "mapbox://styles/mapbox/streets-v9",
+  style: 'mapbox://styles/mapbox/streets-v11',
   center: [
     {{ entry.location.lng }},
     {{ entry.location.lat }}
-  ]
+  ],
+  zoom: 9 // starting zoom
 });
 </script>
 
