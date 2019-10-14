@@ -9,7 +9,7 @@
 
   <div class="swiper-container carousel--hero">
     <div class="swiper-wrapper">
-      {% for image in entry.heroImages %}
+      {% for image in entry.heroImages.order('RAND()') %}
       <div class="swiper-slide small-12 cell text-center">
         <div class="image--hero align-center-middle" data-interchange="{% include "_includes/images/full/full/interchange-img-small-12-medium-12" %}">  
         </div>
