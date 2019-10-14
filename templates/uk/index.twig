@@ -68,9 +68,9 @@
       </div>
       <div class="small-12 medium-4 cell text-uppercase">
 
-{#       <button class="h5 text-uppercase mapboxgl-ctrl-geolocate">Find Beer <svg class="icon icon-arrow_forward"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow_forward"></use></svg></button> #}
+      <button class="h5 text-uppercase mapboxgl-ctrl-geolocate">Find Beer <svg class="icon icon-arrow_forward"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow_forward"></use></svg></button>
       <div id='geocoder' class='geocoder'></div>
-      <div id='geolocate' class='geolocate'></div>
+{#       <div id='geolocate' class='geolocate'></div> #}
 
       </div>
 
@@ -146,6 +146,9 @@ accessToken: mapboxgl.accessToken,
 mapboxgl: mapboxgl
 });
 
+document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
+
+{#
 var geolocate = new GeolocateControl({
 positionOptions: {
 enableHighAccuracy: true,
@@ -153,10 +156,9 @@ trackUserLocation: true},
 accessToken: mapboxgl.accessToken,
 mapboxgl: mapboxgl
 });
- 
-document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
 
 document.getElementById('geolocate').appendChild(geolocate.onAdd(map));
+#}
 
 </script>
 
