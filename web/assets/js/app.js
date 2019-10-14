@@ -162,6 +162,6 @@ var swiper = new Swiper('.carousel--hero', {
   },
 })
 
-  $(".findbeer").click(function(){
-    alert("The paragraph was clicked.");
-  });
+$(".findbeer").click(function(){
+  $(".mapboxgl-ctrl-geolocate").click()
+});
