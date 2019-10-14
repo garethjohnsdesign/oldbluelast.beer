@@ -31,7 +31,7 @@ $("#gallery").lightGallery({
     selector: ".item",
     counter : true,
     fullscreen: true,
-    download: true,
+    download: false,
 });
 
 $('#video-gallery').lightGallery({

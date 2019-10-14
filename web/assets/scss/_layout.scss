@@ -193,10 +193,6 @@ i, cite, em, var, address, dfn {
 // -------
 
 .home__hero {
-  height: 100vh;
-}
-
-.home__hero {
   overflow: hidden;
   position: relative;
   @include breakpoint(small) {
@@ -205,6 +201,12 @@ i, cite, em, var, address, dfn {
   @include breakpoint(medium) {
   height: 100vh;
   }
+}
+
+.home__party-video {
+  height: 80vh;
+  overflow: hidden;
+  position: relative;
 }
 
 .home__campaign {
@@ -261,33 +263,6 @@ i, cite, em, var, address, dfn {
   font-family: $primary-font-family;
 }
 
-
-// 10. Home
-// --------
-
-.home__hero {
-  overflow: hidden;
-  position: relative;
-  @include breakpoint(small) {
-  height: 85vh;
-  }
-  @include breakpoint(medium) {
-  height: 100vh;
-  }
-}
-
-.home__party-video {
-  height: 80vh;
-  overflow: hidden;
-  position: relative;
-}
-
-.home__campaign {
-  height: 50vh;
-  background-size: cover; 
-  background-position: 50%;
-}
-
 // 6. Images
 // ---------
 
@@ -328,6 +303,17 @@ i, cite, em, var, address, dfn {
   }
   background-size: cover; 
   background-position: 50%;
+}
+
+.image--campaign {
+  height: 80vh;
+  background-size: cover; 
+  @include breakpoint(small) {
+  background-position: 50% 50%;
+  }
+  @include breakpoint(medium) {
+  background-position: 50% 50%;
+  }
 }
 
 .image--hero {
