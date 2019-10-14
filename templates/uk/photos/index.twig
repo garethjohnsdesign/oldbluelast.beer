@@ -1,15 +1,6 @@
 {% extends "_layouts/site" %}
 
 {% block main %}
-
-<div class="grid-container">
-  <div class="grid-x grid-padding-x grid-padding-y">
-    <div class="small-12 cell text-uppercase">
-      <h1 id="photos-word">Event</h1>
-      <h1>Photos</h1>
-    </div>
-  </div>
-</div>
     
 <div class="grid-x small-up-1 medium-up-3">
       
@@ -22,25 +13,17 @@
         
         {% for entry in evententries %}
         <div class="cell">
-          <div class="excerpt">
-            <a href="{{ entry.url}}">
-              
-              <div class="grid-x excerpt__title align-middle">
-                <div class="small-12 cell text-center padding-3">
-                  <h5>{{ entry.title}} @ {{ entry.eventVenue}}</h5>
-                </div>
-              </div>
-              
-              <div class="excerpt__image">
+            <a href="{{ entry.url}}" class="global__photos">   
                 {% for image in entry.eventThumb.all() %}
                 <div class="image--square" data-interchange="{% include "_includes/images/full/1-1/interchange-img-small-12-medium-4" %}">
-                  <div class="content"></div>
+                  <div class="grid-y height-100 align-center content">
+                    <div class="shrink cell text-center padding-2">
+                      <h4>{{ entry.title}}<br>@ {{ entry.eventVenue}}</h4>
+                    </div>
+                  </div>
                 </div>
                 {% endfor %}
-              </div>
-            
             </a>
-          </div>
         </div>
         {% endfor %}
         
