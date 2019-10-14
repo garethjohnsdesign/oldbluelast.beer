@@ -6,6 +6,7 @@ import Foundation from 'foundation-sites';
 import "lightGallery";
 import "lg-fullscreen";
 import "lg-video";
+import "lg-autoplay";
 import AOS from 'aos';
 import Swiper from 'swiper';
 
@@ -28,7 +29,9 @@ $(document).foundation();
 
 $("#gallery").lightGallery({
     selector: ".item",
-    download: false
+    counter : true,
+    fullscreen: true,
+    download: true,
 });
 
 $('#video-gallery').lightGallery({
@@ -130,7 +133,7 @@ $('a[href*="#"]')
           } else {
             $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
             $target.focus(); // Set focus again
-          };
+          }
         });
       }
     }
@@ -144,8 +147,8 @@ var swiper = new Swiper('.carousel--hero', {
   spaceBetween: 0,
   loop: true,
   autoplay: {
-    delay: 2500,
-  },
+    delay: 2500
+  }
 })
 
 $(".findbeer").click(function(){
