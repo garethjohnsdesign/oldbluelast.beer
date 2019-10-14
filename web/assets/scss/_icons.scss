@@ -5,7 +5,7 @@
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
-  vertical-align: middle;
+  vertical-align: text-bottom;
 }
 
 /* ==========================================
@@ -45,7 +45,8 @@ Single-colored icons can be modified like so:
 }
 
 .icon-arrow_forward {
-  font-size: 2rem;
+  font-size: 125%;
+  margin-left: 0.25em;
 }
 
 .icon-drinking {

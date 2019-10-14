@@ -313,10 +313,17 @@ $button-background: $white;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 // $button-color: $white;
 $button-color: $primary-color;
-$button-color-alt: $black;
+// $button-color-alt: $black;
+$button-color-alt: $white;
 $button-radius: $global-radius;
 // $button-hollow-border-width: 1px;
 $button-hollow-border-width: 2px;
+$button-sizes: (
+  tiny: 0.6rem,
+  small: 0.75rem,
+  default: 0.9rem,
+  large: 1.25rem,
+);
 $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,
