@@ -154,7 +154,7 @@ $header-lineheight: 1.4;
 $header-margin-bottom: 1rem;
 $header-styles: (
   'small': (
-    'h1': ('font-size': 48, 'line-height': 1.0, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
+    'h1': ('font-size': 48, 'line-height': 1.0, 'margin-top': 1rem, 'margin-bottom': 0),
     'h2': ('font-size': 32, 'line-height': 1.0, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
     'h3': ('font-size': 24, 'line-height': 1.0, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
     'h4': ('font-size': 20, 'line-height': $header-lineheight, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
@@ -162,7 +162,7 @@ $header-styles: (
     'h6': ('font-size': 16, 'line-height': $header-lineheight, 'margin-top': 0, 'margin-bottom': $header-margin-bottom)
   ),
   'medium': (
-    'h1': ('font-size': 72, 'line-height': 1.0, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
+    'h1': ('font-size': 72, 'line-height': 1.0, 'margin-top': 1rem, 'margin-bottom': 0),
     'h2': ('font-size': 40, 'line-height': 1.0, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
     'h3': ('font-size': 32, 'line-height': 1.0, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
     'h4': ('font-size': 24, 'line-height': $header-lineheight, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
@@ -170,7 +170,7 @@ $header-styles: (
     'h6': ('font-size': 16, 'line-height': $header-lineheight, 'margin-top': 0, 'margin-bottom': $header-margin-bottom)
   ),
   'large': (
-    'h1': ('font-size': 120, 'line-height': 1.0, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
+    'h1': ('font-size': 120, 'line-height': 1.0, 'margin-top': 1rem, 'margin-bottom': 0),
     'h2': ('font-size': 64, 'line-height': 1.0, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
     'h3': ('font-size': 32, 'line-height': 1.0, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),
     'h4': ('font-size': 24, 'line-height': $header-lineheight, 'margin-top': 0, 'margin-bottom': $header-margin-bottom),

@@ -26,8 +26,14 @@
                 {{entry.heroText}}
               </div>
               <div class="small-12 medium-4 cell">
-                <div class="text-uppercase">{{entry.heroSubheader}}</div>
-                <div class="margin-top-1"><a href="/redirection" class="button large text-uppercase solid">Click for Beer<svg class="icon icon-arrow_forward"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow_forward"></use></svg></a></div>
+                <div class="grid-y align-justify" style="height: 100%;">
+                  <div class="shrink cell">
+                  <div class="text-uppercase margin-top-1">{{entry.heroSubheader}}</div>
+                  </div>
+                  <div class="shrink cell">
+                  <div class="margin-top-1 margin-bottom-1"><a href="/redirection" class="button large text-uppercase solid">Click for Beer<svg class="icon icon-arrow_forward"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow_forward"></use></svg></a></div>
+                  </div>
+                  </div>
               </div>
           </div>
         </div>
@@ -239,7 +245,7 @@ document.getElementById('geolocate').appendChild(geolocate.onAdd(map));
         <div class="grid-container padding-vertical-2">
           <div class="grid-x grid-padding-x grid-padding-y">
             <div class="small-12 medium-8 cell text-uppercase">
-              <h1 class="secondary-font margin-bottom-0 text-uppercase">Photos</h1>
+              <h1 class="secondary-font text-uppercase">Photos</h1>
             </div>
             <div class="small-12 medium-4 cell text-uppercase">
               <a href="/photos" class="button primary text-uppercase solid large">View All <svg class="icon icon-arrow_forward"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow_forward"></use></svg></a>
