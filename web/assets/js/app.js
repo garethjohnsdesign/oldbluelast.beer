@@ -9,8 +9,6 @@ import "lg-video";
 import "lg-autoplay";
 import AOS from 'aos';
 import Swiper from 'swiper';
-import mapboxgl from 'mapbox-gl';
-window.mapboxgl = mapboxgl;
 
 // 2. Special Queries
 // ------------------
