@@ -145,13 +145,6 @@ map.addControl(new mapboxgl.GeolocateControl ({positionOptions: {enableHighAccur
 // disable map zoom when using scroll
 map.scrollZoom.disable();
 
-var geocoder = new MapboxGeocoder({
-accessToken: mapboxgl.accessToken,
-mapboxgl: mapboxgl
-});
-
-document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
-
 {% endjs %}
 
 <!-- Party Video -->
