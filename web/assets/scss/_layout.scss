@@ -111,11 +111,6 @@ p a {
 	transform:rotate(90deg);
 }
 
-.social-links-test {
-  mix-blend-mode: exclusion; 
-  color: white;
-}
-
 // 3. Typography
 // -------------
 
@@ -407,6 +402,8 @@ cursor: pointer;
  }
 }
 
+
+
 .links {
   width: 100vh;
   left: calc(100% - 7rem);
@@ -415,7 +412,20 @@ cursor: pointer;
   transform: rotate(-90deg) translate(-50%, 0%);
   transform-origin: left top;
   z-index: 21;
+  color: white;
+/*
+  mix-blend-mode: difference;
+  filter: grayscale(100%);
+*/
 }
+
+.testing {
+  background: inherit;
+  background-clip: text;
+  color: black;
+  filter: invert(1);
+}
+
 
 .icon-socials-rotate {
 -webkit-transform: rotate(90deg);
