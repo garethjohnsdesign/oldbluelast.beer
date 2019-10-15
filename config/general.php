@@ -51,8 +51,8 @@ return [
     // Dev environment settings
     'dev' => [
         // Base site URL
-        'siteUrl' => 'https://oldbluelast.test',
-        'shopUrl' => 'https://oldbluelast.test',
+        'siteUrl' => 'http://oldbluelast.test',
+        'shopUrl' => 'http://oldbluelast.test',
 
         // Dev Mode (see https://craftcms.com/support/dev-mode)
         'devMode' => true,
