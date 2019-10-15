@@ -15,6 +15,7 @@
     "lg-fullscreen": "^1.1.0",
     "lg-video": "^1.2.2",
     "lightgallery": "^1.6.12",
+    "mapbox-gl": "^1.4.1",
     "motion-ui": "~2.0.0",
     "package": "^1.0.1",
     "swiper": "^5.0.4",
