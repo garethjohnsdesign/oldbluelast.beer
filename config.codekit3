@@ -97,6 +97,14 @@
 		"oAP": "/config/license.key",
 		"oF": 0
 		},
+	"/config/minify.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/config/minify.php",
+		"oF": 0
+		},
 	"/config/redactor/Simple.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -1132,6 +1140,16 @@
 		"oAP": "/web/assets/fonts/helvetica-neue-bold.woff2",
 		"oF": 0
 		},
+	"/web/assets/icons/can.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/web/assets/icons/can.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/web/assets/icons/mapbox-icon.png": {
 		"ft": 32768,
 		"iS": 2496,
@@ -1142,6 +1160,16 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"/web/assets/icons/symbol-defs.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/web/assets/icons/symbol-defs.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"/web/assets/images/bag.png": {
 		"ft": 32768,
@@ -2462,15 +2490,18 @@
 		"oS": 3,
 		"uL": 0
 		},
-	"/web/assets/scss/_mapbox.css": {
+	"/web/assets/scss/_mapbox.scss": {
 		"aP": 1,
 		"bl": 0,
-		"ft": 16,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
 		"ma": 0,
-		"oA": 0,
-		"oAP": "/web/assets/scss/_mapbox-min.css",
+		"oA": 1,
+		"oAP": "/web/assets/scss/_mapbox.css",
 		"oF": 0,
-		"oS": 3
+		"oS": 3,
+		"uL": 0
 		},
 	"/web/assets/scss/_settings.scss": {
 		"aP": 1,
@@ -2585,6 +2616,106 @@
 		"oF": 0,
 		"oS": 3,
 		"uL": 0
+		},
+	"/web/assets/svg/mapboxgl-ctrl-attrib.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/web/assets/svg/mapboxgl-ctrl-attrib.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/web/assets/svg/mapboxgl-ctrl-compass.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/web/assets/svg/mapboxgl-ctrl-compass.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/web/assets/svg/mapboxgl-ctrl-fullscreen.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/web/assets/svg/mapboxgl-ctrl-fullscreen.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/web/assets/svg/mapboxgl-ctrl-geolocate-background.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/web/assets/svg/mapboxgl-ctrl-geolocate-background.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/web/assets/svg/mapboxgl-ctrl-geolocate.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/web/assets/svg/mapboxgl-ctrl-geolocate.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/web/assets/svg/mapboxgl-ctrl-logo-compact.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/web/assets/svg/mapboxgl-ctrl-logo-compact.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/web/assets/svg/mapboxgl-ctrl-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/web/assets/svg/mapboxgl-ctrl-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/web/assets/svg/mapboxgl-ctrl-shrink.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/web/assets/svg/mapboxgl-ctrl-shrink.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/web/assets/svg/mapboxgl-ctrl-zoom-in.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/web/assets/svg/mapboxgl-ctrl-zoom-in.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/web/assets/svg/mapboxgl-ctrl-zoom-out.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/web/assets/svg/mapboxgl-ctrl-zoom-out.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"/web/cpresources": {
 		"ft": 65536,

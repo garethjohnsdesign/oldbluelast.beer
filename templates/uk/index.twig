@@ -242,31 +242,28 @@ var map = new mapboxgl.Map({
   center: [-96, 37.8],
   zoom: 3
 });
- 
+
 var geojson = {
   type: 'FeatureCollection',
-  features: [{
-    type: 'Feature',
-    geometry: {
-      type: 'Point',
-      coordinates: [-77.032, 38.913]
-    },
-    properties: {
-      title: 'Mapbox',
-      description: 'Washington, D.C.'
-    }
-  },
+  features: 
+  [
+  {% set locations = craft.entries
+  .section('locations')
+  .all() %}
+  {% for entry in locations %}
   {
     type: 'Feature',
     geometry: {
       type: 'Point',
-      coordinates: [-122.414, 37.776]
+      coordinates: [{{ entry.location.lng }}, {{ entry.location.lat }}]
     },
     properties: {
-      title: 'Test',
-      description: 'San Francisco, California'
+      title: '{{entry.title }}',
+      description: '{{ entry.location.parts.number }} {{ entry.location.parts.address }}'
     }
-  }]
+  },
+  {% endfor %}
+  ]
 };
  
 // add markers to map
