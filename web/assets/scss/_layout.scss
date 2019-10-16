@@ -100,7 +100,7 @@ p a {
 .inverted {
   background-color: $white;
   color: $primary-color;
-  @include links ($primary-color, $primary-color) 
+//   @include links ($primary-color, $primary-color) 
 }
 
 .social-links {
@@ -468,4 +468,18 @@ top:20px;
 
 .button {
 vertical-align: bottom;
+}
+
+.primary-button {
+  @include button-style($primary-color, $white, $white);
+  &:hover {
+    color: $primary-color;   
+  }
+}
+
+.secondary-button {
+  @include button-style($white, $primary-color, $primary-color);
+  &:hover {
+    color: $white;   
+  }
 }
