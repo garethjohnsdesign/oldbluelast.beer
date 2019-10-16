@@ -411,19 +411,9 @@ cursor: pointer;
   top: 50%;
   transform: rotate(-90deg) translate(-50%, 0%);
   transform-origin: left top;
-  z-index: 21;
+  z-index: 200;
   color: white;
-/*
-  mix-blend-mode: difference;
-  filter: grayscale(100%);
-*/
-}
-
-.testing {
-  background: inherit;
-  background-clip: text;
-  color: black;
-  filter: invert(1);
+  filter: drop-shadow(1px 1px 1px rgba(0,0,0,.3) );
 }
 
 
