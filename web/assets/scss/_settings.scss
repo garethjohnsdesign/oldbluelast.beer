@@ -307,6 +307,7 @@ $breadcrumbs-item-separator-color: $medium-gray;
 
 $button-font-family: inherit;
 $button-padding: 0.85em 1em;
+$button-padding: 0.85em 1em 0.5em 1em ;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 // $button-background: $primary-color;
@@ -497,6 +498,7 @@ $input-cursor-disabled: not-allowed;
 // $input-transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
 $input-transition: 0;
 $input-number-spinners: true;
+$input-number-spinners: false;
 $input-radius: $global-radius;
 $form-button-radius: $global-radius;
 

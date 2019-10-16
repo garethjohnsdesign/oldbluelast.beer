@@ -69,6 +69,10 @@ input::-webkit-input-placeholder {
   transform:translate3d(0,2px,0)
 }
 
+input::-webkit-input-submit {
+ transform:translate3d(0,2px,0)
+}
+
 small {
   line-height: 1.4;
 }
@@ -479,6 +483,7 @@ vertical-align: bottom;
 
 .primary-button {
   @include button-style($primary-color, $white, $white);
+  padding: 0.85em 1em;
   &:hover {
     color: $primary-color;   
   }
@@ -486,6 +491,7 @@ vertical-align: bottom;
 
 .secondary-button {
   @include button-style($white, $primary-color, $primary-color);
+  padding: 0.85em 1em;
   &:hover {
     color: $white;   
   }
