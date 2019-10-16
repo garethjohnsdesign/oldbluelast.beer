@@ -185,7 +185,7 @@ i, cite, em, var, address, dfn {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 210;
   background-color: transparent;
 }
 
@@ -429,13 +429,20 @@ padding: 0.4rem 1rem !important
 .marker {
   background-image: url('/assets/icons/can.svg');
   background-size: cover;
-  width: 26px;
-  height: 48px;
+  width: 20px;
+  height: 36px;
   cursor: pointer;
+  &:hover {
+    color: $black;   
+  }
 }
 
 .mapboxgl-popup {
   max-width: 200px;
+}
+
+.mapboxgl-map {
+  font-family: $primary-font-family;
 }
 
 /*

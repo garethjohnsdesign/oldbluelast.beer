@@ -277,7 +277,7 @@ geojson.features.forEach(function(marker) {
   new mapboxgl.Marker(el)
     .setLngLat(marker.geometry.coordinates)
     .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-      .setHTML('<h4 class="primary-color secondary-font">' + marker.properties.title + '</h4><p class="primary-color">' + marker.properties.description + '</p>'))
+      .setHTML('<h6 class="primary-color secondary-font">' + marker.properties.title + '</h6><div class="primary-color">' + marker.properties.description + '</div>'))
     .addTo(map);
 });
 
