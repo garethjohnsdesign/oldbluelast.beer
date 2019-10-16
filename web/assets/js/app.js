@@ -7,7 +7,7 @@ import "lightGallery";
 import "lg-fullscreen";
 import "lg-video";
 import "lg-autoplay";
-import AOS from 'aos';
+//import AOS from 'aos';
 import Swiper from 'swiper';
 import AgeGate from 'agegate';
 
@@ -32,7 +32,7 @@ $("#gallery").lightGallery({
     selector: ".item",
     counter : true,
     fullscreen: true,
-    download: false,
+    download: false
 });
 
 $('#video-gallery').lightGallery({
@@ -141,7 +141,7 @@ $('a[href*="#"]')
   });
 
 
-var swiper = new Swiper('.carousel--hero', {
+new Swiper('.carousel--hero', {
   effect: 'fade',
   slidesPerView: '1',
   centeredSlides: true,
@@ -156,21 +156,26 @@ $(".findbeer").click(function(){
   $(".mapboxgl-ctrl-geolocate").click()
 });
 
-$("#agegate").foundation("open");
 
-let options = {
-  form: document.querySelector('form[name=agegate]'),
-  countries: true,
-  cookieExpiry: Infinity,
-  data: [
-    { code: 'UK', name: 'United Kingdom', age: 18 },
-    { code: 'US', name: 'United States of America', age: 21 }
-  ]
-}
+// Age Gate Functionality
+if (!~document.cookie.indexOf("old_enough=true")) {
 
-document.addEventListener('DOMContentLoaded', function () {
-  window.gate = new AgeGate(options, err => {
-    if (err) alert("You Have to Leave")
-    else $("#agegate").foundation("close");;
+  $("#agegate").foundation("open");
+  
+  let options = {
+    form: document.querySelector('form[name=agegate]'),
+    countries: true,
+    cookieExpiry: 60 * 60 * 24 * 335,
+    data: [
+      { code: 'UK', name: 'United Kingdom', age: 18 },
+      { code: 'US', name: 'United States of America', age: 21 }
+    ]
+  }
+  
+  document.addEventListener('DOMContentLoaded', function () {
+    window.gate = new AgeGate(options, err => {
+      if (err) alert("You Have to Leave")
+      else $("#agegate").foundation("close");
+    })
   })
-})
+}

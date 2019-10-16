@@ -1,6 +1,6 @@
 // 1. Imports
 // ----------
-
+/*
 import AgeGate from 'agegate';
 
 let options = {
@@ -20,3 +20,4 @@ document.addEventListener('DOMContentLoaded', function () {
     else alert("Correct Age");
   })
 })
+*/
