@@ -182,7 +182,7 @@
         .section('events')
         .eventFeatured('1')
         .eventDate('<' ~ now.getTimestamp())
-        .orderBy('eventDate desc')
+        .orderBy('RAND()')
         .limit(9)
         .all() %}
         
@@ -234,7 +234,7 @@
 <!-- End Contact Form  -->
 
 {% js %}
-mapboxgl.accessToken = "{{ craft.maps.mapToken }}";
+mapboxgl.accessToken = "pk.eyJ1IjoiZ2FyZXRoam9obnNkZXNpZ24iLCJhIjoiY2sxbnV1NGhmMGE4YTNvb2l1aGp5ano3ZiJ9.g6KdDp-CdRZI2KzanoxFQw";
 
 var map = new mapboxgl.Map({
   container: 'map',
