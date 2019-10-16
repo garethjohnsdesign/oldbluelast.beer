@@ -25,7 +25,8 @@
         <div class="grid-container">
           <div class="grid-x grid-padding-x">
               <div class="small-12 large-8 cell secondary-font text-uppercase">
-                {{entry.heroText}}
+              {% set promo = random(entry.heroText) %}
+              <h1>{{ promo.text }}</h1>
               </div>
               <div class="small-12 large-4 cell">
                 <div class="grid-y align-justify" style="height: 100%;">
