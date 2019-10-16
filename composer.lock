@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a60faaebfbe5f0ad82a9c79aba22c5c",
+    "content-hash": "4f33eb28eeb83fd1a2f8e2c4ab078f08",
     "packages": [
         {
             "name": "aelvan/imager",
@@ -499,11 +499,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.3.9",
+            "version": "3.3.11",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/900b262e1c636f029934ca025a9d0e21c58863d5",
-                "reference": "900b262e1c636f029934ca025a9d0e21c58863d5",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/6b3b38a271d1ee3b74041efc1c291b3f8724171c",
+                "reference": "6b3b38a271d1ee3b74041efc1c291b3f8724171c",
                 "shasum": ""
             },
             "require": {
@@ -581,7 +581,7 @@
                 "docs": "https://docs.craftcms.com/v3/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2019-10-10T23:25:54+00:00"
+            "time": "2019-10-16T11:28:22+00:00"
         },
         {
             "name": "craftcms/contact-form",
@@ -980,58 +980,6 @@
             "time": "2019-06-08T11:03:04+00:00"
         },
         {
-            "name": "doublesecretagency/craft-smartmap",
-            "version": "3.2.2.1",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doublesecretagency/craft-smartmap/zipball/ec0b826a57d9ca4c762a130ce11456fab9c272e8",
-                "reference": "ec0b826a57d9ca4c762a130ce11456fab9c272e8",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^3.0.0"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Smart Map",
-                "handle": "smart-map",
-                "class": "doublesecretagency\\smartmap\\SmartMap"
-            },
-            "autoload": {
-                "psr-4": {
-                    "doublesecretagency\\smartmap\\": "src/"
-                }
-            },
-            "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "Double Secret Agency",
-                    "homepage": "https://www.doublesecretagency.com/plugins"
-                }
-            ],
-            "description": "The most comprehensive proximity search and mapping tool for Craft.",
-            "keywords": [
-                "address",
-                "cms",
-                "craft",
-                "craft-plugin",
-                "craftcms",
-                "geolocation",
-                "google-maps",
-                "locations",
-                "map",
-                "proximity-search",
-                "smart-map"
-            ],
-            "support": {
-                "docs": "https://www.doublesecretagency.com/plugins/smart-map/docs",
-                "issues": "https://github.com/doublesecretagency/craft-smartmap/issues"
-            },
-            "time": "2019-04-09T03:40:19+00:00"
-        },
-        {
             "name": "egulias/email-validator",
             "version": "2.1.11",
             "dist": {
@@ -1151,17 +1099,19 @@
         },
         {
             "name": "ether/simplemap",
-            "version": "3.6.4.3",
+            "version": "3.7.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ethercreative/simplemap/zipball/3b5c8709e814ac538f76d5589a124e261b56853e",
-                "reference": "3b5c8709e814ac538f76d5589a124e261b56853e",
+                "url": "https://api.github.com/repos/ethercreative/simplemap/zipball/8d34962284cbe5f5e73159e22497d46295eec641",
+                "reference": "8d34962284cbe5f5e73159e22497d46295eec641",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.1.0",
+                "craftcms/cms": "^3.2.1",
                 "ext-json": "*",
                 "ext-openssl": "*",
+                "ext-zlib": "*",
+                "geoip2/geoip2": "~2.0",
                 "guzzlehttp/guzzle": "^6.3.3",
                 "mapkit/jwt": "^1.1.2"
             },
@@ -1180,16 +1130,16 @@
                 }
             },
             "license": [
-                "MIT"
+                "proprietary"
             ],
             "description": "A beautifully simple Map field type for Craft CMS 3",
             "support": {
                 "email": "help@ethercreative.co.uk",
-                "docs": "https://github.com/ethercreative/simplemap",
+                "docs": "https://docs.ethercreative.co.uk/maps",
                 "source": "https://github.com/ethercreative/simplemap",
                 "issues": "https://github.com/ethercreative/simplemap/issues"
             },
-            "time": "2019-08-30T09:10:33+00:00"
+            "time": "2019-10-15T13:59:42+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -1269,6 +1219,47 @@
             "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
             "homepage": "https://github.com/firebase/php-jwt",
             "time": "2017-06-27T22:17:23+00:00"
+        },
+        {
+            "name": "geoip2/geoip2",
+            "version": "v2.9.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maxmind/GeoIP2-php/zipball/a807fbf65212eef5d8d2db1a1b31082b53633d77",
+                "reference": "a807fbf65212eef5d8d2db1a1b31082b53633d77",
+                "shasum": ""
+            },
+            "require": {
+                "maxmind-db/reader": "~1.0",
+                "maxmind/web-service-common": "~0.5",
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "GeoIp2\\": "src"
+                }
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Gregory J. Oschwald",
+                    "email": "goschwald@maxmind.com",
+                    "homepage": "http://www.maxmind.com/"
+                }
+            ],
+            "description": "MaxMind GeoIP2 PHP API",
+            "homepage": "https://github.com/maxmind/GeoIP2-php",
+            "keywords": [
+                "IP",
+                "geoip",
+                "geoip2",
+                "geolocation",
+                "maxmind"
+            ],
+            "time": "2018-04-10T15:32:59+00:00"
         },
         {
             "name": "google/auth",
@@ -2012,20 +2003,15 @@
         },
         {
             "name": "justinrainbow/json-schema",
-            "version": "5.2.8",
+            "version": "5.2.9",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/dcb6e1006bb5fd1e392b4daa68932880f37550d4",
-                "reference": "dcb6e1006bb5fd1e392b4daa68932880f37550d4",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/44c6787311242a979fa15c704327c20e7221a0e4",
+                "reference": "44c6787311242a979fa15c704327c20e7221a0e4",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "~2.2.20",
-                "json-schema/json-schema-test-suite": "1.2.0",
-                "phpunit/phpunit": "^4.8.35"
             },
             "bin": [
                 "bin/validate-json"
@@ -2041,7 +2027,6 @@
                     "JsonSchema\\": "src/JsonSchema/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2069,7 +2054,7 @@
                 "json",
                 "schema"
             ],
-            "time": "2019-01-14T23:55:14+00:00"
+            "time": "2019-09-25T14:49:45+00:00"
         },
         {
             "name": "kraken-io/kraken-php",
@@ -2350,6 +2335,85 @@
             "description": "lesserphp is a compiler for LESS written in PHP based on leafo's lessphp.",
             "homepage": "http://leafo.net/lessphp/",
             "time": "2018-05-28T12:54:01+00:00"
+        },
+        {
+            "name": "maxmind-db/reader",
+            "version": "v1.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maxmind/MaxMind-DB-Reader-php/zipball/bd436094fc0a9b0558a899fb80b0ae34fe1808a0",
+                "reference": "bd436094fc0a9b0558a899fb80b0ae34fe1808a0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "suggest": {
+                "ext-bcmath": "bcmath or gmp is required for decoding larger integers with the pure PHP decoder",
+                "ext-gmp": "bcmath or gmp is required for decoding larger integers with the pure PHP decoder",
+                "ext-maxminddb": "A C-based database decoder that provides significantly faster lookups"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MaxMind\\Db\\": "src/MaxMind/Db"
+                }
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Gregory J. Oschwald",
+                    "email": "goschwald@maxmind.com",
+                    "homepage": "https://www.maxmind.com/"
+                }
+            ],
+            "description": "MaxMind DB Reader API",
+            "homepage": "https://github.com/maxmind/MaxMind-DB-Reader-php",
+            "keywords": [
+                "database",
+                "geoip",
+                "geoip2",
+                "geolocation",
+                "maxmind"
+            ],
+            "time": "2019-09-30T22:56:38+00:00"
+        },
+        {
+            "name": "maxmind/web-service-common",
+            "version": "v0.5.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maxmind/web-service-common-php/zipball/61a9836fa3bb1743ab89752bae5005d71e78c73b",
+                "reference": "61a9836fa3bb1743ab89752bae5005d71e78c73b",
+                "shasum": ""
+            },
+            "require": {
+                "composer/ca-bundle": "^1.0.3",
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MaxMind\\Exception\\": "src/Exception",
+                    "MaxMind\\WebService\\": "src/WebService"
+                }
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Gregory Oschwald",
+                    "email": "goschwald@maxmind.com"
+                }
+            ],
+            "description": "Internal MaxMind Web Service API",
+            "homepage": "https://github.com/maxmind/web-service-common-php",
+            "time": "2018-02-12T22:31:54+00:00"
         },
         {
             "name": "mikehaertl/php-shellcommand",
