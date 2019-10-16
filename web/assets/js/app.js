@@ -161,9 +161,8 @@ $("#agegate").foundation("open");
 let options = {
   form: document.querySelector('form[name=agegate]'),
   countries: true,
-  expiry: Infinity,
+  cookieExpiry: Infinity,
   data: [
-
     { code: 'UK', name: 'United Kingdom', age: 18 },
     { code: 'US', name: 'United States of America', age: 21 }
   ]
