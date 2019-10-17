@@ -3,10 +3,6 @@
 
 	var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
 
-	function unwrapExports (x) {
-		return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
-	}
-
 	function createCommonjsModule(fn, module) {
 		return module = { exports: {} }, fn(module, module.exports), module.exports;
 	}
@@ -32455,337 +32451,160 @@
 
 	Swiper.use(components);
 
-	var data$1 = createCommonjsModule(function (module, exports) {
-	(function (global, factory) {
-	  {
-	    factory(exports);
-	  }
-	})(commonjsGlobal, function (exports) {
+	var js_cookie = createCommonjsModule(function (module, exports) {
+	(function (factory) {
+		var registeredInModuleLoader;
+		{
+			module.exports = factory();
+			registeredInModuleLoader = true;
+		}
+		if (!registeredInModuleLoader) {
+			var OldCookies = window.Cookies;
+			var api = window.Cookies = factory();
+			api.noConflict = function () {
+				window.Cookies = OldCookies;
+				return api;
+			};
+		}
+	}(function () {
+		function extend () {
+			var i = 0;
+			var result = {};
+			for (; i < arguments.length; i++) {
+				var attributes = arguments[ i ];
+				for (var key in attributes) {
+					result[key] = attributes[key];
+				}
+			}
+			return result;
+		}
 
-	  Object.defineProperty(exports, '__esModule', {
-	    value: true
-	  });
-	  var Africa = [{ code: 'DZ', name: 'Algeria', age: 18 }, { code: 'AO', name: 'Angola', age: 18 }, { code: 'DZ', name: 'Botswana', age: 18 }, { code: 'BI', name: 'Burundi', age: 18 }, { code: 'CM', name: 'Cameroon', age: 21 }, { code: 'CV', name: 'Cape Verde', age: 18 }, { code: 'CF', name: 'Central African Republic', age: 18 }, { code: 'KM', name: 'Comoros', age: 0 }, { code: 'CD', name: 'Democratic Republic of the Congo', age: 18 }, { code: 'EG', name: 'Egypt', age: 21 }, { code: 'GQ', name: 'Equatorial Guinea', age: 0 }, { code: 'ER', name: 'Eritrea', age: 18 }, { code: 'ET', name: 'Ethiopia', age: 18 }, { code: 'GA', name: 'Gabon', age: 18 }, { code: 'GM', name: 'Gambia', age: 18 }, { code: 'GH', name: 'Ghana', age: 18 }, { code: 'GW', name: 'Guinea-Bissau', age: 0 }, { code: 'KE', name: 'Kenya', age: 18 }, { code: 'LS', name: 'Lesotho', age: 18 }, { code: 'LY', name: 'Libya', age: Infinity }, { code: 'MW', name: 'Malawi', age: 18 }, { code: 'MU', name: 'Mauritius', age: 18 }, { code: 'MA', name: 'Morocco', age: 16 }, { code: 'MZ', name: 'Mozambique', age: 18 }, { code: 'NA', name: 'Namibia', age: 18 }, { code: 'NE', name: 'Niger', age: 18 }, { code: 'NG', name: 'Nigeria', age: 18 }, { code: 'CG', name: 'Republic of the Congo', age: 18 }, { code: 'RW', name: 'Rwanda', age: 18 }, { code: 'SN', name: 'Senegal', age: 0 }, { code: 'SC', name: 'Seychelles', age: 18 }, { code: 'SO', name: 'Somalia', age: Infinity }, { code: 'ZA', name: 'South Africa', age: 18 }, { code: 'SS', name: 'South Sudan', age: 18 }, { code: 'SD', name: 'Sudan', age: Infinity }, { code: 'SZ', name: 'Swaziland', age: 18 }, { code: 'TZ', name: 'Tanzania', age: 18 }, { code: 'TG', name: 'Togo', age: 18 }, { code: 'TN', name: 'Tunisia', age: 18 }, { code: 'UG', name: 'Uganda', age: 18 }, { code: 'ZM', name: 'Zambia', age: 18 }, { code: 'ZW', name: 'Zimbabwe', age: 18 }];
+		function decode (s) {
+			return s.replace(/(%[0-9A-Z]{2})+/g, decodeURIComponent);
+		}
 
-	  exports.Africa = Africa;
-	  var America = [{ code: 'AG', name: 'Antigua and Barbuda', age: 16 }, { code: 'AR', name: 'Argentina', age: 18 }, { code: 'BS', name: 'Bahamas', age: 18 }, { code: 'BZ', name: 'Belize', age: 18 }, { code: 'BM', name: 'Bermuda', age: 18 }, { code: 'BO', name: 'Bolivia', age: 18 }, { code: 'BR', name: 'Brazil', age: 18 }, { code: 'VG', name: 'British Virgin Islands', age: 16 }, { code: 'CA', name: 'Canada', age: 19 }, { code: 'KY', name: 'Cayman Islands', age: 18 }, { code: 'CL', name: 'Chile', age: 18 }, { code: 'CO', name: 'Colombia', age: 18 }, { code: 'CR', name: 'Costa Rica', age: 18 }, { code: 'CU', name: 'Cuba', age: 18 }, { code: 'DO', name: 'Dominican Republic', age: 18 }, { code: 'EC', name: 'Ecuador', age: 18 }, { code: 'SV', name: 'El Salvador', age: 18 }, { code: 'FK', name: 'Falkland Islands', age: 18 }, { code: 'GT', name: 'Guatemala', age: 18 }, { code: 'GY', name: 'Guyana', age: 18 }, { code: 'HT', name: 'Haiti', age: 16 }, { code: 'HN', name: 'Honduras', age: 18 }, { code: 'JM', name: 'Jamaica', age: 16 }, { code: 'MX', name: 'Mexico', age: 18 }, { code: 'NI', name: 'Nicaragua', age: 18 }, { code: 'PA', name: 'Panama', age: 18 }, { code: 'PY', name: 'Paraguay', age: 20 }, { code: 'PE', name: 'Peru', age: 18 }, { code: 'PR', name: 'Puerto Rico', age: 18 }, { code: 'TT', name: 'Trinidad and Tobago', age: 18 }, { code: 'US', name: 'United States', age: 21 }, { code: 'VI', name: 'United States Virgin Islands', age: 18 }, { code: 'UY', name: 'Uruguay', age: 18 }, { code: 'VE', name: 'Venezuela', age: 18 }];
+		function init (converter) {
+			function api() {}
 
-	  exports.America = America;
-	  var Asia = [{ code: 'AF', name: 'Afghanistan', age: Infinity }, { code: 'BD', name: 'Bangladesh', age: Infinity }, { code: 'BN', name: 'Brunei', age: Infinity }, { code: 'KH', name: 'Cambodia', age: 0 }, { code: 'CN', name: 'China', age: 18 }, { code: 'HK', name: 'Hong Kong', age: 18 }, { code: 'IN', name: 'India', age: 18 }, { code: 'ID', name: 'Indonesia', age: 21 }, { code: 'IR', name: 'Iran', age: 18 }, { code: 'JQ', name: 'Iraq', age: 18 }, { code: 'IL', name: 'Israel', age: 18 }, { code: 'JP', name: 'Japan', age: 20 }, { code: 'JO', name: 'Jordan', age: 18 }, { code: 'KZ', name: 'Kazakhstan', age: 21 }, { code: 'KW', name: 'Kuwait', age: Infinity }, { code: 'KG', name: 'Kyrgyzstan', age: 18 }, { code: 'LB', name: 'Lebanon', age: 18 }, { code: 'MO', name: 'Macau', age: 18 }, { code: 'MY', name: 'Malaysia', age: 18 }, { code: 'MV', name: 'Maldives', age: 18 }, { code: 'MN', name: 'Mongolia', age: 18 }, { code: 'NP', name: 'Nepal', age: 18 }, { code: 'KP', name: 'North Korea', age: 18 }, { code: 'OM', name: 'Oman', age: 21 }, { code: 'PK', name: 'Pakistan', age: 21 }, { code: 'PS', name: 'Palestine', age: 16 }, { code: 'PH', name: 'Philippines', age: 18 }, { code: 'QA', name: 'Qatar', age: 21 }, { code: 'SA', name: 'Saudi Arabia', age: Infinity }, { code: 'SG', name: 'Singapore', age: 18 }, { code: 'KR', name: 'South Korea', age: 19 }, { code: 'LK', name: 'Sri Lanka', age: 21 }, { code: 'SY', name: 'Syria', age: 18 }, { code: 'TW', name: 'Taiwan', age: 18 }, { code: 'TJ', name: 'Tajikistan', age: 21 }, { code: 'TH', name: 'Thailand', age: 21 }, { code: 'TM', name: 'Turkmenistan', age: 18 }, { code: 'AE', name: 'United Arab Emirates', age: 21 }, { code: 'VN', name: 'Vietnam', age: 0 }, { code: 'YE', name: 'Yemen', age: Infinity }];
+			function set (key, value, attributes) {
+				if (typeof document === 'undefined') {
+					return;
+				}
 
-	  exports.Asia = Asia;
-	  var Europe = [{ code: 'AL', name: 'Albania', age: 18 }, { code: 'AM', name: 'Armenia', age: 18 }, { code: 'AT', name: 'Austria', age: 18 }, { code: 'AZ', name: 'Azerbaijan', age: 18 }, { code: 'BY', name: 'Belarus', age: 18 }, { code: 'BE', name: 'Belgium', age: 18 }, { code: 'BA', name: 'Bosnia and Herzegovina', age: 18 }, { code: 'BG', name: 'Bulgaria', age: 18 }, { code: 'HR', name: 'Croatia', age: 18 }, { code: 'CY', name: 'Cyprus', age: 17 }, { code: 'CZ', name: 'Czech Republic', age: 18 }, { code: 'DK', name: 'Denmark', age: 18 }, { code: 'EE', name: 'Estonia', age: 18 }, { code: 'FI', name: 'Finland', age: 18 }, { code: 'FR', name: 'France', age: 18 }, { code: 'GE', name: 'Georgia', age: 16 }, { code: 'DE', name: 'Germany', age: 18 }, { code: 'GI', name: 'Gibraltar', age: 18 }, { code: 'GR', name: 'Greece', age: 18 }, { code: 'HU', name: 'Hungary', age: 18 }, { code: 'IS', name: 'Iceland', age: 20 }, { code: 'IE', name: 'Ireland', age: 18 }, { code: 'IT', name: 'Italy', age: 18 }, { code: 'XK', name: 'Kosovo', age: 18 }, { code: 'LV', name: 'Latvia', age: 18 }, { code: 'LI', name: 'Liechtenstein', age: 18 }, { code: 'LT', name: 'Lithuania', age: 18 }, { code: 'LU', name: 'Luxembourg', age: 16 }, { code: 'MK', name: 'Macedonia', age: 18 }, { code: 'MT', name: 'Malta', age: 17 }, { code: 'MD', name: 'Moldova', age: 16 }, { code: 'ME', name: 'Montenegro', age: 18 }, { code: 'NL', name: 'Netherlands', age: 18 }, { code: 'NO', name: 'Norway', age: 20 }, { code: 'PL', name: 'Poland', age: 18 }, { code: 'PT', name: 'Portugal', age: 18 }, { code: 'RO', name: 'Romania', age: 18 }, { code: 'RU', name: 'Russia', age: 18 }, { code: 'RS', name: 'Serbia', age: 18 }, { code: 'SK', name: 'Slovakia', age: 18 }, { code: 'SI', name: 'Slovenia', age: 18 }, { code: 'ES', name: 'Spain', age: 18 }, { code: 'SE', name: 'Sweden', age: 18 }, { code: 'CH', name: 'Switzerland', age: 18 }, { code: 'TR', name: 'Turkey', age: 18 }, { code: 'UA', name: 'Ukraine', age: 18 }, { code: 'GB', name: 'United Kingdom', age: 18 }];
+				attributes = extend({
+					path: '/'
+				}, api.defaults, attributes);
 
-	  exports.Europe = Europe;
-	  var Oceania = [{ code: 'AS', name: 'American Samoa', age: 21 }, { code: 'AU', name: 'Australia', age: 18 }, { code: 'FJ', name: 'Fiji', age: 18 }, { code: 'GU', name: 'Guam', age: 21 }, { code: 'FM', name: 'Federated States of Micronesia', age: 21 }, { code: 'NZ', name: 'New Zealand', age: 18 }, { code: 'MP', name: 'Northern Mariana Islands', age: 21 }, { code: 'PW', name: 'Palau', age: 21 }, { code: 'PG', name: 'Papua New Guinea', age: 18 }, { code: 'WS', name: 'Samoa', age: 18 }, { code: 'SB', name: 'Solomon Islands', age: 21 }, { code: 'TK', name: 'Tokelau', age: 18 }, { code: 'TO', name: 'Tonga', age: 21 }, { code: 'VU', name: 'Vanuatu', age: 18 }];
-	  exports.Oceania = Oceania;
+				if (typeof attributes.expires === 'number') {
+					attributes.expires = new Date(new Date() * 1 + attributes.expires * 864e+5);
+				}
+
+				// We're using "expires" because "max-age" is not supported by IE
+				attributes.expires = attributes.expires ? attributes.expires.toUTCString() : '';
+
+				try {
+					var result = JSON.stringify(value);
+					if (/^[\{\[]/.test(result)) {
+						value = result;
+					}
+				} catch (e) {}
+
+				value = converter.write ?
+					converter.write(value, key) :
+					encodeURIComponent(String(value))
+						.replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g, decodeURIComponent);
+
+				key = encodeURIComponent(String(key))
+					.replace(/%(23|24|26|2B|5E|60|7C)/g, decodeURIComponent)
+					.replace(/[\(\)]/g, escape);
+
+				var stringifiedAttributes = '';
+				for (var attributeName in attributes) {
+					if (!attributes[attributeName]) {
+						continue;
+					}
+					stringifiedAttributes += '; ' + attributeName;
+					if (attributes[attributeName] === true) {
+						continue;
+					}
+
+					// Considers RFC 6265 section 5.2:
+					// ...
+					// 3.  If the remaining unparsed-attributes contains a %x3B (";")
+					//     character:
+					// Consume the characters of the unparsed-attributes up to,
+					// not including, the first %x3B (";") character.
+					// ...
+					stringifiedAttributes += '=' + attributes[attributeName].split(';')[0];
+				}
+
+				return (document.cookie = key + '=' + value + stringifiedAttributes);
+			}
+
+			function get (key, json) {
+				if (typeof document === 'undefined') {
+					return;
+				}
+
+				var jar = {};
+				// To prevent the for loop in the first place assign an empty array
+				// in case there are no cookies at all.
+				var cookies = document.cookie ? document.cookie.split('; ') : [];
+				var i = 0;
+
+				for (; i < cookies.length; i++) {
+					var parts = cookies[i].split('=');
+					var cookie = parts.slice(1).join('=');
+
+					if (!json && cookie.charAt(0) === '"') {
+						cookie = cookie.slice(1, -1);
+					}
+
+					try {
+						var name = decode(parts[0]);
+						cookie = (converter.read || converter)(cookie, name) ||
+							decode(cookie);
+
+						if (json) {
+							try {
+								cookie = JSON.parse(cookie);
+							} catch (e) {}
+						}
+
+						jar[name] = cookie;
+
+						if (key === name) {
+							break;
+						}
+					} catch (e) {}
+				}
+
+				return key ? jar[key] : jar;
+			}
+
+			api.set = set;
+			api.get = function (key) {
+				return get(key, false /* read as raw */);
+			};
+			api.getJSON = function (key) {
+				return get(key, true /* read as json */);
+			};
+			api.remove = function (key, attributes) {
+				set(key, '', extend(attributes, {
+					expires: -1
+				}));
+			};
+
+			api.defaults = {};
+
+			api.withConverter = init;
+
+			return api;
+		}
+
+		return init(function () {});
+	}));
 	});
-	});
-
-	unwrapExports(data$1);
-
-	var cookies = createCommonjsModule(function (module, exports) {
-	(function (global, factory) {
-	  {
-	    factory(exports, module);
-	  }
-	})(commonjsGlobal, function (exports, module) {
-
-	  module.exports = {
-	    getItem: function getItem(sKey) {
-	      if (!sKey) {
-	        return null;
-	      }
-	      return decodeURIComponent(document.cookie.replace(new RegExp('(?:(?:^|.*;)\\s*' + encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, '\\$&') + '\\s*\\=\\s*([^;]*).*$)|^.*$'), '$1')) || null;
-	    },
-
-	    setItem: function setItem(sKey, sValue, vEnd, sPath, sDomain, bSecure) {
-	      if (!sKey || /^(?:expires|max\-age|path|domain|secure)$/i.test(sKey)) {
-	        return false;
-	      }
-	      var sExpires = '';
-	      if (vEnd) {
-	        switch (vEnd.constructor) {
-	          case Number:
-	            sExpires = vEnd === Infinity ? '; expires=Fri, 31 Dec 9999 23:59:59 GMT' : '; max-age=' + vEnd;
-	            break;
-	          case String:
-	            sExpires = '; expires=' + vEnd;
-	            break;
-	          case Date:
-	            sExpires = '; expires=' + vEnd.toUTCString();
-	            break;
-	        }
-	      }
-	      document.cookie = encodeURIComponent(sKey) + '=' + encodeURIComponent(sValue) + sExpires + (sDomain ? '; domain=' + sDomain : '') + (sPath ? '; path=' + sPath : '') + (bSecure ? '; secure' : '');
-	      return true;
-	    },
-
-	    removeItem: function removeItem(sKey, sPath, sDomain) {
-	      if (!this.hasItem(sKey)) {
-	        return false;
-	      }
-	      document.cookie = encodeURIComponent(sKey) + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT' + (sDomain ? '; domain=' + sDomain : '') + (sPath ? '; path=' + sPath : '');
-	      return true;
-	    },
-
-	    hasItem: function hasItem(sKey) {
-	      if (!sKey) {
-	        return false;
-	      }
-	      return new RegExp('(?:^|;\\s*)' + encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, '\\$&') + '\\s*\\=').test(document.cookie);
-	    },
-
-	    keys: function keys() {
-	      var aKeys = document.cookie.replace(/((?:^|\s*;)[^\=]+)(?=;|$)|^\s*|\s*(?:\=[^;]*)?(?:\1|$)/g, '').split(/\s*(?:\=[^;]*)?;\s*/);
-	      for (var nLen = aKeys.length, nIdx = 0; nIdx < nLen; nIdx++) {
-	        aKeys[nIdx] = decodeURIComponent(aKeys[nIdx]);
-	      }
-	      return aKeys;
-	    }
-	  };
-	});
-	});
-
-	var dist = createCommonjsModule(function (module, exports) {
-	(function (global, factory) {
-	  {
-	    factory(exports, module, data$1, cookies);
-	  }
-	})(commonjsGlobal, function (exports, module, _data, _cookies) {
-
-	  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-	  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-	  var _cookies2 = _interopRequireDefault(_cookies);
-
-	  var FORM_ELEMENTS = ['year', 'month', 'day', 'country', 'remember'];
-
-	  var AgeGate = (function () {
-	    function AgeGate(opts, cb) {
-	      _classCallCheck(this, AgeGate);
-
-	      this.options = opts;
-	      this.callback = cb;
-	      this.isEnabled.data && this.validateData(opts.data);
-
-	      // render
-	      this.isEnabled.countries && this.populate();
-	      this.options.form.addEventListener('submit', this.submit.bind(this));
-	    }
-
-	    /**
-	     * Getters & Setters
-	     */
-
-	    _createClass(AgeGate, [{
-	      key: 'validateData',
-
-	      /**
-	       * Check data structure of supplied data
-	       *
-	       * @param {Array} data
-	       */
-	      value: function validateData(data) {
-	        var random = Math.floor(Math.random() * (data.length - 0) + 0);
-
-	        // ensure: containing Array and Object keys
-	        var ok = Array.isArray(data) || data instanceof Array;
-	        ok = ok && ['code', 'name', 'age'].every(function (k) {
-	          return data[random].hasOwnProperty(k);
-	        });
-
-	        return ok ? data : this.respond(false, 'Supplied data is invalid');
-	      }
-
-	      /**
-	       * Add countries to <select> element
-	       */
-	    }, {
-	      key: 'populate',
-	      value: function populate() {
-	        var select = this.options.form.querySelector('select');
-	        select.innerHTML = ''; // assume it's not empty
-
-	        // attempt to use user-supplied data
-	        if (this.isEnabled.data) this.data.forEach(function (country) {
-	          return select.appendChild(createOption(country));
-	        });
-
-	        // fallback to default data (continent-separated)
-	        else {
-	            Object.keys(_data).forEach(function (continent) {
-	              var group = document.createElement('optgroup');
-	              group.label = continent;
-
-	              // create the <option> for each country
-	              for (var i = 0; i < _data[continent].length; i++) {
-	                var country = _data[continent][i];
-	                group.appendChild(createOption(country));
-	              }
-
-	              select.appendChild(group);
-	            });
-	          }
-
-	        // create the <option> element
-	        function createOption(country) {
-	          var option = document.createElement('option');
-
-	          for (var attr in country) {
-	            option.dataset[attr] = country[attr];
-	          }
-	          option.value = country.code;
-	          option.textContent = country.name;
-
-	          return option;
-	        }
-	      }
-
-	      /**
-	       * Serialize form data on submit,
-	       * and pass onto validation
-	       *
-	       * @param {Event} e - form submit event
-	       */
-	    }, {
-	      key: 'submit',
-	      value: function submit(e) {
-	        e.preventDefault();
-
-	        var elements = e.target.elements;
-
-	        // create an object from the form data
-	        this.formData = FORM_ELEMENTS.reduce(function (collection, key) {
-	          if (!elements[key]) return collection;
-
-	          switch (key) {
-	            case 'remember':
-	              collection[key] = elements[key].checked;
-	              break;
-	            default:
-	              collection[key] = elements[key].value;
-	              break;
-	          }
-
-	          return collection;
-	        }, {});
-
-	        this.respond(this.verify(this.formData));
-	      }
-
-	      /**
-	       * Parse form data
-	       * Calculate the age and insert cookie if needed
-	       * Age calculator by Kristoffer Dorph
-	       * http://stackoverflow.com/a/15555947/362136
-	       *
-	       * @param {Object} formData
-	       */
-	    }, {
-	      key: 'verify',
-	      value: function verify(formData) {
-	        var ok = false;
-	        var legalAge = this.ages[formData.country] || this.legalAge;
-	        var bday = [parseInt(formData.year, 10), parseInt(formData.month, 10) || 1, parseInt(formData.day, 10) || 1].join('/');
-	        var age = ~ ~((new Date().getTime() - +new Date(bday)) / 31557600000);
-
-	        if (age >= legalAge) {
-	          var expiry = formData.remember ? this.options.cookieExpiry : null;
-	          this.saveCookie(expiry);
-
-	          ok = true;
-	        }
-
-	        return ok;
-	      }
-
-	      /**
-	       * Create a cookie to remember age
-	       *
-	       * @param {*} expiry - Cookie expiration (0|Infinity|Date)
-	       */
-	    }, {
-	      key: 'saveCookie',
-	      value: function saveCookie() {
-	        var expiry = arguments.length <= 0 || arguments[0] === undefined ? null : arguments[0];
-
-	        var path = this.options.path || null;
-	        var domain = this.options.cookieDomain || null;
-
-	        _cookies2['default'].setItem(this.options.cookieName || 'old_enough', true, expiry, path, domain);
-	      }
-
-	      /**
-	       * Issue the callback with final verdict
-	       *
-	       * @param {boolean} success - Age verification verdict
-	       * @param {string} message - Error message
-	       */
-	    }, {
-	      key: 'respond',
-	      value: function respond() {
-	        var success = arguments.length <= 0 || arguments[0] === undefined ? false : arguments[0];
-	        var message = arguments.length <= 1 || arguments[1] === undefined ? 'Age verification failure' : arguments[1];
-
-	        if (success) this.callback(null);else this.callback(new Error('[AgeGate] ' + message));
-	      }
-	    }, {
-	      key: 'isEnabled',
-	      get: function get() {
-	        return {
-	          age: !!this.options.age,
-	          countries: !!this.options.countries,
-	          data: !!this.options.data
-	        };
-	      }
-	    }, {
-	      key: 'legalAge',
-	      get: function get() {
-	        return parseInt(this.options.age, 10) || 18;
-	      }
-	    }, {
-	      key: 'data',
-	      get: function get() {
-	        return this.options.data || _data;
-	      }
-
-	      /**
-	       * Convert age data into usable key => value
-	       */
-	    }, {
-	      key: 'ages',
-	      get: function get() {
-	        var ages = {};
-
-	        if (this.options.data) {
-	          ages = this.data.reduce(function (total, item) {
-	            total[item.code] = item.age;
-	            return total;
-	          }, ages);
-	        } else {
-	          for (var cont in this.data) {
-	            this.data[cont].map(function (country) {
-	              return ages[country.code] = country.age;
-	            });
-	          }
-	        }
-
-	        return ages;
-	      }
-	    }]);
-
-	    return AgeGate;
-	  })();
-
-	  module.exports = AgeGate;
-	});
-	});
-
-	var AgeGate = unwrapExports(dist);
 
 	// 1. Imports
 
@@ -32934,12 +32753,13 @@
 	  jquery(".mapboxgl-ctrl-geolocate").click();
 	});
 
-	// $("#agegate").foundation("open");
+	/*
+	$("#agegatesimple").foundation("open");
 
 	// Age Gate Functionality
 	if (!~document.cookie.indexOf("old_enough=true")) {
 
-	  jquery("#agegate").foundation("open");
+	  $("#agegate").foundation("open");
 	  
 	  let options = {
 	    form: document.querySelector('form[name=agegate]'),
@@ -32950,14 +32770,24 @@
 	      { code: 'UK', name: 'United Kingdom', age: 18 },
 	      { code: 'US', name: 'United States of America', age: 21 }
 	    ]
-	  };
+	  }
 	  
 	  document.addEventListener('DOMContentLoaded', function () {
 	    window.gate = new AgeGate(options, err => {
 	      if (err) window.location.replace('https://www.drinkaware.co.uk/why-am-i-here');
-	      else jquery("#agegate").foundation("close");
-	    });
-	  });
+	      else $("#agegate").foundation("close");
+	    })
+	  })
 	}
+	*/
+
+	jquery(document).ready(function() {
+	  if (!js_cookie.get('showed_agegate')) {
+	      setTimeout(function(){
+	        jquery('#agegatesimple').foundation('open'); 
+	        js_cookie.set('showed_agegate', 'true', { expires: 365 });
+	      },500); // 3 seconds.
+	  }
+	});
 
 }());

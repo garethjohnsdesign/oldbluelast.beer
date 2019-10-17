@@ -9,7 +9,8 @@ import "lg-video";
 import "lg-autoplay";
 //import AOS from 'aos';
 import Swiper from 'swiper';
-import AgeGate from 'agegate';
+// import AgeGate from 'agegate';
+import Cookies from 'js-cookie'
 
 // 2. Special Queries
 // ------------------
@@ -156,7 +157,8 @@ $(".findbeer").click(function(){
   $(".mapboxgl-ctrl-geolocate").click()
 });
 
-// $("#agegate").foundation("open");
+/*
+$("#agegatesimple").foundation("open");
 
 // Age Gate Functionality
 if (!~document.cookie.indexOf("old_enough=true")) {
@@ -181,3 +183,13 @@ if (!~document.cookie.indexOf("old_enough=true")) {
     })
   })
 }
+*/
+
+$(document).ready(function() {
+  if (!Cookies.get('showed_agegate')) {
+      setTimeout(function(){
+        $('#agegatesimple').foundation('open'); 
+        Cookies.set('showed_agegate', 'true', { expires: 365 });
+      },500) // 3 seconds.
+  }
+});
