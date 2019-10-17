@@ -193,3 +193,7 @@ $(document).ready(function() {
       },500) // 3 seconds.
   }
 });
+
+$('#agegatesimple .close-button-test').click(function() {
+  $('#agegatesimple').foundation('close'); 
+});

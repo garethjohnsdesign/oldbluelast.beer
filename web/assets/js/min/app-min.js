@@ -32790,4 +32790,8 @@
 	  }
 	});
 
+	jquery('#agegatesimple .close-button-test').click(function() {
+	  jquery('#agegatesimple').foundation('close'); 
+	});
+
 }());
