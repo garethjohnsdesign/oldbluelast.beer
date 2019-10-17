@@ -165,6 +165,17 @@
 		"oAP": "/build/node_modules",
 		"oF": 0
 		},
+	"/node_modules/agegate/dist/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/agegate/dist/index-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/node_modules/foundation-sites/dist/js/foundation.esm.js": {
 		"bF": 0,
 		"ft": 64,
@@ -1203,17 +1214,6 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
-		},
-	"/web/assets/js/agegate.js": {
-		"bF": 4,
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "/web/assets/js/min/agegate-min.js",
-		"oF": 3,
-		"sC": 3,
-		"tS": 0
 		},
 	"/web/assets/js/app.js": {
 		"bF": 4,
