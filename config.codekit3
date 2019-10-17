@@ -165,17 +165,6 @@
 		"oAP": "/build/node_modules",
 		"oF": 0
 		},
-	"/node_modules/aos/dist/aos.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/aos/dist/aos-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/node_modules/foundation-sites/dist/js/foundation.esm.js": {
 		"bF": 0,
 		"ft": 64,
@@ -476,20 +465,20 @@
 		"oAP": "/templates/uk/_includes/blocks/form.twig",
 		"oF": 0
 		},
+	"/templates/uk/_includes/blocks/links.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/uk/_includes/blocks/links.twig",
+		"oF": 0
+		},
 	"/templates/uk/_includes/blocks/map.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/uk/_includes/blocks/map.twig",
-		"oF": 0
-		},
-	"/templates/uk/_includes/blocks/social-links.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/uk/_includes/blocks/social-links.twig",
 		"oF": 0
 		},
 	"/templates/uk/_includes/global/analytics.twig": {
@@ -1245,6 +1234,17 @@
 		"oA": 0,
 		"oAP": "/web/assets/js/min/map-min.js",
 		"oF": 2,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/assets/js/min/agegate-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/assets/js/min/agegate-min-min.js",
+		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},

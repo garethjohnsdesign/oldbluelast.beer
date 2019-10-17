@@ -32934,6 +32934,7 @@
 	  jquery(".mapboxgl-ctrl-geolocate").click();
 	});
 
+	// $("#agegate").foundation("open");
 
 	// Age Gate Functionality
 	if (!~document.cookie.indexOf("old_enough=true")) {
@@ -32943,7 +32944,8 @@
 	  let options = {
 	    form: document.querySelector('form[name=agegate]'),
 	    countries: true,
-	    cookieExpiry: 60 * 60 * 24 * 335,
+	//     cookieExpiry: 60 * 60 * 24 * 365,
+	    cookieExpiry: 20,
 	    data: [
 	      { code: 'UK', name: 'United Kingdom', age: 18 },
 	      { code: 'US', name: 'United States of America', age: 21 }
@@ -32952,7 +32954,7 @@
 	  
 	  document.addEventListener('DOMContentLoaded', function () {
 	    window.gate = new AgeGate(options, err => {
-	      if (err) alert("You Have to Leave");
+	      if (err) window.location.replace('https://www.drinkaware.co.uk/why-am-i-here');
 	      else jquery("#agegate").foundation("close");
 	    });
 	  });
