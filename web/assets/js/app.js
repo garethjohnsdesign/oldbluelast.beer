@@ -56,51 +56,18 @@ $('#video-gallery').lightGallery({
 // 6. Age Gate
 // -----------
 
-/*
-function checkIfVerified(){
-  if ($.cookie('age-gate') == 'of_age') {
-    // Hide overlay
-    $('.age-gate').hide();
-  } else {
-    // Show Age gate form
-    $('form[name=agegate]').show();
+$(document).ready(function() {
+  if (!Cookies.get('showed_agegate')) {
+      setTimeout(function(){
+        $('#agegatesimple').foundation('open'); 
+        Cookies.set('showed_agegate', 'true', { expires: 365 });
+      },500) // 3 seconds.
   }
-}
-
-function zeroPadDate(number){
-  if (number < 10) { return '0'+number; }
-  return number;
-}
-
-checkIfVerified();
-
-$('form[name=agegate]').submit(function(ev){
-  ev.preventDefault();
-  var year = $('form[name=agegate] > select[name=year]').val();
-  var month = $('form[name=agegate] > select[name=month]').val();
-  var day = $('form[name=agegate] > select[name=day]').val();
-  
-  if (!(day && month && year)) {
-//     alert('Please enter your date of birth');
-    checkIfVerified();
-    return false;
-  }
-  
-  var date_string = year +  "-" + zeroPadDate(month) + "-" + zeroPadDate(day) + "T00:00:00";
-  var birthday = new Date(date_string);
-  var eighteenYearOld = new Date();
-  eighteenYearOld.setFullYear(eighteenYearOld.getFullYear() - 18);
-  
-  if ((eighteenYearOld - birthday) < 0) {
-    window.location.replace('https://www.drinkaware.co.uk/why-am-i-here');
-  } else {
-    $.cookie('age-gate', 'of_age');
-  }
-  
-  checkIfVerified();  
-  return false;
 });
-*/
+
+$('#agegatesimple .close-button-test').click(function() {
+  $('#agegatesimple').foundation('close'); 
+});
 
 // 7. Links Scroll to Section
 // --------------------------
@@ -155,45 +122,4 @@ new Swiper('.carousel--hero', {
 
 $(".findbeer").click(function(){
   $(".mapboxgl-ctrl-geolocate").click()
-});
-
-/*
-$("#agegatesimple").foundation("open");
-
-// Age Gate Functionality
-if (!~document.cookie.indexOf("old_enough=true")) {
-
-  $("#agegate").foundation("open");
-  
-  let options = {
-    form: document.querySelector('form[name=agegate]'),
-    countries: true,
-//     cookieExpiry: 60 * 60 * 24 * 365,
-    cookieExpiry: 20,
-    data: [
-      { code: 'UK', name: 'United Kingdom', age: 18 },
-      { code: 'US', name: 'United States of America', age: 21 }
-    ]
-  }
-  
-  document.addEventListener('DOMContentLoaded', function () {
-    window.gate = new AgeGate(options, err => {
-      if (err) window.location.replace('https://www.drinkaware.co.uk/why-am-i-here');
-      else $("#agegate").foundation("close");
-    })
-  })
-}
-*/
-
-$(document).ready(function() {
-  if (!Cookies.get('showed_agegate')) {
-      setTimeout(function(){
-        $('#agegatesimple').foundation('open'); 
-        Cookies.set('showed_agegate', 'true', { expires: 365 });
-      },500) // 3 seconds.
-  }
-});
-
-$('#agegatesimple .close-button-test').click(function() {
-  $('#agegatesimple').foundation('close'); 
 });
