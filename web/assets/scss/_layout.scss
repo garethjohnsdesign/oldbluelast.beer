@@ -510,6 +510,9 @@ vertical-align: bottom;
   &:hover {
     color: $primary-color;   
   }
+  @include breakpoint(large) {
+  margin-bottom: 2rem;
+  }
 }
 
 .secondary-button {
@@ -517,5 +520,8 @@ vertical-align: bottom;
   padding: 0.85em 1em;
   &:hover {
     color: $white;   
+  }
+  @include breakpoint(large) {
+  margin-bottom: 2rem;
   }
 }
