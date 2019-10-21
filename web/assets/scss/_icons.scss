@@ -19,6 +19,9 @@ Single-colored icons can be modified like so:
 .icon-logo {
   width: 2.181640625em;
   font-size: 3rem;
+  @include breakpoint(small only) {
+  font-size: 2.5rem;
+  }
 }
 
 .icon-logo-agegate {
@@ -52,6 +55,9 @@ Single-colored icons can be modified like so:
 .icon-drinking {
   width: 8.41015625em;
   font-size: 1.25rem;
+  @include breakpoint(small only) {
+  font-size: 1rem;
+  }
 }
 
 footer .icon-drinking {
