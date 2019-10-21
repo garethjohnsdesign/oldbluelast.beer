@@ -5,23 +5,22 @@
 {% block main %}
 
 <!-- Hero -->
-<section class="home__hero">
+<section class="home__hero grid-y align-center">
 
-  <div class="swiper-container carousel--hero">
-    <div class="swiper-wrapper">
-      {% for image in entry.heroImages.orderBy('RAND()').all() %}
-      <div class="swiper-slide small-12 cell text-center">
-        <div class="image--hero align-center-middle" data-interchange="{% include "_includes/images/full/full/interchange-img-small-12-medium-12" %}">
+
+      <div class="swiper-container carousel--hero home__hero__image">
+        <div class="swiper-wrapper">
+          {% for image in entry.heroImages.orderBy('RAND()').all() %}
+          <div class="swiper-slide small-12 cell text-center">
+            <div class="image--hero align-center-middle" data-interchange="{% include "_includes/images/full/full/interchange-img-small-12-medium-12" %}">
+            </div>
+          </div>
+          {% endfor %}
         </div>
       </div>
-      {% endfor %}
-    </div>
-  </div>
 
-  <div class="home__hero__text">
-    <div class="grid-y height-100 align-center">
+
       <div class="shrink cell white">
-
         <div class="grid-container">
           <div class="grid-x grid-padding-x">
               <div class="small-12 large-8 cell secondary-font text-uppercase">
@@ -40,10 +39,7 @@
               </div>
           </div>
         </div>
-
-      </div>
     </div>
-  </div>
 
 </section>
 <!-- End Hero -->

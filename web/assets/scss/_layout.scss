@@ -197,14 +197,21 @@ i, cite, em, var, address, dfn {
 // -------
 
 .home__hero {
+min-height: 100vh;
+padding-top: 5rem;
+padding-bottom: 5rem;
+position: relative;
+
+/*
   overflow: hidden;
   position: relative;
   @include breakpoint(small) {
-  height: 100vh;
+  min-height: 100vh;
   }
   @include breakpoint(medium) {
-  height: 100vh;
+  min-height: 100vh;
   }
+*/
 }
 
 .home__party-video {
@@ -321,10 +328,10 @@ i, cite, em, var, address, dfn {
 }
 
 .image--hero {
-  height: 100vh;
+  height: 100%;
   background-size: cover; 
   @include breakpoint(small) {
-  background-position: 75% 50%;
+  background-position: 50% 50%;
   }
   @include breakpoint(medium) {
   background-position: 50% 50%;
@@ -391,12 +398,26 @@ cursor: pointer;
 
 
 .home__hero__text {
+/*
+padding-top: 5rem;
+padding-bottom: 5rem;
+*/
+/*
   z-index: 100;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%; 
   height: 100%;
+padding: 3rem;
+*/
+}
+
+.home__hero__image {
+height: 100%;
+width: 100%;
+position: absolute;
+z-index: -1;
 }
 
 .global__photos {
