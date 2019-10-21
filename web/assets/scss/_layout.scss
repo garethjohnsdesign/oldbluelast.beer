@@ -43,6 +43,9 @@
   }
 }
 
+$short-only: "(max-height:728px)" !default;
+$tall-up: "(min-height:729px)" !default;
+
 // 2. Global
 // ---------
 
@@ -105,14 +108,6 @@ p a {
   background-color: $white;
   color: $primary-color;
 //   @include links ($primary-color, $primary-color) 
-}
-
-.social-links {
-  z-index: 10;
-	position: fixed;
-	right: -3rem;
-	top: 50%;
-	transform:rotate(90deg);
 }
 
 // 3. Typography
@@ -198,8 +193,8 @@ i, cite, em, var, address, dfn {
 
 .home__hero {
 min-height: 100vh;
-padding-top: 5rem;
-padding-bottom: 5rem;
+padding-top: 6rem;
+padding-bottom: 6rem;
 position: relative;
 
 /*
@@ -431,7 +426,7 @@ z-index: -1;
 
 .links {
   width: 100vh;
-  left: calc(100% - 7rem);
+  left: calc(100% - 4rem);
   position: fixed;
   top: 50%;
   transform: rotate(-90deg) translate(-50%, 0%);
@@ -439,6 +434,12 @@ z-index: -1;
   z-index: 200;
   color: white;
   filter: drop-shadow(1px 1px 1px rgba(0,0,0,.3) );
+}
+
+.links-links {
+  @media screen and #{$short-only} {
+  display: none !important;
+  }
 }
 
 

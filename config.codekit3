@@ -97,6 +97,14 @@
 		"oAP": "/config/license.key",
 		"oF": 0
 		},
+	"/config/minify.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/config/minify.php",
+		"oF": 0
+		},
 	"/config/redactor/Simple.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -156,17 +164,6 @@
 		"oA": 2,
 		"oAP": "/build/node_modules",
 		"oF": 0
-		},
-	"/node_modules/aos/dist/aos.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/aos/dist/aos-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
 		},
 	"/node_modules/foundation-sites/dist/js/foundation.esm.js": {
 		"bF": 0,
@@ -241,6 +238,17 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/node_modules/lightGallery/dist/js/lightgallery-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/node_modules/mapbox-gl/dist/mapbox-gl.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/mapbox-gl/dist/mapbox-gl-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -436,6 +444,14 @@
 		"oAP": "/templates/uk/503.twig",
 		"oF": 0
 		},
+	"/templates/uk/_includes/blocks/age-gate-simple.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/uk/_includes/blocks/age-gate-simple.twig",
+		"oF": 0
+		},
 	"/templates/uk/_includes/blocks/age-gate.twig": {
 		"cB": 0,
 		"ft": 8192,
@@ -468,20 +484,20 @@
 		"oAP": "/templates/uk/_includes/blocks/form.twig",
 		"oF": 0
 		},
+	"/templates/uk/_includes/blocks/links.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/uk/_includes/blocks/links.twig",
+		"oF": 0
+		},
 	"/templates/uk/_includes/blocks/map.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/uk/_includes/blocks/map.twig",
-		"oF": 0
-		},
-	"/templates/uk/_includes/blocks/social-links.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/uk/_includes/blocks/social-links.twig",
 		"oF": 0
 		},
 	"/templates/uk/_includes/global/analytics.twig": {
@@ -1218,13 +1234,24 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/web/assets/js/lightgallery-all.js": {
+	"/web/assets/js/map.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/web/assets/js/lightgallery-all-min.js",
+		"oAP": "/web/assets/js/map-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/assets/js/min/agegate-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/assets/js/min/agegate-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -1236,6 +1263,17 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/web/assets/js/min/app-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/assets/js/min/map-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/assets/js/min/map-min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
