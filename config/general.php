@@ -48,7 +48,7 @@ return [
 
         // Set the environmental variables
         'environmentVariables' => array(
-            'staticAssetsVersion' => '20150310',
+            'staticAssetsVersion' => '01',
         ),
         
     ],
@@ -80,7 +80,7 @@ return [
         'allowAutoUpdates' => false,
         // Set the environmental variables
         'environmentVariables' => array(
-            'staticAssetsVersion' => '20150310',
+            'staticAssetsVersion' => time(),
         ),
     ],
 
