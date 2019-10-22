@@ -44,7 +44,7 @@ return [
         
         'enableTemplateCaching' => false,
         
-        'extraAllowedFileExtensions' => 'kmz',
+        'siteUrl'             => getenv('SITE_URL') ?: '@web',
 
         // Set the environmental variables
         'environmentVariables' => array(
@@ -55,9 +55,6 @@ return [
 
     // Dev environment settings
     'dev' => [
-        // Base site URL
-        'siteUrl' => 'http://oldbluelast.test',
-        'shopUrl' => 'http://oldbluelast.test',
 
         // Dev Mode (see https://craftcms.com/support/dev-mode)
         'devMode' => true,
@@ -71,9 +68,6 @@ return [
 
     // Staging environment settings
     'staging' => [
-        // Base site URL
-        'siteUrl' => 'https://oblb-staging.frb.io',
-        'shopUrl' => 'https://oblb-staging.frb.io',
 
         'devMode' => false,
         'enableTemplateCaching' => true,
@@ -86,9 +80,6 @@ return [
 
     // Production environment settings
     'production' => [
-        // Base site URL
-        'siteUrl' => 'https://www.oldbluelast.beer',
-        'shopUrl' => 'https://shop.oldbluelast.beer',
 
         'devMode' => false,
         'enableTemplateCaching' => true,
