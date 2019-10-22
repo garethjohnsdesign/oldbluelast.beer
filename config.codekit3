@@ -3740,6 +3740,14 @@
 		"oAP": "/web/index.php",
 		"oF": 0
 		},
+	"/web/robots.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/robots.txt",
+		"oF": 0
+		},
 	"/web/web.config": {
 		"cB": 0,
 		"ft": 8192,
