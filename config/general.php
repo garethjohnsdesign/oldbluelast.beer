@@ -80,7 +80,7 @@ return [
         'allowAutoUpdates' => false,
         // Set the environmental variables
         'environmentVariables' => array(
-            'staticAssetsVersion' => time(),
+            'staticAssetsVersion' => '84',
         ),
     ],
 
