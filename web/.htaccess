@@ -40,8 +40,8 @@
   <filesMatch ".(gif|png|jpg|jpeg|ico|pdf|svg|js)$">
     Header set Cache-Control "max-age=2592000"
   </filesMatch>
-  # CSS expires after 1 day
+  # CSS expires after 1 month
   <filesMatch ".(css)$">
-    Header set Cache-Control "max-age=86400"
+    Header set Cache-Control "max-age=2592000"
   </filesMatch>
 </ifModule>
