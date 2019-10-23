@@ -223,7 +223,7 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/node_modules/lightGallery/dist/js/lightgallery.js": {
+	"/node_modules/lightgallery/dist/js/lightgallery.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
@@ -1180,50 +1180,6 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
-		},
-	"/web/assets/images/bag.png": {
-		"ft": 32768,
-		"iS": 2701,
-		"oA": 0,
-		"oAP": "/web/assets/images/bag.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/web/assets/images/can-new.png": {
-		"ft": 32768,
-		"iS": 93693,
-		"oA": 0,
-		"oAP": "/web/assets/images/can-new.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/web/assets/images/can-small.png": {
-		"ft": 32768,
-		"iS": 2496,
-		"oA": 0,
-		"oAP": "/web/assets/images/can-small.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/web/assets/images/can.png": {
-		"ft": 32768,
-		"iS": 93693,
-		"oA": 0,
-		"oAP": "/web/assets/images/can.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
 		},
 	"/web/assets/js/app.js": {
 		"bF": 4,
