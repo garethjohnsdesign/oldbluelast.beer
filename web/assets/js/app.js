@@ -11,7 +11,7 @@ import "lg-autoplay";
 import Swiper from 'swiper';
 // import AgeGate from 'agegate';
 import Cookies from 'js-cookie'
-import Swup from 'swup';
+// import Swup from 'swup';
 
 // 2. Special Queries
 // ------------------
@@ -125,6 +125,8 @@ $(".findbeer").click(function(){
   $(".mapboxgl-ctrl-geolocate").click()
 });
 
+/*
 var swup = new Swup({
   animationSelector: '[class*="swup-transition-"]'
 });
+*/
