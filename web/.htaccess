@@ -138,7 +138,7 @@
 </ifModule>
 
 <IfModule mod_rewrite.c>
-    RewriteEngine On
+  RewriteEngine On
 
   # Ignore the version strings in static assets
 	RewriteCond %{REQUEST_FILENAME} !-f
@@ -164,9 +164,9 @@
   RewriteRule .* - [E=SERVER_ENV:local]
 
 	# Send would-be 404 requests to Craft
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_URI} !^/(favicon\.ico|apple-touch-icon.*\.png)$ [NC]
-    RewriteRule (.+) index.php?p=$1 [QSA,L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} !^/(favicon\.ico|apple-touch-icon.*\.png)$ [NC]
+  RewriteRule (.+) index.php?p=$1 [QSA,L]
 
 </IfModule>
