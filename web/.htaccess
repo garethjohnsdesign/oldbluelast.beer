@@ -143,6 +143,10 @@
   # Ignore the version strings in static assets
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteRule (^(.*?\/)*?)([a-z\.\-]+)(\d+)\.(bmp|css|cur|gif|ico|jpe?g|js|png|svgz?|webp|webmanifest)$ $1$3$5 [L]
+
+  RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+  RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L,N]
+
 	# Send would-be 404 requests to Craft
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
