@@ -21,8 +21,6 @@ return [
         // Control Panel trigger word
         'cpTrigger' => 'brew',
 
-        'smallbreakpoint' => '1400',
-
         'breakpoints' => [
                 'small' => '640',
                 'medium' => '1024',
@@ -46,19 +44,16 @@ return [
         
         'siteUrl'             => getenv('SITE_URL') ?: '@web',
 
-        // Set the environmental variables
-        'environmentVariables' => array(
-            'staticAssetsVersion' => '01',
-        ),
+        'staticAssetsVersion' => '02',
         
     ],
 
-    // Dev environment settings
+    // Development environment settings
     'dev' => [
 
         // Dev Mode (see https://craftcms.com/support/dev-mode)
         'devMode' => true,
-        'allowAutoUpdates' => true,
+        'allowUpdates' => true,
         'enableTemplateCaching' => false,
         // Set the environmental variables
         'environmentVariables' => array(
@@ -71,7 +66,7 @@ return [
 
         'devMode' => false,
         'enableTemplateCaching' => true,
-        'allowAutoUpdates' => false,
+        'allowUpdates' => false,
         // Set the environmental variables
         'environmentVariables' => array(
             'staticAssetsVersion' => time(),
@@ -83,7 +78,7 @@ return [
 
         'devMode' => false,
         'enableTemplateCaching' => true,
-        'allowAutoUpdates' => false,
+        'allowUpdates' => false,
     ],
     
 

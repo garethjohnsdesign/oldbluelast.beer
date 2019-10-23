@@ -7,78 +7,78 @@
 <!-- Hero -->
 <section class="home__hero grid-y align-center">
 
-
-      <div class="swiper-container carousel--hero home__hero__image">
-        <div class="swiper-wrapper">
-          {% for image in entry.heroImages.orderBy('RAND()').all() %}
-          <div class="swiper-slide small-12 cell text-center">
-            <div class="image--hero align-center-middle" data-interchange="{% include "_includes/images/full/full/interchange-img-small-12-medium-12" %}">
-            </div>
-          </div>
-          {% endfor %}
+  <div class="swiper-container carousel--hero home__hero__image">
+    <div class="swiper-wrapper">
+      {% for image in entry.heroImages.orderBy('RAND()').all() %}
+      <div class="swiper-slide small-12 cell text-center">
+        <div class="image--hero align-center-middle" data-interchange="{% include "_includes/images/full/full/interchange-img-small-12-medium-12" %}">
         </div>
       </div>
+      {% endfor %}
+    </div>
+  </div>
 
-
-      <div class="shrink cell white">
-        <div class="grid-container">
-          <div class="grid-x grid-padding-x">
-              <div class="small-12 large-8 cell secondary-font text-uppercase">
-              {% set promo = random(entry.heroText) %}
-              <h1>{{ promo.text }}</h1>
-              </div>
-              <div class="small-12 large-4 cell">
-                <div class="grid-y align-justify" style="height: 100%;">
-                  <div class="shrink cell">
-                  <div class="text-uppercase margin-top-2">{{entry.heroSubheader}}</div>
-                  </div>
-                  <div class="shrink cell">
-                  <div class="margin-top-1 margin-bottom-1"><a href="/redirection" class="button large text-uppercase solid secondary-button">Click for Beer<svg class="icon icon-arrow_forward"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow_forward"></use></svg></a></div>
-                  </div>
-                  </div>
-              </div>
+  <div class="shrink cell white">
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="small-12 large-8 cell secondary-font text-uppercase">
+        {% set promo = random(entry.heroText) %}
+        <h1>{{ promo.text }}</h1>
+        </div>
+        <div class="small-12 large-4 cell">
+          <div class="grid-y align-justify" style="height: 100%;">
+            <div class="shrink cell">
+              <div class="text-uppercase margin-top-2">{{entry.heroSubheader}}</div>
+            </div>
+            <div class="shrink cell">
+              <div class="margin-top-1 margin-bottom-1"><a href="/redirection" class="button large text-uppercase solid secondary-button">Click for Beer<svg class="icon icon-arrow_forward"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow_forward"></use></svg></a></div>
+            </div>
           </div>
         </div>
+      </div>
     </div>
+  </div>
 
 </section>
 <!-- End Hero -->
 
 <!-- Campaign -->
 {% if entry.showCampaign %}
-<div class="grid-x">
-  <div class="small-12 cell">
-  
-    {% set image = entry.campaignImage.one() %}
-    <div class="image--campaign align-center-middle" data-interchange="{% include "_includes/images/full/full/interchange-img-small-12-medium-12" %}">
-      <div class="grid-y height-100 align-center">
-        <div class="shrink cell text-center padding-2" id="video-gallery">
-          <a href="https://www.youtube.com/watch?v=CciUPWG6Kp8" class="h1 white play_arrow"><svg class="icon icon-play_arrow"><use xlink:href="/assets/icons/symbol-defs.svg#icon-play_arrow"></use></svg></a>
+<section class="home__campaign">
+
+  <div class="grid-x">
+    <div class="small-12 cell">
+    
+      {% set image = entry.campaignImage.one() %}
+      <div class="image--campaign align-center-middle" data-interchange="{% include "_includes/images/full/full/interchange-img-small-12-medium-12" %}">
+        <div class="grid-y height-100 align-center">
+          <div class="shrink cell text-center padding-2" id="video-gallery">
+            <a href="https://www.youtube.com/watch?v=CciUPWG6Kp8" class="h1 white play_arrow"><svg class="icon icon-play_arrow"><use xlink:href="/assets/icons/symbol-defs.svg#icon-play_arrow"></use></svg></a>
+          </div>
         </div>
       </div>
+    
     </div>
-  
   </div>
-</div>
+
+</section>
 {% endif %}
 <!-- End Campaign -->
 
 <!-- Location -->
 <section class="home__drink inverted" id="home__drink">
+
   <div class="grid-container">
     <div class="grid-x grid-padding-x grid-padding-y">
       <div class="small-12 medium-auto large-8 cell">
         <h1 class="secondary-font margin-bottom-0 text-uppercase">Drink</h1>
       </div>
       <div class="small-12 medium-shrink large-4 cell text-uppercase align-self-bottom">
-
-      <button class="button text-uppercase findbeer solid large primary-button">Find Beer <svg class="icon icon-arrow_forward"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow_forward"></use></svg></button>
-{#       <div id='geocoder' class='geocoder'></div> #}
-
+        <button class="button text-uppercase findbeer solid large primary-button">Find Beer <svg class="icon icon-arrow_forward"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow_forward"></use></svg></button>
       </div>
-
     </div>  
   </div>
+
 </section>
 
 <div id="map" style="width: 100%; height: 500px;"></div>
@@ -96,6 +96,7 @@
 
 <!-- Party -->
 <section class="home__party" id="home__party">
+
   <div class="grid-container">
     <div class="grid-x grid-padding-x grid-padding-y">
       <div class="small-12 medium-8 cell">
@@ -104,11 +105,11 @@
       </div>
     </div>
   </div>
+
 </section>
 <!-- End Party -->
 
-{# Upcoming Events #}
-
+<!-- Upcoming Events -->
 {% set entries = craft.entries
 .section('events')
 .eventDate('>' ~ now.getTimestamp())
@@ -154,54 +155,53 @@
   
 </section>
 {% endif %}
-{# End Upcoming Events #}
+<!-- End Upcoming Events -->
 
-{# Photos #}
+<!-- Photos -->
+
+{% set evententries = craft.entries.section('events')
+.eventFeatured('1')
+.eventDate('< ' ~ now.getTimestamp())
+.orderBy('RAND()')
+.limit(9)
+.all() %}
+
 <section class="home__photos" id="home__photos">
 
     <div class="inverted">
-        <div class="grid-container">
-          <div class="grid-x grid-padding-x grid-padding-y">
-            <div class="small-12 medium-auto large-8 cell text-uppercase">
-              <h1 class="secondary-font text-uppercase">Photos</h1>
-            </div>
-            <div class="small-12 medium-shrink large-4 cell text-uppercase align-self-bottom">
-              <a href="/photos" class="button text-uppercase solid large primary-button">View All <svg class="icon icon-arrow_forward"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow_forward"></use></svg></a>
-            </div>
+      <div class="grid-container">
+        <div class="grid-x grid-padding-x grid-padding-y">
+          <div class="small-12 medium-auto large-8 cell text-uppercase">
+            <h1 class="secondary-font text-uppercase">Photos</h1>
+          </div>
+          <div class="small-12 medium-shrink large-4 cell text-uppercase align-self-bottom">
+            <a href="/photos" class="button text-uppercase solid large primary-button">View All <svg class="icon icon-arrow_forward"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow_forward"></use></svg></a>
           </div>
         </div>
+      </div>
     </div>
     
     <div class="grid-x small-up-1 medium-up-3 large-up-3">
-      
-        {% set evententries = craft.entries
-        .section('events')
-        .eventFeatured('1')
-        .eventDate('<' ~ now.getTimestamp())
-        .orderBy('RAND()')
-        .limit(9)
-        .all() %}
-        
-        {% for entry in evententries %}
-        <div class="cell">
-            <a href="{{ entry.url}}" class="global__photos">   
-                {% for image in entry.eventThumb.all() %}
-                <div class="image--square" data-interchange="{% include "_includes/images/full/1-1/interchange-img-small-12-medium-4" %}">
-                  <div class="grid-y height-100 align-center content">
-                    <div class="shrink cell text-center padding-2">
-                      <h4 class="margin-bottom-0">{{ entry.title}}<br>@ {{ entry.eventVenue}}</h4>
-                    </div>
-                  </div>
-                </div>
-                {% endfor %}
-            </a>
-        </div>
-        {% endfor %}
-        
+      {% for entry in evententries %}
+      <div class="cell">
+        <a href="{{ entry.url}}" class="global__photos">   
+          {% for image in entry.eventThumb.all() %}
+          <div class="image--square" data-interchange="{% include "_includes/images/full/1-1/interchange-img-small-12-medium-4" %}">
+            <div class="grid-y height-100 align-center content">
+              <div class="shrink cell text-center padding-2">
+                <h4 class="margin-bottom-0">{{ entry.title}}<br>@ {{ entry.eventVenue}}</h4>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </a>
+      </div>
+      {% endfor %}
     </div>
+
 </section>
 
-{# End Photos #}
+<!-- End Photos -->
 
 <!-- The Beer -->
 <section class="home__the-beer" id="home__the-beer">
@@ -214,10 +214,10 @@
     </div>
   </div>
 </section>
-<!-- End Party -->
+<!-- End The Beer -->
 
 <!-- Contact Form -->
-<section class="home__the-beer padding-vertical-2" id="home__the-beer">
+<section class="home__contact padding-vertical-2" id="home__contact">
   <div class="grid-container">
     <div class="grid-x">
       <div class="small-12 medium-8 cell">
@@ -262,8 +262,8 @@ var geojson = {
   ]
 };
  
-// add markers to map
-geojson.features.forEach(function(marker) {
+  // add markers to map
+  geojson.features.forEach(function(marker) {
 
   // create a HTML element for each feature
   var el = document.createElement('div');
