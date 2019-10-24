@@ -43,8 +43,8 @@
   }
 }
 
-$short-only: "(max-height:728px)" !default;
-$tall-up: "(min-height:729px)" !default;
+$short-only: "(max-height:620px)" !default;
+$tall-up: "(min-height:621px)" !default;
 
 // 2. Global
 // ---------
@@ -458,7 +458,7 @@ transform: rotate(90deg);
 }
 
 .social {
-padding: 0.4rem 1rem !important
+padding: 0.3rem 0.7rem !important
 }
 
 .marker {
