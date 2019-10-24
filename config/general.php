@@ -46,7 +46,7 @@ return [
 
         // Set the environmental variables
         'environmentVariables' => array(
-            'staticAssetsVersion' => '03',
+            'staticAssetsVersion' => '04',
         ),
         
     ],
