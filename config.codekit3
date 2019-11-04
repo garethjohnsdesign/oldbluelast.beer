@@ -57,6 +57,14 @@
 		"oAP": "/config/app.php",
 		"oF": 0
 		},
+	"/config/commerce.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/config/commerce.php",
+		"oF": 0
+		},
 	"/config/db.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -298,6 +306,630 @@
 		"ft": 65536,
 		"oA": 1,
 		"oAP": "/build/storage",
+		"oF": 0
+		},
+	"/templates/merch/_email.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/templates/merch/_email.html",
+		"oF": 0
+		},
+	"/templates/merch/_images/logo.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_images/logo.html",
+		"oF": 0
+		},
+	"/templates/merch/_images/product.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_images/product.html",
+		"oF": 0
+		},
+	"/templates/merch/_includes/_postRedirect.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/templates/merch/_includes/_postRedirect.html",
+		"oF": 0
+		},
+	"/templates/merch/_includes/addresses/address.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/addresses/address.html",
+		"oF": 0
+		},
+	"/templates/merch/_includes/addresses/fieldset.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/addresses/fieldset.html",
+		"oF": 0
+		},
+	"/templates/merch/_includes/addresses/form.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/addresses/form.html",
+		"oF": 0
+		},
+	"/templates/merch/_includes/blocks/age-gate-simple.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/blocks/age-gate-simple.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/blocks/age-gate.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/blocks/age-gate.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/blocks/copyright.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/blocks/copyright.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/blocks/footer.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/blocks/footer.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/blocks/form.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/blocks/form.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/blocks/links.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/blocks/links.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/blocks/map.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/blocks/map.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/global/analytics.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/global/analytics.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/global/head.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/global/head.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/global/navigation.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/global/navigation.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/global/scripts.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/global/scripts.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/contained/1-1/interchange-img-small-12-medium-12.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/contained/1-1/interchange-img-small-12-medium-12.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/contained/1-1/interchange-img-small-12-medium-4.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/contained/1-1/interchange-img-small-12-medium-4.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/contained/1-1/interchange-img-small-12-medium-6.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/contained/1-1/interchange-img-small-12-medium-6.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/contained/16-9/interchange-img-small-12-medium-12.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/contained/16-9/interchange-img-small-12-medium-12.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/contained/16-9/interchange-img-small-12-medium-4.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/contained/16-9/interchange-img-small-12-medium-4.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/contained/16-9/interchange-img-small-12-medium-6.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/contained/16-9/interchange-img-small-12-medium-6.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/contained/5-4/interchange-img-small-12-medium-12.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/contained/5-4/interchange-img-small-12-medium-12.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/contained/5-4/interchange-img-small-12-medium-4.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/contained/5-4/interchange-img-small-12-medium-4.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/contained/5-4/interchange-img-small-12-medium-6.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/contained/5-4/interchange-img-small-12-medium-6.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/contained/5-7/interchange-img-small-12-medium-12.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/contained/5-7/interchange-img-small-12-medium-12.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/contained/5-7/interchange-img-small-12-medium-4.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/contained/5-7/interchange-img-small-12-medium-4.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/contained/5-7/interchange-img-small-12-medium-6.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/contained/5-7/interchange-img-small-12-medium-6.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/contained/6-4/interchange-img-small-12-medium-12.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/contained/6-4/interchange-img-small-12-medium-12.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/contained/6-4/interchange-img-small-12-medium-4.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/contained/6-4/interchange-img-small-12-medium-4.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/contained/6-4/interchange-img-small-12-medium-6.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/contained/6-4/interchange-img-small-12-medium-6.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/contained/7-5/interchange-img-small-12-medium-12.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/contained/7-5/interchange-img-small-12-medium-12.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/contained/7-5/interchange-img-small-12-medium-4.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/contained/7-5/interchange-img-small-12-medium-4.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/contained/7-5/interchange-img-small-12-medium-6.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/contained/7-5/interchange-img-small-12-medium-6.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/full/1-1/interchange-img-small-12-medium-12.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/full/1-1/interchange-img-small-12-medium-12.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/full/1-1/interchange-img-small-12-medium-4.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/full/1-1/interchange-img-small-12-medium-4.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/full/1-1/interchange-img-small-12-medium-6.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/full/1-1/interchange-img-small-12-medium-6.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/full/16-9/interchange-img-small-12-medium-12.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/full/16-9/interchange-img-small-12-medium-12.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/full/16-9/interchange-img-small-12-medium-4.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/full/16-9/interchange-img-small-12-medium-4.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/full/16-9/interchange-img-small-12-medium-6.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/full/16-9/interchange-img-small-12-medium-6.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/full/5-4/interchange-img-small-12-medium-12.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/full/5-4/interchange-img-small-12-medium-12.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/full/5-4/interchange-img-small-12-medium-4.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/full/5-4/interchange-img-small-12-medium-4.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/full/5-4/interchange-img-small-12-medium-6.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/full/5-4/interchange-img-small-12-medium-6.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/full/5-7/interchange-img-small-12-medium-12.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/full/5-7/interchange-img-small-12-medium-12.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/full/5-7/interchange-img-small-12-medium-4.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/full/5-7/interchange-img-small-12-medium-4.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/full/5-7/interchange-img-small-12-medium-6.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/full/5-7/interchange-img-small-12-medium-6.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/full/6-4/interchange-img-small-12-medium-12.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/full/6-4/interchange-img-small-12-medium-12.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/full/6-4/interchange-img-small-12-medium-4.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/full/6-4/interchange-img-small-12-medium-4.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/full/6-4/interchange-img-small-12-medium-6.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/full/6-4/interchange-img-small-12-medium-6.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/full/7-5/interchange-img-small-12-medium-12.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/full/7-5/interchange-img-small-12-medium-12.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/full/7-5/interchange-img-small-12-medium-4.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/full/7-5/interchange-img-small-12-medium-4.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/full/7-5/interchange-img-small-12-medium-6.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/full/7-5/interchange-img-small-12-medium-6.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/images/full/full/interchange-img-small-12-medium-12.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/images/full/full/interchange-img-small-12-medium-12.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/meter.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/meter.html",
+		"oF": 0
+		},
+	"/templates/merch/_includes/order-review.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/order-review.twig",
+		"oF": 0
+		},
+	"/templates/merch/_includes/scripts/map.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_includes/scripts/map.twig",
+		"oF": 0
+		},
+	"/templates/merch/_layouts/checkout.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_layouts/checkout.twig",
+		"oF": 0
+		},
+	"/templates/merch/_layouts/main.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_layouts/main.twig",
+		"oF": 0
+		},
+	"/templates/merch/_pdf/order.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/_pdf/order.html",
+		"oF": 0
+		},
+	"/templates/merch/cart.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/cart.twig",
+		"oF": 0
+		},
+	"/templates/merch/checkout/addresses.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/checkout/addresses.html",
+		"oF": 0
+		},
+	"/templates/merch/checkout/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/checkout/index.html",
+		"oF": 0
+		},
+	"/templates/merch/checkout/payment.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/checkout/payment.html",
+		"oF": 0
+		},
+	"/templates/merch/checkout/register-signin.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/checkout/register-signin.html",
+		"oF": 0
+		},
+	"/templates/merch/checkout/shipping.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/checkout/shipping.html",
+		"oF": 0
+		},
+	"/templates/merch/customer/addresses/edit.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/customer/addresses/edit.html",
+		"oF": 0
+		},
+	"/templates/merch/customer/addresses/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/customer/addresses/index.html",
+		"oF": 0
+		},
+	"/templates/merch/customer/cards.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/customer/cards.html",
+		"oF": 0
+		},
+	"/templates/merch/customer/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/customer/index.html",
+		"oF": 0
+		},
+	"/templates/merch/customer/order.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/customer/order.html",
+		"oF": 0
+		},
+	"/templates/merch/index.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/index.twig",
+		"oF": 0
+		},
+	"/templates/merch/products/_product.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/templates/merch/products/_product.twig",
+		"oF": 0
+		},
+	"/templates/merch/products/index.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/products/index.twig",
+		"oF": 0
+		},
+	"/templates/merch/services/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/services/index.html",
+		"oF": 0
+		},
+	"/templates/merch/services/subscription/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/services/subscription/index.html",
+		"oF": 0
+		},
+	"/templates/merch/services/update-billing-details.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/merch/services/update-billing-details.html",
 		"oF": 0
 		},
 	"/templates/shop/_includes/age-gate/overlay.twig": {
@@ -936,6 +1568,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/web/.htaccess",
+		"oF": 0
+		},
+	"/web/.htaccess copy": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/web/.htaccess copy",
 		"oF": 0
 		},
 	"/web/assets/css/app.css": {
