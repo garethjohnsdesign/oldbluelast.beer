@@ -308,6 +308,54 @@
 		"oAP": "/build/storage",
 		"oF": 0
 		},
+	"/templates/buy/_components/checkboxicon.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/buy/_components/checkboxicon.html",
+		"oF": 0
+		},
+	"/templates/buy/_components/spinner.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/buy/_components/spinner.html",
+		"oF": 0
+		},
+	"/templates/buy/_layout/main.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/buy/_layout/main.html",
+		"oF": 0
+		},
+	"/templates/buy/add.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/buy/add.html",
+		"oF": 0
+		},
+	"/templates/buy/confirm.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/buy/confirm.html",
+		"oF": 0
+		},
+	"/templates/buy/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/buy/index.html",
+		"oF": 0
+		},
 	"/templates/merch/_email.html": {
 		"cB": 0,
 		"ft": 8192,
