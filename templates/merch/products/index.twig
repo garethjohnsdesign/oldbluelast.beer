@@ -1,6 +1,6 @@
 {% extends 'merch/_layouts/main' %}
 
-{% set products = craft.products.limit(5).all() %}
+{% set products = craft.products.all() %}
 
 {% block main %}
 
@@ -11,7 +11,7 @@
             <div class="small-12 medium-6 cell">
               
           {% for image in product.image.all() %}
-          <div class="image--square" data-interchange="{% include "_includes/images/full/1-1/interchange-img-small-12-medium-4" %}">
+          <div class="image--square" data-interchange="{% include "_includes/images/full/1-1/interchange-img-small-12-medium-6" %}">
             <div class="grid-y height-100 align-center content">
               <div class="shrink cell text-center padding-2">
  
@@ -19,37 +19,31 @@
             </div>
           </div>
           {% endfor %}
+
           <h3>{% if product.url %}{{ product.link }}{% else %}{{ product.title }}{% endif %}</h3>
-{% if product.getVariants()|length %}
+          {% if product.getVariants()|length %}
                     <form method="POST" class="add-to-cart-form">
                         <input type="hidden" name="action" value="commerce/cart/update-cart">
                         <input type="hidden" name="cartUpdatedNotice" value="Added {{ product.title}} to the cart.">
-                        {{ redirectInput('shop/cart') }}
+                        {{ redirectInput('merch/cart') }}
                         <input type="hidden" name="qty" value="1">
                         {{ csrfInput() }}
 
-                        <select name="purchasableId" class="purchasableId">
-                            {%- for purchasable in product.getVariants() -%}
-                                <option {% if not purchasable.isAvailable %}disabled {% endif %}
-                                        data-info="product-{{ product.id }}-purchasable-{{ purchasable.id }}"
-                                        value="{{ purchasable.id }}">
-                                        {{ purchasable.description }} {{ purchasable.salePrice|commerceCurrency(cart.currency) }}
-                                </option>
-                            {%- endfor -%}
+                        <select name="purchasableId" class="purchasableId text-uppercase">
+                          {%- for purchasable in product.getVariants() -%}
+                              <option {% if not purchasable.isAvailable %}disabled {% endif %}
+                                      data-info="product-{{ product.id }}-purchasable-{{ purchasable.id }}"
+                                      value="{{ purchasable.id }}">
+                                      {{ purchasable.size }} {{ purchasable.salePrice|commerceCurrency(cart.currency) }}
+                              </option>
+                          {%- endfor -%}
                         </select>
                         {% if product.hasUnlimitedStock or (product.hasUnlimitedStock == false and product.totalStock > 0 ) %}
-                            <button type="submit">{{ "Add to cart"|t }}</button>
+                            <button type="submit" class="button large text-uppercase">{{ "Add to cart"|t }}</button>
                         {% else %}
                             {{ "Out of Stock"|t }}
                         {% endif %}
                     </form>
-
-                    {% if currentUser %}
-                    {% set order = craft.orders.user(currentUser).hasPurchasables(product.defaultVariant).all() %}
-                    {% if order|length %}
-                        <strong>I already own this product: </strong> <a href="/shop/customer/order?number={{ order[0].number }}">Order #{{ order[0].shortNumber }}</a>
-                    {% endif %}
-                    {% endif %}
 
                     {%- for purchasable in product.getVariants() -%}
                         <div id="product-{{ product.id }}-purchasable-{{ purchasable.id }}" class="purchasableInfo" style="display:none;">

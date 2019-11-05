@@ -1,7 +1,6 @@
 {% extends "merch/_layouts/main" %}
 
 {% block main %}
-    <h1>Here’s what’s in your cart</h1>
 
     {% if cart.lineItems|length %}
         <table class="cart w-full">
@@ -15,7 +14,7 @@
             <form method="POST">
                 <input type="hidden" name="action" value="commerce/cart/update-cart">
                 <input type="hidden" name="cartUpdatedNotice" value="The cart was updated.">
-                {{ redirectInput('shop/cart') }}
+                {{ redirectInput('merch/cart') }}
                 {{ csrfInput() }}
             <tbody>
                 {% set lineItemHasErrors = false %}

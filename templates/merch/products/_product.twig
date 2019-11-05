@@ -3,16 +3,24 @@
 {% block main %}
 <div class="grid-x grid-padding-y grid-padding-x">
   <div class="small-12 cell">
-      <a href="{{ url('shop/products') }}">&larr; All products</a>
+      <a href="{{ url('merch/products') }}">&larr; All products</a>
   </div>
 </div>
 
 <div class="grid-container">
   <div class="grid-x">
-      <div class="small-6 cell">
-          {% include "merch/_images/product" with { class: 'u-max-full-width', number: '3' } %}
+      <div class="small-12 medium-6 cell">
+        {% for image in product.image.all() %}
+        <div class="image--square" data-interchange="{% include "_includes/images/full/1-1/interchange-img-small-12-medium-4" %}">
+          <div class="grid-y height-100 align-center content">
+            <div class="shrink cell text-center padding-2">
+  
+            </div>
+          </div>
+        </div>
+        {% endfor %}
       </div>
-      <div class="small-6 cell">
+      <div class="small-12 medium-6 cell">
           <h3>{{ product.title }}</h3>
 
           <form method="POST">
