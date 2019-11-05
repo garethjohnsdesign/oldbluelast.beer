@@ -5,43 +5,24 @@
   </div>
 
   <div class="shrink medium-6 cell">
-  <ul class="dropdown menu align-center text-uppercase" data-dropdown-menu>
-          {% set page = craft.app.request.getSegment(2) %}
-  
-          {% if craft.commerce.plans.getAllPlans|length %}
-              <li>
-                  <a class="{% if page == 'services' %}active{% endif %}" href="{{ url('merch/services') }}">
-                      {{ "Services"|t }}
-                  </a>
-              </li>
-          {% endif %}
-  
-          <li>
-              <a class="{% if page == 'products' %}active{% endif %}" href="{{ url('merch/products') }}">
-                  {{ "Products"|t }}
-              </a>
-          </li>
-  
-          <li>
-              <a class="{% if page == 'cart' %}active{% endif %}" href="{{ url('merch/cart') }}">
-                  <i class="fa fa-shopping-cart"></i> {{ "Cart"|t }} <span class="badge">{{ craft.orders.number(cart.number).one().totalQty ?? 0}}</span>
-              </a>
-          </li>
-  
-          {% if currentUser %}
-              <li>
-                  <a href="#">Account</a>
-                  <ul class="menu">
-                      <li><a href="{{ url('shop/customer') }}">{{ "My Orders"|t }}</a></li>
-                      <li><a href="{{ url('shop/customer/addresses') }}">{{ "My Addresses"|t }}</a></li>
-                      <li><a href="{{ url('shop/customer/cards') }}">{{ "My Cards"|t }}</a></li>
-                      <li><a href="{{ logoutUrl }}">Logout</a></li>
-                  </ul>
-              </li>
-          {% else %}
-              <li>{{ "Guest"|t }}</li>
-          {% endif %}
-      </ul>
+    <ul class="dropdown menu align-center text-uppercase" data-dropdown-menu>
+      {% set page = craft.app.request.getSegment(2) %}
+      <li><a class="{% if page == 'products' %}active{% endif %}" href="{{ url('merch/products') }}">{{ "Products"|t }}</a></li>
+      <li><a class="{% if page == 'cart' %}active{% endif %}" href="{{ url('merch/cart') }}">{{ "Cart"|t }} — {{ craft.orders.number(cart.number).one().totalQty ?? 0}}</a></li>
+      {% if currentUser %}
+        <li>
+            <a href="#">Account</a>
+            <ul class="menu">
+                <li><a href="{{ url('merch/customer') }}">{{ "My Orders"|t }}</a></li>
+                <li><a href="{{ url('merch/customer/addresses') }}">{{ "My Addresses"|t }}</a></li>
+                <li><a href="{{ url('merch/customer/cards') }}">{{ "My Cards"|t }}</a></li>
+                <li><a href="{{ logoutUrl }}">Logout</a></li>
+            </ul>
+        </li>
+      {% else %}
+          <li class="menu-text">{{ "Guest"|t }}</li>
+      {% endif %}
+    </ul>
   </div>
 
   <div class="shrink medium-3 cell text-right">

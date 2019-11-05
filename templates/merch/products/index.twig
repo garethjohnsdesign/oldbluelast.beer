@@ -4,13 +4,13 @@
 
 {% block main %}
 
-    <div class="grid-container">
-        <div class="grid-x">
+        <div class="grid-x grid-padding-x grid-padding-y padding-horizontal-2">
 
     {% for product in products %}
-            <div class="small-12 medium-6 cell">
+            <div class="small-12 medium-6 large-4 cell">
               
           {% for image in product.image.all() %}
+          {% if product.url %}{{ product.link }}
           <div class="image--square" data-interchange="{% include "_includes/images/full/1-1/interchange-img-small-12-medium-6" %}">
             <div class="grid-y height-100 align-center content">
               <div class="shrink cell text-center padding-2">
@@ -29,8 +29,9 @@
                         <input type="hidden" name="qty" value="1">
                         {{ csrfInput() }}
 
-                        <select name="purchasableId" class="purchasableId text-uppercase">
+                        <select name="purchasableId" class="purchasableId text-uppercase h5">
                           {%- for purchasable in product.getVariants() -%}
+
                               <option {% if not purchasable.isAvailable %}disabled {% endif %}
                                       data-info="product-{{ product.id }}-purchasable-{{ purchasable.id }}"
                                       value="{{ purchasable.id }}">
@@ -39,7 +40,7 @@
                           {%- endfor -%}
                         </select>
                         {% if product.hasUnlimitedStock or (product.hasUnlimitedStock == false and product.totalStock > 0 ) %}
-                            <button type="submit" class="button large text-uppercase">{{ "Add to cart"|t }}</button>
+                            <button type="submit" class="button large text-uppercase solid secondary-button expanded">{{ "Add to cart"|t }} <svg class="icon icon-arrow_forward"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow_forward"></use></svg></button>
                         {% else %}
                             {{ "Out of Stock"|t }}
                         {% endif %}
@@ -65,7 +66,6 @@
     {% endfor %}
 
         </div>
-    </div>
 
 
 
