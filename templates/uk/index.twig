@@ -25,6 +25,7 @@
         {% set promo = random(entry.heroText) %}
         <h1>{{ promo.text }}</h1>
         </div>
+        {% if site.delivery %}
         <div class="small-12 large-4 cell">
           <div class="grid-y align-justify" style="height: 100%;">
             <div class="shrink cell">
@@ -35,6 +36,7 @@
             </div>
           </div>
         </div>
+        {% endif %}
       </div>
     </div>
   </div>
