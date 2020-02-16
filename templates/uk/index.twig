@@ -162,7 +162,6 @@
 {% set evententries = craft.entries.section('events')
 .eventFeatured('1')
 .eventDate('< ' ~ now.getTimestamp())
-.orderBy('RAND()')
 .limit(9)
 .all() %}
 
