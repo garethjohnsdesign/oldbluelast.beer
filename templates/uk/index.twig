@@ -86,14 +86,11 @@
 <div id="map" style="width: 100%; height: 500px;"></div>
 
 <!-- Party Video -->
-{% if entry.partyVideo | length %}
 <section class="home__party-video">
-    {% set video = entry.partyVideo.one() %}
     <video playsinline autoplay muted loop class="video" poster="">
-      <source src="https://storage.googleapis.com/old-blue-last-beer/{{ video.filename }}" type="video/mp4">
+      <source src="https://player.vimeo.com/external/391844796.sd.mp4?s=2a7dde528b78f8c9ac45cb0e8f01e54505f54b30&profile_id=165" type="video/mp4">
     </video>
 </section>
- {% endif %}
 <!-- End Party Video -->
 
 <!-- Party -->
