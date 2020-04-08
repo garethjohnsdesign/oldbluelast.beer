@@ -4,7 +4,7 @@
 
 {% block main %}
 
-<!-- Hero -->
+{# Hero #}
 <section class="home__hero grid-y align-center">
 
   <div class="swiper-container carousel--hero home__hero__image">
@@ -42,9 +42,9 @@
   </div>
 
 </section>
-<!-- End Hero -->
+{# End Hero #}
 
-<!-- Campaign -->
+{# Campaign #}
 {% if entry.showCampaign %}
 <section class="home__campaign">
 
@@ -65,9 +65,9 @@
 
 </section>
 {% endif %}
-<!-- End Campaign -->
+{# End Campaign #}
 
-<!-- Location -->
+{# Location #}
 <section class="home__drink inverted" id="home__drink">
 
   <div class="grid-container">
@@ -85,15 +85,15 @@
 
 <div id="map" style="width: 100%; height: 500px;"></div>
 
-<!-- Party Video -->
+{# Party Video #}
 <section class="home__party-video">
     <video playsinline autoplay muted loop class="video" poster="">
       <source src="https://player.vimeo.com/external/391844796.sd.mp4?s=2a7dde528b78f8c9ac45cb0e8f01e54505f54b30&profile_id=165" type="video/mp4">
     </video>
 </section>
-<!-- End Party Video -->
+{# End Party Video #}
 
-<!-- Party -->
+{# Party #}
 <section class="home__party" id="home__party">
 
   <div class="grid-container">
@@ -106,9 +106,9 @@
   </div>
 
 </section>
-<!-- End Party -->
+{# End Party #}
 
-<!-- Upcoming Events -->
+{# Upcoming Events #}
 {% set entries = craft.entries
 .section('events')
 .eventDate('>' ~ now.getTimestamp())
@@ -154,9 +154,9 @@
   
 </section>
 {% endif %}
-<!-- End Upcoming Events -->
+{# End Upcoming Events #}
 
-<!-- Photos -->
+{# Photos #}
 
 {% set evententries = craft.entries.section('events')
 .eventFeatured('1')
@@ -199,9 +199,9 @@
 
 </section>
 
-<!-- End Photos -->
+{# End Photos #}
 
-<!-- The Beer -->
+{# The Beer #}
 <section class="home__the-beer" id="home__the-beer">
   <div class="grid-container">
     <div class="grid-x grid-padding-x grid-padding-y">
@@ -212,9 +212,9 @@
     </div>
   </div>
 </section>
-<!-- End The Beer -->
+{# End The Beer #}
 
-<!-- Contact Form -->
+{# Contact Form #}
 <section class="home__contact padding-vertical-2" id="home__contact">
   <div class="grid-container">
     <div class="grid-x">
@@ -225,7 +225,7 @@
     </div>
   </div>
 </section>
-<!-- End Contact Form  -->
+{# End Contact Form  #}
 
 {% js %}
 mapboxgl.accessToken = "pk.eyJ1IjoiZ2FyZXRoam9obnNkZXNpZ24iLCJhIjoiY2sxbnV1NGhmMGE4YTNvb2l1aGp5ano3ZiJ9.g6KdDp-CdRZI2KzanoxFQw";
