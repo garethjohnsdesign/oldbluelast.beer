@@ -1,60 +1,45 @@
 // 1. Imports
 // ----------
 
-import $ from "jquery";
-import Foundation from 'foundation-sites';
-import "lightGallery";
-import "lg-fullscreen";
-import "lg-video";
-import "lg-autoplay";
-//import AOS from 'aos';
+import './jqueryload';
+import 'what-input';
 import Swiper from 'swiper';
-// import AgeGate from 'agegate';
-import Cookies from 'js-cookie'
-// import Swup from 'swup';
+import Cookies from 'js-cookie';
+import './lib/foundation-explicit-pieces';
+import '@fancyapps/fancybox/dist/jquery.fancybox.min';
 
-// 2. Special Queries
+// 2. Foundation Special Queries
 // ------------------
 
 Foundation.Interchange.SPECIAL_QUERIES['medium-retina'] = 'only screen and (min-width: 40em), (min-width: 40em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 40em) and (min--moz-device-pixel-ratio: 2), (min-width: 40em) and (-o-min-device-pixel-ratio: 2/1), (min-width: 40em) and (min-device-pixel-ratio: 2), (min-width: 40em) and (min-resolution: 192dpi), (min-width: 40em) and (min-resolution: 2dppx)';
 Foundation.Interchange.SPECIAL_QUERIES['large-retina'] = 'only screen and (min-width: 64em), (min-width: 64em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 64em) and (min--moz-device-pixel-ratio: 2), (min-width: 64em) and (-o-min-device-pixel-ratio: 2/1), (min-width: 64em) and (min-device-pixel-ratio: 2), (min-width: 64em) and (min-resolution: 192dpi), (min-width: 64em) and (min-resolution: 2dppx)';
 Foundation.Interchange.SPECIAL_QUERIES['xlarge-retina'] = 'only screen and (min-width: 75em), (min-width: 75em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 75em) and (min--moz-device-pixel-ratio: 2), (min-width: 75em) and (-o-min-device-pixel-ratio: 2/1), (min-width: 75em) and (min-device-pixel-ratio: 2), (min-width: 75em) and (min-resolution: 192dpi), (min-width: 75em) and (min-resolution: 2dppx)';
 Foundation.Interchange.SPECIAL_QUERIES['xxlarge-retina'] = 'only screen and (min-width: 90em), (min-width: 75em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 75em) and (min--moz-device-pixel-ratio: 2), (min-width: 75em) and (-o-min-device-pixel-ratio: 2/1), (min-width: 75em) and (min-device-pixel-ratio: 2), (min-width: 75em) and (min-resolution: 192dpi), (min-width: 75em) and (min-resolution: 2dppx)';
-
-// 3. Foundation
-// -------------
+  
 
 $(document).foundation();
 
 
-// 5. Lightgallery
+// 4. Lightgallery
 // ---------------
 
-$("#gallery").lightGallery({
-    selector: ".item",
-    counter : true,
-    fullscreen: true,
-    download: false
+$('[data-fancybox="gallery"]').fancybox({
+loop: true,
+arrows: true,
+infobar: true,
+buttons: [
+//     "zoom",
+    //"share",
+    "slideShow",
+    //"fullScreen",
+    //"download",
+//     "thumbs",
+    "close"
+  ],
+ transitionEffect: "tube",
 });
 
-$('#video-gallery').lightGallery({
-   download: false,
-   counter : false,
-   controls: false,
-    vimeoPlayerParams: {
-        byline : 0,
-        portrait : 0,
-        color : '272A67'
-    },
-    youtubePlayerParams: {
-        modestbranding: 1,
-        showinfo: 0,
-        rel: 0,
-        controls: 0
-    }
-});
-
-// 6. Age Gate
+// 5. Age Gate
 // -----------
 
 $(document).ready(function() {
@@ -70,7 +55,7 @@ $('#agegatesimple .close-button-test').click(function() {
   $('#agegatesimple').foundation('close'); 
 });
 
-// 7. Links Scroll to Section
+// 6. Links Scroll to Section
 // --------------------------
 
 $('a[href*="#"]')
@@ -109,6 +94,8 @@ $('a[href*="#"]')
     }
   });
 
+// 6. Carousel
+// -----------
 
 new Swiper('.carousel--hero', {
   effect: 'fade',
@@ -121,12 +108,9 @@ new Swiper('.carousel--hero', {
   }
 })
 
+// 7. Find Beer Button
+// -------------------
+
 $(".findbeer").click(function(){
   $(".mapboxgl-ctrl-geolocate").click()
 });
-
-/*
-var swup = new Swup({
-  animationSelector: '[class*="swup-transition-"]'
-});
-*/
