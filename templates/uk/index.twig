@@ -44,29 +44,6 @@
 </section>
 {# End Hero #}
 
-{# Campaign #}
-{% if entry.showCampaign %}
-<section class="home__campaign">
-
-  <div class="grid-x">
-    <div class="small-12 cell">
-    
-      {% set image = entry.campaignImage.one() %}
-      <div class="image--campaign align-center-middle" data-interchange="{% include "_includes/images/full/full/interchange-img-small-12-medium-12" %}">
-        <div class="grid-y height-100 align-center">
-          <div class="shrink cell text-center padding-2" id="video-gallery">
-            <a href="https://www.youtube.com/watch?v=CciUPWG6Kp8" class="h1 white play_arrow"><svg class="icon icon-play_arrow"><use xlink:href="/assets/icons/symbol-defs.svg#icon-play_arrow"></use></svg></a>
-          </div>
-        </div>
-      </div>
-    
-    </div>
-  </div>
-
-</section>
-{% endif %}
-{# End Campaign #}
-
 {# Location #}
 <section class="home__drink inverted" id="home__drink">
 
