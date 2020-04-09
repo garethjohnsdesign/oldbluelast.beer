@@ -16,69 +16,22 @@
 <div class="grid-x small-up-2 medium-up-3 large-up-4 margin-bottom-2" id="gallery">
   {% for image in entry.eventPhotos.all() %}
   <div class="cell">
-    <div class="image--square global__photos item" data-interchange="{% include "_includes/images/full/1-1/interchange-img-small-12-medium-4" %}" data-src="{{craft.imager.transformImage(image, { width: (craft.app.config.general.breakpoints.large / 1), dpr: 1, ratio: 7/5, position: image.getFocalPoint() }).url}}">
+<a href="{{craft.imager.transformImage(image, { width: (craft.app.config.general.breakpoints.large / 1), dpr: 1, position: image.getFocalPoint() }).url}}"
+   data-fancybox="gallery"
+   data-type="image"
+
+   data-srcset="{{craft.imager.transformImage(image, { width: (craft.app.config.general.breakpoints.small / 1), dpr: 1, position: image.getFocalPoint() }).url}} {{(craft.app.config.general.breakpoints.small)}}w,
+                {{craft.imager.transformImage(image, { width: (craft.app.config.general.breakpoints.medium / 1), dpr: 2, position: image.getFocalPoint() }).url}} {{(craft.app.config.general.breakpoints.medium)}}w,
+                {{craft.imager.transformImage(image, { width: (craft.app.config.general.breakpoints.large / 1), dpr: 2, position: image.getFocalPoint() }).url}} {{(craft.app.config.general.breakpoints.large)}}w"
+>
+{#   <a href="{{craft.imager.transformImage(image, { width: (craft.app.config.general.breakpoints.large / 1), dpr: 2, ratio: 7/5, position: image.getFocalPoint() }).url}}" data-fancybox="gallery"> #}
+    <div class="image--square global__photos item" data-interchange="{% include "_includes/images/full/1-1/interchange-img-small-12-medium-4" %}">
       <div class="grid-y height-100 align-center content">
       </div>
     </div>
+  </a>
   </div>
   {% endfor %}
-</div>
-
-
-
-{% else %}
-
-<div class="grid-container">
-
-  <div class="grid-x grid-padding-y">
-    <div class="small-12 cell">
-      <h5>{{ entry.eventDate | date('D j M') }}</h5>
-      <h4>{{entry.title}} @ {{entry.eventVenue}}, {{entry.eventLocation}}</h4>
-    </div>
-  </div>
-  
-  {% if entry.hasCopy %}
-  <div class="grid-x grid-padding-y">
-    <div class="small-12 cell">
-      {{ entry.pageCopy }}
-    </div>
-  </div>
-  {% endif %}
-
-  <div class="grid-x grid-padding-y">
-    <div class="small-12 cell">
-    {% for asset in entry.eventFeatureImage %}
-    <img src="{{ asset.getUrl('xxlarge') }}">
-    {% endfor %}
-    </div>
-  </div>
-
-  <div class="grid-x grid-padding-y">
-    <div class="small-12 cell">
-      <div id="eventbrite-widget-container-{{ entry.evenbriteId }}"></div>
-
-      <script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
-      <script type="text/javascript">
-          var exampleCallback = function() {
-              console.log('Order complete!');
-          };
-      
-          window.EBWidgets.createWidget({
-              // Required
-              widgetType: 'checkout',
-              eventId: '{{ entry.evenbriteId }}',
-              iframeContainerId: 'eventbrite-widget-container-{{ entry.evenbriteId }}',
-      
-              // Optional
-              iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
-              onOrderComplete: exampleCallback  // Method called when an order has successfully completed
-          });
-      </script>
-    </div>
-  </div>
-
-
-
 </div>
 
 {% endif %}
