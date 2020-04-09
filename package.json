@@ -10,7 +10,7 @@
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
     "aos": "^2.3.4",
-    "foundation-sites": "^6.6.2",
+    "foundation-sites": "^6.6.3",
     "jquery": "^3.4.1",
     "js-cookie": "^2.2.1",
     "mapbox-gl": "^1.9.1",
