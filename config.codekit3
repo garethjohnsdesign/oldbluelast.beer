@@ -165,17 +165,6 @@
 		"oAP": "/build/node_modules",
 		"oF": 0
 		},
-	"/node_modules/foundation-sites/dist/js/foundation.esm.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/foundation-sites/dist/js/foundation.esm-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/node_modules/jquery/dist/jquery.js": {
 		"bF": 0,
 		"ft": 64,
@@ -194,50 +183,6 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/node_modules/js-cookie/src/js.cookie-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/node_modules/lg-autoplay/dist/lg-autoplay.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/lg-autoplay/dist/lg-autoplay-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/node_modules/lg-fullscreen/dist/lg-fullscreen.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/lg-fullscreen/dist/lg-fullscreen-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/node_modules/lg-video/dist/lg-video.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/lg-video/dist/lg-video-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/node_modules/lightGallery/dist/js/lightgallery.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/node_modules/lightGallery/dist/js/lightgallery-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -274,6 +219,25 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"/node_modules/what-input/dist/what-input.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/what-input/dist/what-input-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/package-lock.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/package-lock-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
 		},
 	"/package.json": {
 		"ft": 524288,
@@ -946,14 +910,6 @@
 		"oAP": "/web/.htaccess",
 		"oF": 0
 		},
-	"/web/.htaccess copy": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/web/.htaccess copy",
-		"oF": 0
-		},
 	"/web/assets/css/app.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1215,6 +1171,39 @@
 		"oA": 0,
 		"oAP": "/web/assets/js/min/app-min.js",
 		"oF": 2,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/assets/js/jqueryload-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/web/assets/js/jqueryload-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/assets/js/jqueryload.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "/web/assets/js/jqueryload-min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"/web/assets/js/lib/foundation-explicit-pieces.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/web/assets/js/lib/foundation-explicit-pieces-min.js",
+		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
@@ -3523,6 +3512,19 @@
 		"oA": 1,
 		"oAP": "/web/assets/scss/.sass-cache/ecce55e2e9447d0ad4dd543b2ef4406b7a2dbfd9/_unit.scssc",
 		"oF": 0
+		},
+	"/web/assets/scss/_fancybox.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/web/assets/scss/_fancybox.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 0
 		},
 	"/web/assets/scss/_fonts.scss": {
 		"aP": 1,
