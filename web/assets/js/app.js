@@ -56,6 +56,8 @@ $('#agegatesimple .close-button-test').click(function() {
 
 if (document.querySelector('#gallery')) {
   $('[data-fancybox="gallery"]').fancybox({
+  animationEffect: "fade",
+  animationDuration: 366,
   loop: true,
   arrows: true,
   infobar: true,

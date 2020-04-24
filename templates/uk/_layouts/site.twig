@@ -34,5 +34,30 @@
 
 </div>
 
+{% js %}
+var geojson = {
+  type: 'FeatureCollection',
+  features: 
+  [
+  {% set locations = craft.entries
+  .section('locations')
+  .all() %}
+  {% for entry in locations %}
+  {
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [{{ entry.location.lng }}, {{ entry.location.lat }}]
+    },
+    properties: {
+      title: '{{entry.title }}',
+      description: '{{ entry.location.parts.number }} {{ entry.location.parts.address }}'
+    }
+  },
+  {% endfor %}
+  ]
+};
+{% endjs %}
+
 
 {% endblock %}
