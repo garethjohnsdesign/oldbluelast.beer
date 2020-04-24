@@ -2,12 +2,11 @@
 
 {% block body %}
 
-<div class="content transition-fade" id="swup">
-
 <!-- Age Gate -->
 {% include "_includes/blocks/age-gate-simple" %}
 <!-- End Age Gate -->
 
+<div class="swup-transition-fade testing testing--hide" id="swup-body">
 <!-- Navigation Desktop -->
 {% include "_includes/global/navigation" %}
 <!-- End Navigation Desktop -->
@@ -20,12 +19,10 @@
 {% block main %}{% endblock %}
 </main>
 
-</div>
-
 <!-- Footer -->
 <footer class="footer">
 <!-- Newsletter -->
-{% include "_includes/blocks/footer" %}
+{% include "_includes/blocks/newsletter" %}
 <!-- End Newsletter -->
 
 <!-- Copyright -->
@@ -34,31 +31,8 @@
 </footer>
 <!-- End Footer -->
 
-{% endblock %}
 
-{% block foot %}
+</div>
 
-<!-- OneTrust Cookies Consent Notice -->
-{#
-<script src="https://optanon.blob.core.windows.net/consent/684f20d3-5e83-4b86-ba47-ea0ed44019e0.js" type="text/javascript" charset="UTF-8"></script>
-<script type="text/javascript">
-function OptanonWrapper() {
-var a;
-    //BEHAVIOUR(IsIABEnabled == true)
-!function(t) {
-    var r= {
-}
-;
-    function o(e) {
-    if(r[e])return r[e].exports;
-    var n=r[e]= {
-    i: e, l:!1, exports: {
-}
-}
-;
-}
-</script>
-#}
-<!-- OneTrust Cookies Consent Notice End -->
 
 {% endblock %}

@@ -8,6 +8,11 @@
     "email": "info@garethjohnsdesign.com"
   },
   "dependencies": {
+    "@swup/body-class-plugin": "^1.0.2",
+    "@swup/ga-plugin": "^1.0.1",
+    "@swup/head-plugin": "^1.0.2",
+    "@swup/preload-plugin": "^1.0.3",
+    "@swup/scroll-plugin": "^1.0.6",
     "@fancyapps/fancybox": "^3.5.7",
     "aos": "^2.3.4",
     "foundation-sites": "^6.6.3",

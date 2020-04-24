@@ -119,6 +119,38 @@ html.is-animating .transition-fade {
   opacity: 0;
 }
 
+// 3. Animations
+// -------------
+
+.swup-transition-fade-up {
+  transition: opacity 0.5s;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+html.is-animating .swup-transition-fade-up {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.swup-transition-fade {
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+
+html.is-animating .swup-transition-fade {
+  opacity: 0;
+}
+
+.swup-transition-color {
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+
+html.is-animating .swup-transition-color {
+  opacity: 0;
+}
+
 // 3. Typography
 // -------------
 
@@ -367,39 +399,6 @@ input#honeypot {
 font-size: $small-font-size;
 }
 
-/*
-#optanon *, #optanon *:before, #optanon *:after {
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-}
-#optanon, #optanon *, #optanon div, #optanon span, #optanon ul, #optanon li, #optanon a, #optanon p, .optanon-alert-box-wrapper * {
-    font-family: Arial, sans-serif;
-    background: none;
-    border: none;
-    bottom: auto;
-}
-
-.optanon-alert-box-wrapper .optanon-button-more .optanon-alert-box-button-middle button {
-border-bottom: 1px solid $white;
-padding-bottom: 1px;
-color: $white !important;
-cursor: pointer;
-}
-
-.optanon-alert-box-wrapper .optanon-button-more .optanon-alert-box-button-middle button:before {
-content: '';
-display: none;
-}
-
-.optanon-alert-box-wrapper .optanon-button-more .optanon-alert-box-button-middle button {
-border-bottom: 1px solid #ccc;
-padding-bottom: 1px;
-color: #000 !important;
-cursor: pointer;
-}
-*/
-
 
 .home__hero__text {
 /*
@@ -538,4 +537,25 @@ vertical-align: bottom;
 
 .menu .menu-text {
 font-weight: normal;
+}
+
+
+.testing--hide {
+opacity: 0;
+}
+
+.primary-background-color {
+  background-color: get-color(primary);
+  color: $white;
+  @include links($white, $secondary-color)
+}
+
+[data-aos="new-animation"] {
+ filter: blur(20px);
+//  opacity: 0;
+//   transition-property: transform, opacity;
+  &.aos-animate {
+    filter: blur(0px);
+//     opacity: 1
+  }
 }

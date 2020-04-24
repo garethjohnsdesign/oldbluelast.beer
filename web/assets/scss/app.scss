@@ -22,6 +22,10 @@
 @import 'typography';
 
 
+// Scroll
+@import 'scroll/aos';
+
+
 // 5. Transitions
 // --------------
 
@@ -54,8 +58,8 @@
 @include foundation-menu;
 // @include foundation-menu-icon;
 // @include foundation-drilldown-menu;
-@include foundation-dropdown;
-@include foundation-dropdown-menu;
+// @include foundation-dropdown;
+// @include foundation-dropdown-menu;
 // @include foundation-responsive-embed;
 // @include foundation-label;
 // @include foundation-media-object;
@@ -74,7 +78,7 @@
 // @include foundation-thumbnail;
 // @include foundation-title-bar;
 // @include foundation-tooltip;
-@include foundation-top-bar;
+// @include foundation-top-bar;
 @include foundation-visibility-classes;
 // @include foundation-float-classes;
 @include foundation-flex-classes;
@@ -91,5 +95,5 @@
 
 @import 'icons';
 @import 'swiper';
-@import 'mapbox';
+@import 'mapbox-gl';
 @import 'layout';

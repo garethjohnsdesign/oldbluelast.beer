@@ -7,7 +7,7 @@
 		"uuidString": "F7CC2255-C147-4BFE-82DC-F393990E3BD5"
 		}
 	],
-"creatorBuild": "32001",
+"creatorBuild": "32137",
 "files": {
 	"/.env": {
 		"cB": 0,
@@ -165,6 +165,61 @@
 		"oAP": "/build/node_modules",
 		"oF": 0
 		},
+	"/node_modules/@swup/body-class-plugin/lib/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/@swup/body-class-plugin/lib/index-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/node_modules/@swup/ga-plugin/lib/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/@swup/ga-plugin/lib/index-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/node_modules/@swup/preload-plugin/lib/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/@swup/preload-plugin/lib/index-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/node_modules/@swup/scroll-plugin/lib/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/@swup/scroll-plugin/lib/index-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/node_modules/aos/dist/aos.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/aos/dist/aos-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/node_modules/jquery/dist/jquery.js": {
 		"bF": 0,
 		"ft": 64,
@@ -220,6 +275,17 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/node_modules/swup/lib/index.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/node_modules/swup/lib/index-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/node_modules/what-input/dist/what-input.js": {
 		"bF": 0,
 		"ft": 64,
@@ -230,14 +296,6 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
-		},
-	"/package-lock.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/package-lock-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
 		},
 	"/package.json": {
 		"ft": 524288,
@@ -270,126 +328,6 @@
 		"ft": 65536,
 		"oA": 1,
 		"oAP": "/build/storage",
-		"oF": 0
-		},
-	"/templates/shop/_includes/age-gate/overlay.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/shop/_includes/age-gate/overlay.twig",
-		"oF": 0
-		},
-	"/templates/shop/_includes/contact/form.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/shop/_includes/contact/form.twig",
-		"oF": 0
-		},
-	"/templates/shop/_includes/footer/copyright.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/shop/_includes/footer/copyright.twig",
-		"oF": 0
-		},
-	"/templates/shop/_includes/footer/footer.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/shop/_includes/footer/footer.twig",
-		"oF": 0
-		},
-	"/templates/shop/_includes/images/interchange-img-small-12-medium-12-cell.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/shop/_includes/images/interchange-img-small-12-medium-12-cell.twig",
-		"oF": 0
-		},
-	"/templates/shop/_includes/images/interchange-img-small-12-medium-4-cell.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/shop/_includes/images/interchange-img-small-12-medium-4-cell.twig",
-		"oF": 0
-		},
-	"/templates/shop/_includes/images/interchange-img-small-12-medium-6-cell.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/shop/_includes/images/interchange-img-small-12-medium-6-cell.twig",
-		"oF": 0
-		},
-	"/templates/shop/_includes/navigation/desktop.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/shop/_includes/navigation/desktop.twig",
-		"oF": 0
-		},
-	"/templates/shop/_includes/scripts/scripts.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/shop/_includes/scripts/scripts.html",
-		"oF": 0
-		},
-	"/templates/shop/_includes/social-links/overlay.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/shop/_includes/social-links/overlay.twig",
-		"oF": 0
-		},
-	"/templates/shop/_layouts/base.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/shop/_layouts/base.twig",
-		"oF": 0
-		},
-	"/templates/shop/_layouts/site.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/shop/_layouts/site.twig",
-		"oF": 0
-		},
-	"/templates/shop/index.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/shop/index.twig",
-		"oF": 0
-		},
-	"/templates/shop/page/index.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/shop/page/index.twig",
-		"oF": 0
-		},
-	"/templates/shop/thanks/index.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/shop/thanks/index.twig",
 		"oF": 0
 		},
 	"/templates/uk/404.twig": {
@@ -432,14 +370,6 @@
 		"oAP": "/templates/uk/_includes/blocks/copyright.twig",
 		"oF": 0
 		},
-	"/templates/uk/_includes/blocks/footer.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/uk/_includes/blocks/footer.twig",
-		"oF": 0
-		},
 	"/templates/uk/_includes/blocks/form.twig": {
 		"cB": 0,
 		"ft": 8192,
@@ -462,6 +392,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/uk/_includes/blocks/map.twig",
+		"oF": 0
+		},
+	"/templates/uk/_includes/blocks/newsletter.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/uk/_includes/blocks/newsletter.twig",
 		"oF": 0
 		},
 	"/templates/uk/_includes/global/analytics.twig": {
@@ -3506,105 +3444,79 @@
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/web/assets/scss/_fancybox.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 0
+		"sct": 0
 		},
 	"/web/assets/scss/_fonts.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/web/assets/scss/_fonts.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 0
-		},
-	"/web/assets/scss/_hamburgers.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/web/assets/scss/_hamburgers.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 0
+		"sct": 0
 		},
 	"/web/assets/scss/_icons.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/web/assets/scss/_icons.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 0
+		"sct": 0
 		},
 	"/web/assets/scss/_layout.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/web/assets/scss/_layout.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 0
+		"sct": 0
 		},
-	"/web/assets/scss/_lightgallery.scss": {
+	"/web/assets/scss/_mapbox-gl.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/web/assets/scss/_lightgallery.css",
+		"oAP": "/web/assets/scss/_mapbox-gl.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 0
-		},
-	"/web/assets/scss/_mapbox.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/web/assets/scss/_mapbox.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 0
+		"sct": 0
 		},
 	"/web/assets/scss/_settings.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/web/assets/scss/_settings.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 0
+		"sct": 0
 		},
 	"/web/assets/scss/_swiper.css": {
 		"aP": 1,
@@ -3620,92 +3532,92 @@
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/web/assets/scss/_transitions.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 0
+		"sct": 0
 		},
 	"/web/assets/scss/_typography.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/web/assets/scss/_typography.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 0
+		"sct": 0
 		},
 	"/web/assets/scss/app.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/web/assets/css/app.css",
 		"oF": 2,
 		"oS": 3,
-		"uL": 1
+		"sct": 0
 		},
 	"/web/assets/scss/scroll/_animations.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/web/assets/scss/scroll/_animations.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 0
+		"sct": 0
 		},
 	"/web/assets/scss/scroll/_core.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/web/assets/scss/scroll/_core.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 0
+		"sct": 0
 		},
 	"/web/assets/scss/scroll/_easing.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/web/assets/scss/scroll/_easing.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 0
+		"sct": 0
 		},
 	"/web/assets/scss/scroll/aos.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/web/assets/scss/scroll/aos.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 0
+		"sct": 0
 		},
 	"/web/cpresources": {
 		"ft": 65536,
@@ -3754,7 +3666,7 @@
 	"creationDate": 534613424,
 	"displayValue": "Old Blue Last Beer",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "brackets_gray",
+	"iconImageName": "brackets-silver",
 	"iconImageWasSetByUser": 1
 	},
 "projectSettings": {
@@ -5775,13 +5687,13 @@
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
 		"autoOutputPathStyle": 0,
+		"compilerType": 0,
 		"createSourceMap": 0,
-		"debugStyle": 0,
 		"decimalPrecision": 10,
+		"emitCharset": 1,
 		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 0,
-		"useLibsass": 0
+		"shouldRunBless": 0
 		},
 	"languageDefaultsSLIM": {
 		"autoOutputAction": 0,

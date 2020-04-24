@@ -7,12 +7,12 @@
 {# Hero #}
 <section class="home__hero grid-y align-center">
 
-  <div class="swiper-container carousel--hero home__hero__image">
+  <div class="swiper-container home__hero__image" id="carousel--hero" data-aos="fade-in" data-aos-delay="100">
     <div class="swiper-wrapper">
       {% for image in entry.heroImages.orderBy('RAND()').all() %}
       <div class="swiper-slide small-12 cell text-center">
-        <div class="image--hero align-center-middle" data-interchange="{% include "_includes/images/full/full/interchange-img-small-12-medium-12" %}">
-        </div>
+          <div class="image--hero align-center-middle" data-interchange="{% include "_includes/images/full/full/interchange-img-small-12-medium-12" %}">
+          </div>
       </div>
       {% endfor %}
     </div>
@@ -44,7 +44,7 @@
 </section>
 {# End Hero #}
 
-{# Location #}
+{# Map #}
 <section class="home__drink inverted" id="home__drink">
 
   <div class="grid-container">
@@ -53,7 +53,7 @@
         <h1 class="secondary-font margin-bottom-0 text-uppercase">Drink</h1>
       </div>
       <div class="small-12 medium-shrink large-4 cell text-uppercase align-self-bottom">
-        <button class="button text-uppercase findbeer solid large primary-button">Find Beer <svg class="icon icon-arrow_forward"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow_forward"></use></svg></button>
+        <button class="button text-uppercase solid large primary-button" id="findbeer">Find Beer <svg class="icon icon-arrow_forward"><use xlink:href="/assets/icons/symbol-defs.svg#icon-arrow_forward"></use></svg></button>
       </div>
     </div>  
   </div>
@@ -61,6 +61,33 @@
 </section>
 
 <div id="map" style="width: 100%; height: 500px;"></div>
+
+{% js %}
+var geojson = {
+  type: 'FeatureCollection',
+  features: 
+  [
+  {% set locations = craft.entries
+  .section('locations')
+  .all() %}
+  {% for entry in locations %}
+  {
+    type: 'Feature',
+    geometry: {
+      type: 'Point',
+      coordinates: [{{ entry.location.lng }}, {{ entry.location.lat }}]
+    },
+    properties: {
+      title: '{{entry.title }}',
+      description: '{{ entry.location.parts.number }} {{ entry.location.parts.address }}'
+    }
+  },
+  {% endfor %}
+  ]
+};
+{% endjs %}
+{# End Map #}
+
 
 {# Party Video #}
 <section class="home__party-video">
@@ -175,7 +202,6 @@
     </div>
 
 </section>
-
 {# End Photos #}
 
 {# The Beer #}
@@ -203,61 +229,5 @@
   </div>
 </section>
 {# End Contact Form  #}
-
-{% js %}
-mapboxgl.accessToken = "pk.eyJ1IjoiZ2FyZXRoam9obnNkZXNpZ24iLCJhIjoiY2sxbnV1NGhmMGE4YTNvb2l1aGp5ano3ZiJ9.g6KdDp-CdRZI2KzanoxFQw";
-
-var map = new mapboxgl.Map({
-  container: 'map',
-  style: 'mapbox://styles/garethjohnsdesign/ck1qcw4jy09aj1cpdwf0xqiec?optimize=true',
-  center: [-0.0800221, 51.5242972],
-  zoom: 12
-});
-
-var geojson = {
-  type: 'FeatureCollection',
-  features: 
-  [
-  {% set locations = craft.entries
-  .section('locations')
-  .all() %}
-  {% for entry in locations %}
-  {
-    type: 'Feature',
-    geometry: {
-      type: 'Point',
-      coordinates: [{{ entry.location.lng }}, {{ entry.location.lat }}]
-    },
-    properties: {
-      title: '{{entry.title }}',
-      description: '{{ entry.location.parts.number }} {{ entry.location.parts.address }}'
-    }
-  },
-  {% endfor %}
-  ]
-};
- 
-  // add markers to map
-  geojson.features.forEach(function(marker) {
-
-  // create a HTML element for each feature
-  var el = document.createElement('div');
-  el.className = 'marker';
-
-  // make a marker for each feature and add to the map
-  new mapboxgl.Marker(el)
-    .setLngLat(marker.geometry.coordinates)
-    .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-    .setHTML('<h6 class="primary-color secondary-font margin-bottom-1">' + marker.properties.title + '</h6><div class="primary-color">' + marker.properties.description + '</div>'))
-    .addTo(map);
-});
-
-map.addControl(new mapboxgl.NavigationControl(), 'top-left');
-map.addControl(new mapboxgl.GeolocateControl ({positionOptions: {enableHighAccuracy: true},trackUserLocation: true}), 'top-left');
-
-// disable map zoom when using scroll
-map.scrollZoom.disable();
-
-{% endjs %}
 
 {% endblock %}
