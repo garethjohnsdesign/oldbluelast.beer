@@ -346,20 +346,20 @@
 		"oAP": "/templates/uk/503.twig",
 		"oF": 0
 		},
+	"/templates/uk/_includes/blocks/age-gate-advanced.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/uk/_includes/blocks/age-gate-advanced.twig",
+		"oF": 0
+		},
 	"/templates/uk/_includes/blocks/age-gate-simple.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/uk/_includes/blocks/age-gate-simple.twig",
-		"oF": 0
-		},
-	"/templates/uk/_includes/blocks/age-gate.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/uk/_includes/blocks/age-gate.twig",
 		"oF": 0
 		},
 	"/templates/uk/_includes/blocks/copyright.twig": {
@@ -384,14 +384,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/uk/_includes/blocks/links.twig",
-		"oF": 0
-		},
-	"/templates/uk/_includes/blocks/map.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/uk/_includes/blocks/map.twig",
 		"oF": 0
 		},
 	"/templates/uk/_includes/blocks/newsletter.twig": {
