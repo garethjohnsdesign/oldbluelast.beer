@@ -16,10 +16,9 @@
 <div class="grid-x small-up-2 medium-up-3 large-up-4 margin-bottom-2" id="gallery">
   {% for image in entry.eventPhotos.all() %}
   <div class="cell">
-<a href="{{craft.imager.transformImage(image, { width: (craft.app.config.general.breakpoints.large / 1), dpr: 1, position: image.getFocalPoint() }).url}}"
+<a href="{{craft.imager.transformImage(image, { width: (craft.app.config.general.breakpoints.large / 1), dpr: 2, position: image.getFocalPoint() }).url}}"
    data-fancybox="gallery"
    data-type="image"
-
    data-srcset="{{craft.imager.transformImage(image, { width: (craft.app.config.general.breakpoints.small / 1), dpr: 2, position: image.getFocalPoint() }).url}} {{(craft.app.config.general.breakpoints.small)}}w,
                 {{craft.imager.transformImage(image, { width: (craft.app.config.general.breakpoints.medium / 1), dpr: 2, position: image.getFocalPoint() }).url}} {{(craft.app.config.general.breakpoints.medium)}}w,
                 {{craft.imager.transformImage(image, { width: (craft.app.config.general.breakpoints.large / 1), dpr: 2, position: image.getFocalPoint() }).url}} {{(craft.app.config.general.breakpoints.large)}}w"
