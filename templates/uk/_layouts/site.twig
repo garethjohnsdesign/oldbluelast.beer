@@ -39,9 +39,7 @@ var geojson = {
   type: 'FeatureCollection',
   features: 
   [
-  {% set locations = craft.entries
-  .section('locations')
-  .all() %}
+  {% set locations = craft.entries.section('locations').all() %}
   {% for entry in locations %}
   {
     type: 'Feature',

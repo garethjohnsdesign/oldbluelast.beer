@@ -19,7 +19,7 @@
     "rss": "https://craftcms.com/changelog.rss"
   },
   "require": {
-    "craftcms/cms": "3.4.14",
+    "craftcms/cms": "3.4.17.1",
     "vlucas/phpdotenv": "^2.4.0",
     "craftcms/ckeditor": "1.0.0-beta.3",
     "craftcms/contact-form": "2.2.6",
@@ -28,7 +28,7 @@
     "craftcms/contact-form-honeypot": "1.0.2",
     "nystudio107/craft-minify": "1.2.10",
     "aelvan/imager": "v2.4.0",
-    "ether/simplemap": "3.8.2",
+    "ether/simplemap": "3.8.3",
     "craftcms/commerce": "2.2.7"
   },
   "autoload": {
