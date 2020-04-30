@@ -8,12 +8,12 @@
     "email": "info@garethjohnsdesign.com"
   },
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "@swup/body-class-plugin": "^1.0.2",
     "@swup/ga-plugin": "^1.0.1",
     "@swup/head-plugin": "^1.0.2",
     "@swup/preload-plugin": "^1.0.3",
     "@swup/scroll-plugin": "^1.0.6",
-    "@fancyapps/fancybox": "^3.5.7",
     "aos": "^2.3.4",
     "foundation-sites": "^6.6.3",
     "jquery": "^3.5.0",
@@ -21,7 +21,7 @@
     "mapbox-gl": "^1.9.1",
     "motion-ui": "~2.0.0",
     "package": "^1.0.1",
-    "swiper": "^5.3.7",
+    "swiper": "^5.3.8",
     "swup": "^2.0.9",
     "what-input": "^5.2.7"
   },
