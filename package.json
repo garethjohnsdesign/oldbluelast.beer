@@ -21,7 +21,7 @@
     "mapbox-gl": "^1.9.1",
     "motion-ui": "~2.0.0",
     "package": "^1.0.1",
-    "swiper": "^5.3.8",
+    "swiper": "^6.5.1",
     "swup": "^2.0.9",
     "what-input": "^5.2.7"
   },
